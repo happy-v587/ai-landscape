@@ -5,6 +5,9 @@ import { GlobalNav } from '@/components/site/GlobalNav';
 it('links to all four English maps and the Chinese homepage', () => {
   render(<GlobalNav locale="en" />);
   expect(screen.getByRole('link', { name: 'Models' })).toHaveAttribute('href', '/en/maps/models');
+  expect(screen.getByRole('link', { name: 'Model Infra' })).toHaveAttribute('href', '/en/maps/model-infra');
+  expect(screen.getByRole('link', { name: 'Agent & Tools' })).toHaveAttribute('href', '/en/maps/agent-tools');
+  expect(screen.getByRole('link', { name: 'Apps & SaaS' })).toHaveAttribute('href', '/en/maps/apps-saas');
   expect(screen.getByRole('link', { name: '中文' })).toHaveAttribute('href', '/zh');
 });
 

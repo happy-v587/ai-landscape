@@ -32,9 +32,9 @@ export function GlobalNav({ locale, activeMap }: { locale: Locale; activeMap?: M
           ))}
         </nav>
         <div className={styles.actions}>
-          <input type="search" placeholder={t.search} className={styles.search} />
-          <Link href={`/${locale}/submit`} className={styles.submit}>{t.submit}</Link>
+          <input type="search" aria-label={t.search} placeholder={t.search} className={styles.search} />
           <Link href={`/${alternate}`} className={styles.locale}>{t.language}</Link>
+          <Link href={`/${locale}/submit`} className={styles.submit}>{t.submit}</Link>
         </div>
       </div>
     </header>

@@ -52,6 +52,7 @@
 .active {
   color: var(--ink);
   border-bottom: 2px solid var(--map);
+  padding-bottom: 10px;
 }
 
 .actions {
@@ -70,6 +71,11 @@
   border-radius: 9999px;
   min-width: 180px;
   outline: none;
+}
+
+.search:focus-visible {
+  outline: 2px solid var(--action-focus);
+  outline-offset: 2px;
 }
 
 .search::placeholder {
