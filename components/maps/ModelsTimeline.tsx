@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import type { CatalogEntry } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
 import styles from './maps.module.css';
@@ -21,6 +22,15 @@ function formatMonthKey(date: Date) {
 function monthLabel(key: string) {
   const [year, month] = key.split('-');
   return `${monthNames[Number(month) - 1]} ${year}`;
+}
+
+function laneColor(lane: string) {
+  let hash = 0;
+  for (const char of lane) {
+    hash = char.charCodeAt(0) + ((hash << 5) - hash);
+  }
+  const hue = Math.abs(hash) % 360;
+  return `hsl(${hue}, 72%, 45%)`;
 }
 
 export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; locale: Locale }) {
@@ -59,8 +69,10 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
         {months.map((key) => (
           <div key={key} className={styles.timelineMonth}>{monthLabel(key)}</div>
         ))}
-        {Object.entries(lanes).map(([lane, laneEntries]) => (
-          <div key={lane} className={styles.timelineLane} role="row">
+        {Object.entries(lanes)
+          .sort(([a], [b]) => a.localeCompare(b))
+          .map(([lane, laneEntries]) => (
+          <div key={lane} className={styles.timelineLane} role="row" style={{ '--lane-color': laneColor(lane) } as CSSProperties}>
             <div className={styles.timelineProvider} role="rowheader">{lane}</div>
             {months.map((key) => (
               <div key={key} className={styles.timelineMonthCell}>
