@@ -159,6 +159,11 @@
   padding: 32px var(--page-gutter);
 }
 
+.mapPage[data-map="models"] .mapCanvas {
+  max-width: none;
+  min-width: 0;
+}
+
 @media (max-width: 768px) {
   .mapPage { display: block; }
   .mapCanvas { max-width: 100%; padding: 24px var(--page-gutter); }

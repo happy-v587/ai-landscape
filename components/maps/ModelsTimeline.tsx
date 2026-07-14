@@ -46,8 +46,8 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
     return groups;
   }, {});
 
-  const gridTemplateColumns = `160px repeat(${months.length}, minmax(120px, 1fr))`;
-  const minWidth = 160 + months.length * 120;
+  const gridTemplateColumns = `160px repeat(${months.length}, minmax(150px, 1fr))`;
+  const minWidth = 160 + months.length * 150;
 
   return (
     <section className={styles.timeline} aria-label="Model release timeline">
