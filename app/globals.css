@@ -1,0 +1,40 @@
+:root {
+  --canvas: #ffffff;
+  --canvas-subtle: #f7f8fa;
+  --ink: #111827;
+  --body: #4b5563;
+  --muted: #9ca3af;
+  --hairline: #e5e7eb;
+  --hairline-hover: #d1d5db;
+  --action: #2563eb;
+  --action-focus: #1d4ed8;
+  --action-on-dark: #60a5fa;
+  --on-action: #ffffff;
+  --nav-height: 56px;
+  --rail-width: 48px;
+  --max-width: 1440px;
+  --page-gutter: 24px;
+}
+
+[data-map="models"] { --map: #6366f1; --pill-bg: #eef2ff; --pill-text: #312e81; }
+[data-map="model-infra"] { --map: #3b82f6; --pill-bg: #eff6ff; --pill-text: #1e40af; }
+[data-map="agent-tools"] { --map: #ec4899; --pill-bg: #fce7f3; --pill-text: #831843; }
+[data-map="apps-saas"] { --map: #10b981; --pill-bg: #ecfdf5; --pill-text: #065f46; }
+
+* { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  background: var(--canvas-subtle);
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a { color: var(--action); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button, a, input, select { min-height: 44px; }
