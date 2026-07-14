@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 import { GlobalNav } from '@/components/site/GlobalNav';
 import { assertLocale, locales } from '@/lib/i18n';
 
@@ -9,7 +11,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;

@@ -98,6 +98,9 @@
   font-weight: 500;
   color: var(--body);
   min-height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
