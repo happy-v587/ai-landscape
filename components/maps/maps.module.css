@@ -148,6 +148,22 @@
   .subcategoryLabel { width: auto; text-align: left; line-height: 1.3; }
 }
 
+.mapPage {
+  display: flex;
+  min-height: calc(100vh - var(--nav-height));
+}
+
+.mapCanvas {
+  flex: 1;
+  max-width: calc(var(--max-width) - var(--rail-width));
+  padding: 32px var(--page-gutter);
+}
+
+@media (max-width: 768px) {
+  .mapPage { display: block; }
+  .mapCanvas { max-width: 100%; padding: 24px var(--page-gutter); }
+}
+
 .timeline {
   overflow-x: auto;
   padding-bottom: 16px;

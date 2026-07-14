@@ -9,7 +9,7 @@ export function SectionCard({
 }) {
   return (
     <section className={styles.sectionCard}>
-      <div className={styles.categoryPill}>{category}</div>
+      <h2 className={styles.categoryPill}>{category}</h2>
       <div className={styles.sectionBody}>{children}</div>
     </section>
   );

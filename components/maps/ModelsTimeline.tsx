@@ -6,8 +6,9 @@ import styles from './maps.module.css';
 const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May'];
 
 export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; locale: Locale }) {
-  const lanes = entries.reduce<Record<string, CatalogEntry[]>>((groups, entry) => {
-    const lane = entry.timeline?.provider_lane ?? entry.organization ?? 'other';
+  const timelineEntries = entries.filter((entry) => entry.timeline != null);
+  const lanes = timelineEntries.reduce<Record<string, CatalogEntry[]>>((groups, entry) => {
+    const lane = entry.timeline!.provider_lane ?? entry.organization ?? 'other';
     groups[lane] = [...(groups[lane] ?? []), entry];
     return groups;
   }, {});
