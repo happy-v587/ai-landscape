@@ -1,0 +1,26 @@
+id: kimi-k2-7-code
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K2.7 Code
+  zh: Kimi K2.7 Code
+summary:
+  en: Coding-specialized open-weight model for long-horizon agentic software engineering.
+  zh: 面向长程智能体软件工程的代码专用开源权重模型。
+website: https://www.moonshot.ai/
+organization: moonshot-ai
+tags: ['llm', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-06-12
+  provider_lane: moonshot-ai
+  capabilities: ['coding', 'reasoning']
+sources:
+  - url: https://www.moonshot.ai/
+    checked_at: 2026-07-14

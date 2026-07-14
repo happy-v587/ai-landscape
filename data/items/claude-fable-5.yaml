@@ -1,0 +1,26 @@
+id: claude-fable-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Fable 5
+  zh: Claude Fable 5
+summary:
+  en: Anthropic's multimodal Claude Fable model.
+  zh: Anthropic 发布的多模态 Claude Fable 模型。
+website: https://www.anthropic.com/
+organization: anthropic
+tags: ['llm', 'multimodal']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision', 'audio']
+  open_source: false
+timeline:
+  released_at: 2026-06-09
+  provider_lane: anthropic
+  capabilities: ['multimodal']
+sources:
+  - url: https://www.anthropic.com/
+    checked_at: 2026-07-14

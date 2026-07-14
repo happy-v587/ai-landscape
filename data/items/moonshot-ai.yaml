@@ -12,7 +12,14 @@ website: https://www.moonshot.ai/
 tags: ['provider', 'llm', 'open-weights']
 regions: [CN]
 status: active
-related: []
+related:
+  - kimi-k1-5
+  - kimi-k2
+  - kimi-k2-instruct
+  - kimi-k2-thinking
+  - kimi-k2-5
+  - kimi-k2-6
+  - kimi-k2-7-code
 facts:
   access: [api]
   open_source: false

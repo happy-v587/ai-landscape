@@ -12,7 +12,25 @@ website: https://www.anthropic.com/
 tags: [provider, llm, safety]
 regions: [US]
 status: active
-related: [claude-3-5-sonnet]
+related:
+  - introducing-claude
+  - claude-2
+  - claude-2-1
+  - claude-instant-1-2
+  - claude-3
+  - claude-3-haiku
+  - claude-3-5-sonnet
+  - claude-3-7-sonnet-and-claude-code
+  - claude-4
+  - claude-sonnet-4-5
+  - claude-opus-4-5
+  - claude-haiku-4-5
+  - claude-sonnet-4-6
+  - claude-opus-4-6
+  - claude-opus-4-7
+  - claude-opus-4-8
+  - claude-fable-5
+  - claude-code
 facts:
   access: [api, claude]
 sources:

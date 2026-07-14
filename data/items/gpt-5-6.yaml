@@ -1,0 +1,26 @@
+id: gpt-5-6
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-5.6
+  zh: GPT-5.6
+summary:
+  en: OpenAI's GPT-5.6 series, including Sol, Terra and Luna.
+  zh: OpenAI 发布的 GPT-5.6 系列，包含 Sol、Terra 与 Luna。
+website: https://openai.com/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-07-09
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/
+    checked_at: 2026-07-14
