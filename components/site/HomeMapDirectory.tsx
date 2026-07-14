@@ -59,7 +59,12 @@ export function HomeMapDirectory({ locale }: { locale: Locale }) {
             ? 'A bilingual map of the global AI ecosystem.'
             : '全球 AI 生态的中英文双语地图。'}
         </p>
-        <div className={styles.search}>{locale === 'en' ? 'Search catalog' : '搜索目录'}</div>
+        <input
+          type="search"
+          placeholder={locale === 'en' ? 'Search catalog' : '搜索目录'}
+          aria-label={locale === 'en' ? 'Search catalog' : '搜索目录'}
+          className={styles.search}
+        />
       </section>
       <section className={styles.grid} aria-label="Landscape maps">
         {maps.map((map) => (
