@@ -1,0 +1,26 @@
+id: gemini-2-5-flash-flash-lite-preview-09-2025
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 2.5 Flash / Flash-Lite Preview 09-2025
+  zh: Gemini 2.5 Flash / Flash-Lite Preview 09-2025
+summary:
+  en: Gemini 2.5 Flash / Flash-Lite Preview 09-2025, released by Google DeepMind.
+  zh: Gemini 2.5 Flash 和 Flash-Lite 发布 09-2025 预览版本。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-09-25
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

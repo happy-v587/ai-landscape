@@ -1,0 +1,26 @@
+id: gpt-4
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-4
+  zh: GPT-4
+summary:
+  en: GPT-4, released by OpenAI.
+  zh: GPT-4 发布，OpenAI 将其描述为大型多模态模型；首批开放文本输入能力，图像能力处于预览/合作阶段。
+website: https://openai.com/index/gpt-4-research/
+organization: openai
+tags: ['llm', 'multimodal']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision']
+  open_source: false
+timeline:
+  released_at: 2023-03-14
+  provider_lane: openai
+  capabilities: ['multimodal']
+sources:
+  - url: https://openai.com/index/gpt-4-research/
+    checked_at: 2026-07-14

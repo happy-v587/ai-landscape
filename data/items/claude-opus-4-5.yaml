@@ -1,0 +1,26 @@
+id: claude-opus-4-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Opus 4.5
+  zh: Claude Opus 4.5
+summary:
+  en: Claude Opus 4.5, released by Anthropic.
+  zh: Claude Opus 4.5 发布，Anthropic 将其定位为 coding、agents、computer use 的高能力模型。
+website: https://www.anthropic.com/news/claude-opus-4-5
+organization: anthropic
+tags: ['llm', 'coding']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-11-24
+  provider_lane: anthropic
+  capabilities: ['coding']
+sources:
+  - url: https://www.anthropic.com/news/claude-opus-4-5
+    checked_at: 2026-07-14

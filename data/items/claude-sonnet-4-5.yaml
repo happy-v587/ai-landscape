@@ -1,0 +1,26 @@
+id: claude-sonnet-4-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Sonnet 4.5
+  zh: Claude Sonnet 4.5
+summary:
+  en: Claude Sonnet 4.5, released by Anthropic.
+  zh: Claude Sonnet 4.5 发布，Anthropic 强调其编码、agent 和 computer use 能力。
+website: https://www.anthropic.com/news/claude-sonnet-4-5
+organization: anthropic
+tags: ['llm', 'coding']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-09-29
+  provider_lane: anthropic
+  capabilities: ['coding']
+sources:
+  - url: https://www.anthropic.com/news/claude-sonnet-4-5
+    checked_at: 2026-07-14

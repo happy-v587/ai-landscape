@@ -1,0 +1,26 @@
+id: claude-3
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude 3 家族
+  zh: Claude 3 家族
+summary:
+  en: Claude 3 家族, released by Anthropic.
+  zh: Claude 3 家族发布，按能力/成本层级拆分 Opus、Sonnet、Haiku。
+website: https://www.anthropic.com/news/claude-3-family
+organization: anthropic
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-03-04
+  provider_lane: anthropic
+  capabilities: ['text']
+sources:
+  - url: https://www.anthropic.com/news/claude-3-family
+    checked_at: 2026-07-14

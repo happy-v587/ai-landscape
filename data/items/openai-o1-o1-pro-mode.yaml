@@ -1,0 +1,26 @@
+id: openai-o1-o1-pro-mode
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: OpenAI o1 / o1 pro mode
+  zh: OpenAI o1 / o1 pro mode
+summary:
+  en: OpenAI o1 / o1 pro mode, released by OpenAI.
+  zh: ChatGPT Pro 发布，包含 OpenAI o1 与 o1 pro mode。
+website: https://openai.com/index/introducing-chatgpt-pro/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-12-05
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/introducing-chatgpt-pro/
+    checked_at: 2026-07-14

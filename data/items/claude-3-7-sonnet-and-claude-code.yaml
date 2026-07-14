@@ -1,0 +1,26 @@
+id: claude-3-7-sonnet-and-claude-code
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude 3.7 Sonnet and Claude Code
+  zh: Claude 3.7 Sonnet and Claude Code
+summary:
+  en: Claude 3.7 Sonnet and Claude Code, released by Anthropic.
+  zh: Claude 3.7 Sonnet 发布，Anthropic 称其为首个 hybrid reasoning 模型。
+website: https://www.anthropic.com/news/claude-3-7-sonnet
+organization: anthropic
+tags: ['llm', 'reasoning', 'coding']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-02-24
+  provider_lane: anthropic
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://www.anthropic.com/news/claude-3-7-sonnet
+    checked_at: 2026-07-14

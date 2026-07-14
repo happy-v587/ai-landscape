@@ -1,0 +1,26 @@
+id: gemini-1-5-pro-flash-ga
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 1.5 Pro / Flash GA
+  zh: Gemini 1.5 Pro / Flash GA
+summary:
+  en: Gemini 1.5 Pro / Flash GA, released by Google DeepMind.
+  zh: Gemini 1.5 Pro 与 Gemini 1.5 Flash 在 Gemini API 中进入 GA。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-05-23
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

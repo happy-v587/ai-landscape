@@ -1,0 +1,26 @@
+id: claude-opus-4-6
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Opus 4.6
+  zh: Claude Opus 4.6
+summary:
+  en: Claude Opus 4.6, released by Anthropic.
+  zh: Claude Opus 4.6 发布，升级 Anthropic 最强 Opus 模型。
+website: https://www.anthropic.com/news/claude-opus-4-6
+organization: anthropic
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-02-05
+  provider_lane: anthropic
+  capabilities: ['text']
+sources:
+  - url: https://www.anthropic.com/news/claude-opus-4-6
+    checked_at: 2026-07-14

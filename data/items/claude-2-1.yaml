@@ -1,0 +1,26 @@
+id: claude-2-1
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude 2.1
+  zh: Claude 2.1
+summary:
+  en: Claude 2.1, released by Anthropic.
+  zh: Claude 2.1 发布，成为 claude.ai 与 API 的最新模型，主打企业级长上下文。
+website: https://www.anthropic.com/news/claude-2-1
+organization: anthropic
+tags: ['llm', 'long-context']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2023-11-21
+  provider_lane: anthropic
+  capabilities: ['long-context']
+sources:
+  - url: https://www.anthropic.com/news/claude-2-1
+    checked_at: 2026-07-14

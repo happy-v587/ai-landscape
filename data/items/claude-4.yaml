@@ -1,0 +1,26 @@
+id: claude-4
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude 4
+  zh: Claude 4
+summary:
+  en: Claude 4, released by Anthropic.
+  zh: Claude 4 家族发布，包括 Opus 4 与 Sonnet 4。
+website: https://www.anthropic.com/news/claude-4
+organization: anthropic
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-05-22
+  provider_lane: anthropic
+  capabilities: ['text']
+sources:
+  - url: https://www.anthropic.com/news/claude-4
+    checked_at: 2026-07-14

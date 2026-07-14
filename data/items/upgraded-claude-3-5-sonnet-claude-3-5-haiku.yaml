@@ -1,0 +1,26 @@
+id: upgraded-claude-3-5-sonnet-claude-3-5-haiku
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Upgraded Claude 3.5 Sonnet / Claude 3.5 Haiku
+  zh: Upgraded Claude 3.5 Sonnet / Claude 3.5 Haiku
+summary:
+  en: Upgraded Claude 3.5 Sonnet / Claude 3.5 Haiku, released by Anthropic.
+  zh: Anthropic 发布升级版 Claude 3.5 Sonnet 与 Claude 3.5 Haiku，并推出 computer use beta。
+website: https://www.anthropic.com/news/3-5-models-and-computer-use
+organization: anthropic
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-10-22
+  provider_lane: anthropic
+  capabilities: ['text']
+sources:
+  - url: https://www.anthropic.com/news/3-5-models-and-computer-use
+    checked_at: 2026-07-14

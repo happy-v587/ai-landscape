@@ -1,0 +1,26 @@
+id: gemini-1-5-experimental-updates
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 1.5 Experimental Updates
+  zh: Gemini 1.5 Experimental Updates
+summary:
+  en: Gemini 1.5 Experimental Updates, released by Google DeepMind.
+  zh: Google 在 API changelog 中发布一组 0827 实验模型。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-08-27
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

@@ -1,0 +1,26 @@
+id: claude-instant-1-2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Instant 1.2
+  zh: Claude Instant 1.2
+summary:
+  en: Claude Instant 1.2, released by Anthropic.
+  zh: Claude Instant 分支更新，定位为更快、更便宜但仍具备较强能力的模型。
+website: https://www.anthropic.com/news/releasing-claude-instant-1-2
+organization: anthropic
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2023-08-09
+  provider_lane: anthropic
+  capabilities: ['text']
+sources:
+  - url: https://www.anthropic.com/news/releasing-claude-instant-1-2
+    checked_at: 2026-07-14

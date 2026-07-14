@@ -1,0 +1,26 @@
+id: claude-2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude 2
+  zh: Claude 2
+summary:
+  en: Claude 2, released by Anthropic.
+  zh: Claude 2 发布，能力覆盖 API 与 claude.ai beta，强调更长回复、更强编码/数学/推理。
+website: https://www.anthropic.com/news/claude-2
+organization: anthropic
+tags: ['llm', 'reasoning', 'coding']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2023-07-11
+  provider_lane: anthropic
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://www.anthropic.com/news/claude-2
+    checked_at: 2026-07-14

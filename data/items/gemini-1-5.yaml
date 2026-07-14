@@ -1,0 +1,26 @@
+id: gemini-1-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 1.5
+  zh: Gemini 1.5
+summary:
+  en: Gemini 1.5, released by Google DeepMind.
+  zh: Gemini 1.5 发布，首个开放早测的模型是 Gemini 1.5 Pro。
+website: https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-02-15
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/
+    checked_at: 2026-07-14

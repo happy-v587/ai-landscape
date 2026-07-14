@@ -1,0 +1,26 @@
+id: gemini-1-0
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 1.0
+  zh: Gemini 1.0
+summary:
+  en: Gemini 1.0, released by Google DeepMind.
+  zh: Google 发布 Gemini 1.0，标志 Gemini 时代开始，按能力和部署场景拆分为 Ultra、Pro、Nano。
+website: https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2023-12-06
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/
+    checked_at: 2026-07-14

@@ -1,0 +1,26 @@
+id: gpt-4-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-4.5
+  zh: GPT-4.5
+summary:
+  en: GPT-4.5, released by OpenAI.
+  zh: GPT-4.5 research preview 发布，OpenAI 称其为当时最强 GPT 聊天模型。
+website: https://openai.com/index/introducing-gpt-4-5/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-02-27
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/introducing-gpt-4-5/
+    checked_at: 2026-07-14

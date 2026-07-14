@@ -1,0 +1,26 @@
+id: gpt-5-3-codex
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-5.3-Codex
+  zh: GPT-5.3-Codex
+summary:
+  en: GPT-5.3-Codex, released by OpenAI.
+  zh: GPT-5.3-Codex 发布，OpenAI 称其扩展了 Codex 在电脑上完成专业工作的能力。
+website: https://openai.com/index/introducing-gpt-5-3-codex/
+organization: openai
+tags: ['llm', 'coding']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-02-05
+  provider_lane: openai
+  capabilities: ['coding']
+sources:
+  - url: https://openai.com/index/introducing-gpt-5-3-codex/
+    checked_at: 2026-07-14

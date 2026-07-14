@@ -1,0 +1,26 @@
+id: claude-opus-4-8
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Opus 4.8
+  zh: Claude Opus 4.8
+summary:
+  en: Claude Opus 4.8, released by Anthropic.
+  zh: Claude Opus 4.8 发布，是 Opus 4.7 之后的新版本。
+website: https://www.anthropic.com/news/claude-opus-4-8
+organization: anthropic
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-05-28
+  provider_lane: anthropic
+  capabilities: ['text']
+sources:
+  - url: https://www.anthropic.com/news/claude-opus-4-8
+    checked_at: 2026-07-14

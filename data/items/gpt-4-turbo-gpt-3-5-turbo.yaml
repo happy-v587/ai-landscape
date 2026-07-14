@@ -1,0 +1,26 @@
+id: gpt-4-turbo-gpt-3-5-turbo
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-4 Turbo 与更新版 GPT-3.5 Turbo
+  zh: GPT-4 Turbo 与更新版 GPT-3.5 Turbo
+summary:
+  en: GPT-4 Turbo 与更新版 GPT-3.5 Turbo, released by OpenAI.
+  zh: OpenAI DevDay 发布 GPT-4 Turbo，带 128K 上下文、更低价格；同时推出新的 GPT-3.5 Turbo 版本。
+website: https://openai.com/index/new-models-and-developer-products-announced-at-devday/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2023-11-06
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/new-models-and-developer-products-announced-at-devday/
+    checked_at: 2026-07-14

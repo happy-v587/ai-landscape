@@ -1,0 +1,26 @@
+id: openai-o3-mini
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: OpenAI o3-mini
+  zh: OpenAI o3-mini
+summary:
+  en: OpenAI o3-mini, released by OpenAI.
+  zh: o3-mini 发布，定位为成本更低的 STEM reasoning 模型。
+website: https://openai.com/index/openai-o3-mini/
+organization: openai
+tags: ['llm', 'reasoning']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-01-31
+  provider_lane: openai
+  capabilities: ['reasoning']
+sources:
+  - url: https://openai.com/index/openai-o3-mini/
+    checked_at: 2026-07-14

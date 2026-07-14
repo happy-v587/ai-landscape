@@ -1,0 +1,26 @@
+id: gemini-2-0-flash-thinking-exp-01-21
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 2.0 Flash Thinking exp 01-21
+  zh: Gemini 2.0 Flash Thinking exp 01-21
+summary:
+  en: Gemini 2.0 Flash Thinking exp 01-21, released by Google DeepMind.
+  zh: Google 发布 Flash Thinking 模型的新预览版本。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm', 'reasoning']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-01-21
+  provider_lane: google-deepmind
+  capabilities: ['reasoning']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

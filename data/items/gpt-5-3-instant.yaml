@@ -1,0 +1,26 @@
+id: gpt-5-3-instant
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-5.3 Instant
+  zh: GPT-5.3 Instant
+summary:
+  en: GPT-5.3 Instant, released by OpenAI.
+  zh: GPT-5.3 Instant 发布，作为 ChatGPT 最常用模型的更新。
+website: https://openai.com/index/gpt-5-3-instant/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-03-03
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/gpt-5-3-instant/
+    checked_at: 2026-07-14

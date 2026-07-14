@@ -1,0 +1,26 @@
+id: gemini-3-1-pro-preview
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 3.1 Pro Preview
+  zh: Gemini 3.1 Pro Preview
+summary:
+  en: Gemini 3.1 Pro Preview, released by Google DeepMind.
+  zh: Gemini 3.1 Pro Preview 发布，是 Gemini 3 系列的新迭代。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-02-19
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

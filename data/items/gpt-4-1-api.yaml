@@ -1,0 +1,26 @@
+id: gpt-4-1-api
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-4.1 API 系列
+  zh: GPT-4.1 API 系列
+summary:
+  en: GPT-4.1 API 系列, released by OpenAI.
+  zh: OpenAI 发布 GPT-4.1、GPT-4.1 mini、GPT-4.1 nano，作为新的 API 模型系列。
+website: https://openai.com/index/gpt-4-1/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-04-14
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/gpt-4-1/
+    checked_at: 2026-07-14

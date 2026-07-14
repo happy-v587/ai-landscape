@@ -1,0 +1,26 @@
+id: gpt-4o-mini
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-4o mini
+  zh: GPT-4o mini
+summary:
+  en: GPT-4o mini, released by OpenAI.
+  zh: GPT-4o mini 发布，成为 OpenAI 当时最具成本效率的小模型。
+website: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-07-18
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+    checked_at: 2026-07-14

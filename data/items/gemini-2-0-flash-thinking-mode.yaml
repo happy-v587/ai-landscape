@@ -1,0 +1,26 @@
+id: gemini-2-0-flash-thinking-mode
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 2.0 Flash Thinking Mode
+  zh: Gemini 2.0 Flash Thinking Mode
+summary:
+  en: Gemini 2.0 Flash Thinking Mode, released by Google DeepMind.
+  zh: Gemini 2.0 Flash Thinking Mode 进入 public preview。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm', 'reasoning']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-12-19
+  provider_lane: google-deepmind
+  capabilities: ['reasoning']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

@@ -1,0 +1,26 @@
+id: gpt-5-1
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-5.1
+  zh: GPT-5.1
+summary:
+  en: GPT-5.1, released by OpenAI.
+  zh: GPT-5.1 发布，OpenAI 强调更智能、更会话化、更易定制。
+website: https://openai.com/index/gpt-5-1/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-11-12
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/gpt-5-1/
+    checked_at: 2026-07-14

@@ -1,0 +1,26 @@
+id: openai-o3-pro
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: OpenAI o3-pro
+  zh: OpenAI o3-pro
+summary:
+  en: OpenAI o3-pro, released by OpenAI.
+  zh: o3-pro 作为 o3 的更长思考版本向 Pro 与 API 开放。
+website: https://openai.com/index/introducing-o3-and-o4-mini/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-06-10
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/introducing-o3-and-o4-mini/
+    checked_at: 2026-07-14

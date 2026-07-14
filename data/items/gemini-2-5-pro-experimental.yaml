@@ -1,0 +1,26 @@
+id: gemini-2-5-pro-experimental
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 2.5 Pro Experimental
+  zh: Gemini 2.5 Pro Experimental
+summary:
+  en: Gemini 2.5 Pro Experimental, released by Google DeepMind.
+  zh: Gemini 2.5 发布，首个模型是 Gemini 2.5 Pro Experimental。
+website: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-03-25
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/
+    checked_at: 2026-07-14

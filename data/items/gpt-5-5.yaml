@@ -1,0 +1,26 @@
+id: gpt-5-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-5.5
+  zh: GPT-5.5
+summary:
+  en: GPT-5.5, released by OpenAI.
+  zh: GPT-5.5 发布，OpenAI 称其为面向真实工作的新版智能模型。
+website: https://openai.com/index/introducing-gpt-5-5/
+organization: openai
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-04-23
+  provider_lane: openai
+  capabilities: ['text']
+sources:
+  - url: https://openai.com/index/introducing-gpt-5-5/
+    checked_at: 2026-07-14

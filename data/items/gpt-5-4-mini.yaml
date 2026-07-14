@@ -1,0 +1,26 @@
+id: gpt-5-4-mini
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-5.4 mini
+  zh: GPT-5.4 mini
+summary:
+  en: GPT-5.4 mini, released by OpenAI.
+  zh: GPT-5.4 mini 在 ChatGPT 推出，作为 Free/Go 用户 Thinking 功能与部分用户 rate-limit fallback。
+website: https://help.openai.com/en/articles/9624314-model-release-notes
+organization: openai
+tags: ['llm', 'reasoning']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-03-18
+  provider_lane: openai
+  capabilities: ['reasoning']
+sources:
+  - url: https://help.openai.com/en/articles/9624314-model-release-notes
+    checked_at: 2026-07-14

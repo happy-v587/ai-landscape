@@ -1,0 +1,26 @@
+id: gemini-1-5-pro-api-preview
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 1.5 Pro API Preview
+  zh: Gemini 1.5 Pro API Preview
+summary:
+  en: Gemini 1.5 Pro API Preview, released by Google DeepMind.
+  zh: Gemini API release notes 记录 Gemini 1.5 Pro preview 上线。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-04-09
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14

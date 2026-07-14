@@ -1,0 +1,26 @@
+id: introducing-claude
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Introducing Claude
+  zh: Introducing Claude
+summary:
+  en: Introducing Claude, released by Anthropic.
+  zh: Claude 初代公开，提供聊天界面与 API，用于总结、搜索、写作、问答和编码等任务。
+website: https://www.anthropic.com/news/introducing-claude
+organization: anthropic
+tags: ['llm', 'coding']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2023-03-14
+  provider_lane: anthropic
+  capabilities: ['coding']
+sources:
+  - url: https://www.anthropic.com/news/introducing-claude
+    checked_at: 2026-07-14

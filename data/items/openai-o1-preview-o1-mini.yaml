@@ -1,0 +1,26 @@
+id: openai-o1-preview-o1-mini
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: OpenAI o1-preview / o1-mini
+  zh: OpenAI o1-preview / o1-mini
+summary:
+  en: OpenAI o1-preview / o1-mini, released by OpenAI.
+  zh: OpenAI 发布首批 o 系列 reasoning 模型，强调“花更多时间思考”。
+website: https://openai.com/index/introducing-openai-o1-preview/
+organization: openai
+tags: ['llm', 'reasoning']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2024-09-12
+  provider_lane: openai
+  capabilities: ['reasoning']
+sources:
+  - url: https://openai.com/index/introducing-openai-o1-preview/
+    checked_at: 2026-07-14

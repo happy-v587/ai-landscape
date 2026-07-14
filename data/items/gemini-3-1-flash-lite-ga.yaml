@@ -1,0 +1,26 @@
+id: gemini-3-1-flash-lite-ga
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 3.1 Flash-Lite GA
+  zh: Gemini 3.1 Flash-Lite GA
+summary:
+  en: Gemini 3.1 Flash-Lite GA, released by Google DeepMind.
+  zh: Gemini 3.1 Flash-Lite 进入 GA。
+website: https://ai.google.dev/gemini-api/docs/changelog
+organization: google-deepmind
+tags: ['llm']
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-05-07
+  provider_lane: google-deepmind
+  capabilities: ['text']
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-07-14
