@@ -1,0 +1,26 @@
+id: gpt-3-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-3.5
+  zh: GPT-3.5
+summary:
+  en: OpenAI's GPT-3.5 series, powering the original ChatGPT launch.
+  zh: OpenAI 的 GPT-3.5 系列，驱动了初代 ChatGPT 的发布。
+website: https://openai.com/index/chatgpt/
+organization: openai
+tags: [llm]
+regions: [US]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: false
+timeline:
+  released_at: 2022-11-30
+  provider_lane: openai
+  capabilities: [text]
+sources:
+  - url: https://openai.com/index/chatgpt/
+    checked_at: 2026-07-14
