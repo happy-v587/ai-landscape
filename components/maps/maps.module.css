@@ -171,20 +171,20 @@
 
 .timeline {
   overflow-x: auto;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
 .timelineGrid {
   display: grid;
-  gap: 12px 8px;
+  gap: 6px 4px;
 }
 
 .timelineMonth {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--muted);
   text-align: center;
-  padding: 8px 0;
+  padding: 4px 0;
   border-bottom: 1px solid var(--hairline);
 }
 
@@ -193,51 +193,51 @@
 }
 
 .timelineProvider {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--ink);
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 16px;
+  padding-right: 10px;
   border-right: 3px solid var(--lane-color, var(--map));
 }
 
 .timelineMonthCell {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   justify-content: center;
-  min-height: 48px;
-  padding: 8px 0;
+  min-height: 32px;
+  padding: 4px 0;
   border-bottom: 1px dashed var(--lane-color, var(--hairline));
 }
 
 .timelineCard {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 8px 12px;
+  gap: 1px;
+  padding: 5px 8px;
   border: 1px solid color-mix(in srgb, var(--lane-color, var(--map)) 35%, var(--hairline));
   border-left: 3px solid var(--lane-color, var(--map));
-  border-radius: 10px;
+  border-radius: 6px;
   background: color-mix(in srgb, var(--lane-color, var(--map)) 12%, var(--canvas));
-  min-width: 120px;
+  min-width: 0;
   color: var(--ink);
   text-decoration: none;
 }
 
 .timelineCard time {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--muted);
 }
 
 .timelineCard strong {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 .timelineCard span {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--body);
 }

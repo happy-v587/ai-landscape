@@ -22,5 +22,5 @@ const sampleEntry = {
 it('groups models by provider lane and exposes their release date', () => {
   render(<ModelsTimeline entries={[sampleEntry]} locale="en" />);
   expect(screen.getByRole('rowheader', { name: 'deepseek' })).toBeInTheDocument();
-  expect(screen.getByText('Dec 26, 2024')).toBeInTheDocument();
+  expect(screen.getByText('Dec 26')).toBeInTheDocument();
 });
