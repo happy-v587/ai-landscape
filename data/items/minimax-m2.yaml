@@ -1,0 +1,26 @@
+id: minimax-m2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: MiniMax M2
+  zh: MiniMax M2
+summary:
+  en: MiniMax M2, released by Minimax.
+  zh: MiniMax 发布并开源 MiniMax-M2，面向编码与 agentic 工作流。
+website: https://github.com/MiniMax-AI/MiniMax-M2
+organization: minimax
+tags: ['llm', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-10-27
+  provider_lane: minimax
+  capabilities: ['coding']
+sources:
+  - url: https://github.com/MiniMax-AI/MiniMax-M2
+    checked_at: 2026-07-14

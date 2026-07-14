@@ -1,0 +1,26 @@
+id: kimi-k2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K2
+  zh: Kimi K2
+summary:
+  en: Kimi K2, released by Moonshot Ai.
+  zh: Kimi K2 发布，万亿参数开源 MoE 模型，面向 agentic 能力、编码与推理。
+website: https://www.kimi.com/blog/kimi-k2
+organization: moonshot-ai
+tags: ['llm', 'reasoning', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-07-11
+  provider_lane: moonshot-ai
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://www.kimi.com/blog/kimi-k2
+    checked_at: 2026-07-14

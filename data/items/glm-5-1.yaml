@@ -1,0 +1,26 @@
+id: glm-5-1
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-5.1
+  zh: GLM-5.1
+summary:
+  en: GLM-5.1, released by Zhipu Ai.
+  zh: Z.ai 发布 GLM-5.1，面向长程任务，支持连续自主执行。
+website: https://z.ai/blog/glm-5.1
+organization: zhipu-ai
+tags: ['llm', 'reasoning', 'coding', 'long-context', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-04-07
+  provider_lane: zhipu-ai
+  capabilities: ['reasoning', 'coding', 'long-context']
+sources:
+  - url: https://z.ai/blog/glm-5.1
+    checked_at: 2026-07-14

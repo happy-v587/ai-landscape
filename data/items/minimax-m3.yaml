@@ -1,0 +1,26 @@
+id: minimax-m3
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: MiniMax M3
+  zh: MiniMax M3
+summary:
+  en: MiniMax M3, released by Minimax.
+  zh: MiniMax 发布 M3 模型。
+website: https://platform.minimax.io/docs/release-notes/models
+organization: minimax
+tags: ['llm', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-06-01
+  provider_lane: minimax
+  capabilities: ['coding']
+sources:
+  - url: https://platform.minimax.io/docs/release-notes/models
+    checked_at: 2026-07-14

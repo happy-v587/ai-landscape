@@ -1,0 +1,26 @@
+id: minimax-abab6-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: MiniMax abab6.5
+  zh: MiniMax abab6.5
+summary:
+  en: MiniMax abab6.5, released by Minimax.
+  zh: MiniMax 发布 abab6.5 系列模型，万亿参数 MoE 架构。
+website: https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97
+organization: minimax
+tags: ['llm', 'multimodal']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision']
+  open_source: false
+timeline:
+  released_at: 2024-04-17
+  provider_lane: minimax
+  capabilities: ['multimodal']
+sources:
+  - url: https://www.minimaxi.com/news/%E9%80%9A%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8Babab65%E7%B3%BB%E5%88%97
+    checked_at: 2026-07-14

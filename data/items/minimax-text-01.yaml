@@ -1,0 +1,26 @@
+id: minimax-text-01
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: MiniMax-Text-01
+  zh: MiniMax-Text-01
+summary:
+  en: MiniMax-Text-01, released by Minimax.
+  zh: MiniMax 发布 MiniMax-Text-01 开源大模型，支持超长上下文。
+website: https://platform.minimax.io/docs/release-notes/models
+organization: minimax
+tags: ['llm', 'long-context', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-01-15
+  provider_lane: minimax
+  capabilities: ['long-context']
+sources:
+  - url: https://platform.minimax.io/docs/release-notes/models
+    checked_at: 2026-07-14

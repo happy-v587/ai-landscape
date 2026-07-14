@@ -1,0 +1,26 @@
+id: minimax-m2-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: MiniMax M2.5
+  zh: MiniMax M2.5
+summary:
+  en: MiniMax M2.5, released by Minimax.
+  zh: MiniMax 发布 M2.5 模型。
+website: https://platform.minimax.io/docs/release-notes/models
+organization: minimax
+tags: ['llm', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-02-12
+  provider_lane: minimax
+  capabilities: ['coding']
+sources:
+  - url: https://platform.minimax.io/docs/release-notes/models
+    checked_at: 2026-07-14

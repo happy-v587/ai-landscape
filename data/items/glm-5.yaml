@@ -1,0 +1,26 @@
+id: glm-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-5
+  zh: GLM-5
+summary:
+  en: GLM-5, released by Zhipu Ai.
+  zh: Z.ai 发布 GLM-5，面向复杂系统工程与长程 agentic 任务。
+website: https://z.ai/blog/glm-5
+organization: zhipu-ai
+tags: ['llm', 'reasoning', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-02-12
+  provider_lane: zhipu-ai
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://z.ai/blog/glm-5
+    checked_at: 2026-07-14

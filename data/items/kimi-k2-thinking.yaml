@@ -1,0 +1,26 @@
+id: kimi-k2-thinking
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K2 Thinking
+  zh: Kimi K2 Thinking
+summary:
+  en: Kimi K2 Thinking, released by Moonshot Ai.
+  zh: Kimi K2 Thinking 发布，面向推理的 K2 模型。
+website: https://www.kimi.com/blog/
+organization: moonshot-ai
+tags: ['llm', 'reasoning', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-11-06
+  provider_lane: moonshot-ai
+  capabilities: ['reasoning']
+sources:
+  - url: https://www.kimi.com/blog/
+    checked_at: 2026-07-14

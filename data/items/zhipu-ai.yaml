@@ -1,0 +1,21 @@
+id: zhipu-ai
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: Zhipu AI
+  zh: 智谱AI
+summary:
+  en: Chinese AI company developing the GLM model family.
+  zh: 开发 GLM 模型系列的中国人工智能公司。
+website: https://z.ai/
+tags: ['provider', 'llm', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  access: [api]
+  open_source: false
+sources:
+  - url: https://z.ai/
+    checked_at: 2026-07-14

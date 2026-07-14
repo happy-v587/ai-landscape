@@ -1,0 +1,26 @@
+id: kimi-k1-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi k1.5
+  zh: Kimi k1.5
+summary:
+  en: Kimi k1.5, released by Moonshot Ai.
+  zh: Kimi k1.5 发布，多模态大语言模型，强化推理能力。
+website: https://arxiv.org/abs/2501.12599
+organization: moonshot-ai
+tags: ['llm', 'multimodal', 'reasoning']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision']
+  open_source: false
+timeline:
+  released_at: 2025-01-20
+  provider_lane: moonshot-ai
+  capabilities: ['reasoning', 'multimodal']
+sources:
+  - url: https://arxiv.org/abs/2501.12599
+    checked_at: 2026-07-14

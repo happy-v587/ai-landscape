@@ -1,0 +1,26 @@
+id: kimi-k2-instruct
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K2 Instruct
+  zh: Kimi K2 Instruct
+summary:
+  en: Kimi K2 Instruct, released by Moonshot Ai.
+  zh: Kimi K2 Instruct 发布，基于 K2 的对话指令模型。
+website: https://www.kimi.com/blog/
+organization: moonshot-ai
+tags: ['llm', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-07-11
+  provider_lane: moonshot-ai
+  capabilities: ['text']
+sources:
+  - url: https://www.kimi.com/blog/
+    checked_at: 2026-07-14

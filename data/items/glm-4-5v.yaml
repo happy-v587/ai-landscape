@@ -1,0 +1,26 @@
+id: glm-4-5v
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-4.5V
+  zh: GLM-4.5V
+summary:
+  en: GLM-4.5V, released by Zhipu Ai.
+  zh: Z.ai 发布 GLM-4.5V 开源视觉推理模型。
+website: https://docs.z.ai/release-notes/new-released
+organization: zhipu-ai
+tags: ['llm', 'multimodal', 'vision', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision']
+  open_source: true
+timeline:
+  released_at: 2025-08-11
+  provider_lane: zhipu-ai
+  capabilities: ['multimodal', 'vision']
+sources:
+  - url: https://docs.z.ai/release-notes/new-released
+    checked_at: 2026-07-14

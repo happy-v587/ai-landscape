@@ -1,0 +1,21 @@
+id: moonshot-ai
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: Moonshot AI
+  zh: 月之暗面
+summary:
+  en: AI company behind the Kimi model family.
+  zh: 开发 Kimi 模型系列的人工智能公司。
+website: https://www.moonshot.ai/
+tags: ['provider', 'llm', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  access: [api]
+  open_source: false
+sources:
+  - url: https://www.moonshot.ai/
+    checked_at: 2026-07-14

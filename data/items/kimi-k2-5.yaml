@@ -1,0 +1,26 @@
+id: kimi-k2-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K2.5
+  zh: Kimi K2.5
+summary:
+  en: Kimi K2.5, released by Moonshot Ai.
+  zh: Kimi K2.5 发布，开源多模态模型，增强视觉与 agentic 能力。
+website: https://www.kimi.com/ai-models/kimi-k2-5
+organization: moonshot-ai
+tags: ['llm', 'multimodal', 'reasoning', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision']
+  open_source: true
+timeline:
+  released_at: 2026-01-27
+  provider_lane: moonshot-ai
+  capabilities: ['multimodal', 'reasoning', 'coding']
+sources:
+  - url: https://www.kimi.com/ai-models/kimi-k2-5
+    checked_at: 2026-07-14

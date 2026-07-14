@@ -1,0 +1,26 @@
+id: glm-4-7
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-4.7
+  zh: GLM-4.7
+summary:
+  en: GLM-4.7, released by Zhipu Ai.
+  zh: Z.ai 发布 GLM-4.7，进一步增强编码能力。
+website: https://z.ai/blog/glm-4.7
+organization: zhipu-ai
+tags: ['llm', 'reasoning', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-12-22
+  provider_lane: zhipu-ai
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://z.ai/blog/glm-4.7
+    checked_at: 2026-07-14

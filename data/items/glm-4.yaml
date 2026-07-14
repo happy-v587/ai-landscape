@@ -1,0 +1,26 @@
+id: glm-4
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-4
+  zh: GLM-4
+summary:
+  en: GLM-4, released by Zhipu Ai.
+  zh: 智谱 AI 发布 GLM-4 新一代基座大模型，支持长上下文与多模态能力。
+website: https://www.xinhuanet.com/tech/20240116/19d92dc316544dfba1cdc8bbba6b566f/c.html
+organization: zhipu-ai
+tags: ['llm', 'multimodal']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text', 'vision']
+  open_source: false
+timeline:
+  released_at: 2024-01-16
+  provider_lane: zhipu-ai
+  capabilities: ['multimodal']
+sources:
+  - url: https://www.xinhuanet.com/tech/20240116/19d92dc316544dfba1cdc8bbba6b566f/c.html
+    checked_at: 2026-07-14
