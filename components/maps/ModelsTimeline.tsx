@@ -3,52 +3,94 @@ import type { CatalogEntry } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
 import styles from './maps.module.css';
 
-const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May'];
-const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const monthNames = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+];
+
+function parseDateUTC(value: string) {
+  return new Date(`${value}T00:00:00Z`);
+}
+
+function formatMonthKey(date: Date) {
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+  return `${year}-${month}`;
+}
+
+function monthLabel(key: string) {
+  const [year, month] = key.split('-');
+  return `${monthNames[Number(month) - 1]} ${year}`;
+}
 
 export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; locale: Locale }) {
   const timelineEntries = entries.filter((entry) => entry.timeline != null);
+  if (timelineEntries.length === 0) return null;
+
+  const releaseDates = timelineEntries.map((entry) => parseDateUTC(entry.timeline!.released_at));
+  const minDate = new Date(Math.min(...releaseDates.map((d) => d.getTime())));
+  const maxDate = new Date(Math.max(...releaseDates.map((d) => d.getTime())));
+  minDate.setUTCMonth(minDate.getUTCMonth() - 1);
+  maxDate.setUTCMonth(maxDate.getUTCMonth() + 1);
+
+  const months: string[] = [];
+  const cursor = new Date(minDate);
+  while (cursor <= maxDate) {
+    months.push(formatMonthKey(cursor));
+    cursor.setUTCMonth(cursor.getUTCMonth() + 1);
+  }
+
   const lanes = timelineEntries.reduce<Record<string, CatalogEntry[]>>((groups, entry) => {
     const lane = entry.timeline!.provider_lane ?? entry.organization ?? 'other';
     groups[lane] = [...(groups[lane] ?? []), entry];
     return groups;
   }, {});
 
+  const gridTemplateColumns = `160px repeat(${months.length}, minmax(120px, 1fr))`;
+  const minWidth = 160 + months.length * 120;
+
   return (
     <section className={styles.timeline} aria-label="Model release timeline">
-      <div className={styles.timelineGrid}>
+      <div
+        className={styles.timelineGrid}
+        style={{ gridTemplateColumns, minWidth }}
+      >
         <div className={styles.timelineProviderHeader} />
-        {months.map((month) => (
-          <div key={month} className={styles.timelineMonth}>{month}</div>
+        {months.map((key) => (
+          <div key={key} className={styles.timelineMonth}>{monthLabel(key)}</div>
         ))}
         {Object.entries(lanes).map(([lane, laneEntries]) => (
           <div key={lane} className={styles.timelineLane} role="row">
             <div className={styles.timelineProvider} role="rowheader">{lane}</div>
-            <div className={styles.timelineLaneBody}>
-              {laneEntries
-                .sort((a, b) => a.timeline!.released_at.localeCompare(b.timeline!.released_at))
-                .map((entry) => {
-                  const open = entry.facts.open_source === true;
-                  const date = new Date(`${entry.timeline!.released_at}T00:00:00Z`);
-                  const monthIndex = months.findIndex(
-                    (m) => m === monthNames[date.getUTCMonth()]
-                  );
-                  return (
-                    <Link
-                      key={entry.id}
-                      href={`/${locale}/item/${entry.id}`}
-                      className={`${styles.timelineCard} ${open ? styles.timelineCardOpen : ''}`}
-                      style={{ gridColumn: monthIndex >= 0 ? monthIndex + 2 : 2 }}
-                    >
-                      <time dateTime={entry.timeline!.released_at}>
-                        {date.toLocaleDateString(locale, { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}
-                      </time>
-                      <strong>{entry.name[locale]}</strong>
-                      <span>{entry.timeline!.capabilities.join(' · ')}</span>
-                    </Link>
-                  );
-                })}
-            </div>
+            {months.map((key) => (
+              <div key={key} className={styles.timelineMonthCell}>
+                {laneEntries
+                  .filter((entry) => formatMonthKey(parseDateUTC(entry.timeline!.released_at)) === key)
+                  .sort((a, b) => a.timeline!.released_at.localeCompare(b.timeline!.released_at))
+                  .map((entry) => {
+                    const open = entry.facts.open_source === true;
+                    const date = parseDateUTC(entry.timeline!.released_at);
+                    return (
+                      <Link
+                        key={entry.id}
+                        href={`/${locale}/item/${entry.id}`}
+                        className={`${styles.timelineCard} ${open ? styles.timelineCardOpen : ''}`}
+                      >
+                        <time dateTime={entry.timeline!.released_at}>
+                          {date.toLocaleDateString(locale, {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric',
+                            timeZone: 'UTC',
+                          })}
+                        </time>
+                        <strong>{entry.name[locale]}</strong>
+                        <span>{entry.timeline!.capabilities.join(' · ')}</span>
+                      </Link>
+                    );
+                  })}
+              </div>
+            ))}
           </div>
         ))}
       </div>

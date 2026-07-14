@@ -171,9 +171,7 @@
 
 .timelineGrid {
   display: grid;
-  grid-template-columns: 160px repeat(9, minmax(120px, 1fr));
   gap: 12px 8px;
-  min-width: 1200px;
 }
 
 .timelineMonth {
@@ -200,12 +198,11 @@
   border-right: 2px solid var(--map);
 }
 
-.timelineLaneBody {
-  grid-column: 2 / -1;
+.timelineMonthCell {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
   min-height: 48px;
   padding: 8px 0;
   border-bottom: 1px dashed var(--hairline);
