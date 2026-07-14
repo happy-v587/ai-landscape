@@ -16,6 +16,10 @@ export const copy = {
     language: '中文',
     search: 'Search catalog',
     submit: 'Submit',
+    tags: 'Tags',
+    release: 'Release',
+    sources: 'Sources',
+    related: 'Related',
   },
   zh: {
     models: '模型',
@@ -25,5 +29,9 @@ export const copy = {
     language: 'English',
     search: '搜索目录',
     submit: '提交',
+    tags: '标签',
+    release: '发布',
+    sources: '来源',
+    related: '相关',
   },
 } as const;

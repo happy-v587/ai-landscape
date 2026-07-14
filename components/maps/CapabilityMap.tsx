@@ -5,7 +5,7 @@ import { SectionCard } from './SectionCard';
 import { SubcategoryRow } from './SubcategoryRow';
 import { ItemChip } from './ItemChip';
 
-export function AgentToolsMap({
+export function CapabilityMap({
   entries,
   locale,
   categoryLabels,

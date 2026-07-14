@@ -1,9 +1,7 @@
 import type { CatalogEntry, MapId } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
 import { ModelsTimeline } from './ModelsTimeline';
-import { ModelInfraMap } from './ModelInfraMap';
-import { AgentToolsMap } from './AgentToolsMap';
-import { AppsSaasMap } from './AppsSaasMap';
+import { CapabilityMap } from './CapabilityMap';
 import { MapRail } from './MapRail';
 import styles from './maps.module.css';
 
@@ -43,12 +41,8 @@ export function MapShell({
       <div className={styles.mapCanvas}>
         {map === 'models' ? (
           <ModelsTimeline entries={entries} locale={locale} />
-        ) : map === 'model-infra' ? (
-          <ModelInfraMap entries={entries} locale={locale} categoryLabels={categoryLabels} />
-        ) : map === 'agent-tools' ? (
-          <AgentToolsMap entries={entries} locale={locale} categoryLabels={categoryLabels} />
         ) : (
-          <AppsSaasMap entries={entries} locale={locale} categoryLabels={categoryLabels} />
+          <CapabilityMap entries={entries} locale={locale} categoryLabels={categoryLabels} />
         )}
       </div>
     </div>

@@ -4,6 +4,7 @@ import type { Locale } from '@/lib/i18n';
 import styles from './maps.module.css';
 
 const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May'];
+const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; locale: Locale }) {
   const timelineEntries = entries.filter((entry) => entry.timeline != null);
@@ -30,7 +31,7 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
                   const open = entry.facts.open_source === true;
                   const date = new Date(`${entry.timeline!.released_at}T00:00:00Z`);
                   const monthIndex = months.findIndex(
-                    (m) => m === date.toLocaleDateString('en-US', { month: 'short' })
+                    (m) => m === monthNames[date.getUTCMonth()]
                   );
                   return (
                     <Link
@@ -40,7 +41,7 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
                       style={{ gridColumn: monthIndex >= 0 ? monthIndex + 2 : 2 }}
                     >
                       <time dateTime={entry.timeline!.released_at}>
-                        {date.toLocaleDateString(locale, { month: 'short', day: 'numeric', year: 'numeric' })}
+                        {date.toLocaleDateString(locale, { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}
                       </time>
                       <strong>{entry.name[locale]}</strong>
                       <span>{entry.timeline!.capabilities.join(' · ')}</span>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { CatalogEntry } from '@/lib/catalog/types';
-import type { Locale } from '@/lib/i18n';
+import { copy, type Locale } from '@/lib/i18n';
 import styles from './catalog.module.css';
 
 export function EntryDetail({
@@ -12,6 +12,7 @@ export function EntryDetail({
   locale: Locale;
   related: CatalogEntry[];
 }) {
+  const t = copy[locale];
   return (
     <article className={styles.detail}>
       <header className={styles.detailHeader}>
@@ -22,7 +23,7 @@ export function EntryDetail({
         </a>
       </header>
       <section className={styles.detailSection}>
-        <h2 className={styles.detailSectionTitle}>Tags</h2>
+        <h2 className={styles.detailSectionTitle}>{t.tags}</h2>
         <div className={styles.tagList}>
           {entry.tags.map((tag) => (
             <span key={tag} className={styles.tag}>{tag}</span>
@@ -31,7 +32,7 @@ export function EntryDetail({
       </section>
       {entry.timeline && (
         <section className={styles.detailSection}>
-          <h2 className={styles.detailSectionTitle}>Release</h2>
+          <h2 className={styles.detailSectionTitle}>{t.release}</h2>
           <p className={styles.detailText}>
             {entry.timeline.released_at} · {entry.timeline.provider_lane} ·{' '}
             {entry.timeline.capabilities.join(' · ')}
@@ -39,7 +40,7 @@ export function EntryDetail({
         </section>
       )}
       <section className={styles.detailSection}>
-        <h2 className={styles.detailSectionTitle}>Sources</h2>
+        <h2 className={styles.detailSectionTitle}>{t.sources}</h2>
         <ul className={styles.sourceList}>
           {entry.sources.map((source) => (
             <li key={source.url}>
@@ -51,7 +52,7 @@ export function EntryDetail({
       </section>
       {related.length > 0 && (
         <section className={styles.detailSection}>
-          <h2 className={styles.detailSectionTitle}>Related</h2>
+          <h2 className={styles.detailSectionTitle}>{t.related}</h2>
           <ul className={styles.relatedList}>
             {related.map((item) => (
               <li key={item.id}>

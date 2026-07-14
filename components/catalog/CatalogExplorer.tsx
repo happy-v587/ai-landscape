@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import type { Locale } from '@/lib/i18n';
 import styles from './catalog.module.css';
@@ -62,7 +63,7 @@ export function CatalogExplorer({
       <ul className={styles.resultList}>
         {results.map((entry) => (
           <li key={entry.id}>
-            <a href={`/${locale}/item/${entry.id}`}>{entry.name[locale]}</a>
+            <Link href={`/${locale}/item/${entry.id}`}>{entry.name[locale]}</Link>
             <span>{entry.summary[locale]}</span>
           </li>
         ))}

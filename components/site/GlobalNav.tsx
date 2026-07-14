@@ -1,8 +1,10 @@
-import Link from 'next/link';
-import { copy, type Locale } from '@/lib/i18n';
-import styles from './GlobalNav.module.css';
+'use client';
 
-type MapId = 'models' | 'model-infra' | 'agent-tools' | 'apps-saas';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { copy, type Locale } from '@/lib/i18n';
+import type { MapId } from '@/lib/catalog/types';
+import styles from './GlobalNav.module.css';
 
 const mapLinks: { id: MapId; key: keyof typeof copy.en }[] = [
   { id: 'models', key: 'models' },
@@ -11,9 +13,13 @@ const mapLinks: { id: MapId; key: keyof typeof copy.en }[] = [
   { id: 'apps-saas', key: 'apps' },
 ];
 
-export function GlobalNav({ locale, activeMap }: { locale: Locale; activeMap?: MapId }) {
+export function GlobalNav({ locale }: { locale: Locale }) {
   const t = copy[locale];
   const alternate = locale === 'en' ? 'zh' : 'en';
+  const pathname = usePathname() ?? '';
+  const activeMap = mapLinks.find((link) =>
+    pathname.startsWith(`/${locale}/maps/${link.id}`)
+  )?.id;
   return (
     <header className={styles.nav}>
       <div className={styles.inner}>

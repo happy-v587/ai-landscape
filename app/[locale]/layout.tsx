@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
 import { GlobalNav } from '@/components/site/GlobalNav';
+import { HtmlLang } from '@/components/site/HtmlLang';
 import { assertLocale, locales } from '@/lib/i18n';
 
 export function generateStaticParams() {
@@ -18,6 +19,7 @@ export default async function LocaleLayout({
   assertLocale(locale);
   return (
     <>
+      <HtmlLang locale={locale} />
       <GlobalNav locale={locale} />
       <main>{children}</main>
     </>

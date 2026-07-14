@@ -1,6 +1,7 @@
+import type { Locale } from '@/lib/i18n';
+
 export const mapIds = ['models', 'model-infra', 'agent-tools', 'apps-saas'] as const;
 export type MapId = (typeof mapIds)[number];
-export type Locale = 'en' | 'zh';
 export type LocalizedText = Record<Locale, string>;
 export type Timeline = {
   released_at: string;
