@@ -1,0 +1,111 @@
+.directory {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px var(--page-gutter);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--body);
+  margin: 0 0 24px;
+}
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 24px;
+  border: 1px solid var(--hairline);
+  border-radius: 9999px;
+  color: var(--muted);
+  background: var(--canvas);
+  min-width: 320px;
+  justify-content: flex-start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.accent {
+  width: 4px;
+  flex-shrink: 0;
+  background: var(--map);
+}
+
+.content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: var(--body);
+  margin: 0;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 10px;
+  border-radius: 9999px;
+  background: var(--pill-bg);
+  color: var(--pill-text);
+}
+
+.explore {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--action);
+  color: var(--on-action);
+  font-weight: 500;
+}
+
+.explore:hover { text-decoration: none; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .title { font-size: 36px; }
+  .search { min-width: unset; width: 100%; }
+}
