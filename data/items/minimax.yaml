@@ -12,7 +12,14 @@ website: https://www.minimaxi.com/
 tags: ['provider', 'llm', 'multimodal']
 regions: [CN]
 status: active
-related: []
+related:
+  - minimax-abab6-5
+  - minimax-text-01
+  - minimax-m1
+  - minimax-m2
+  - minimax-m2-5
+  - minimax-m2-7
+  - minimax-m3
 facts:
   access: [api]
   open_source: false
