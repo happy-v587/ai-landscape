@@ -1,0 +1,82 @@
+.detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px var(--page-gutter);
+}
+
+.detailHeader {
+  margin-bottom: 32px;
+}
+
+.detailTitle {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+
+.detailSummary {
+  font-size: 18px;
+  color: var(--body);
+  margin: 0 0 16px;
+}
+
+.detailLink {
+  font-size: 14px;
+  color: var(--action);
+}
+
+.detailSection {
+  margin-bottom: 32px;
+}
+
+.detailSectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.detailText {
+  font-size: 14px;
+  color: var(--ink);
+  margin: 0;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border: 1px solid var(--hairline);
+  border-radius: 9999px;
+  color: var(--body);
+}
+
+.sourceList,
+.relatedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sourceList li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sourceList time {
+  font-size: 12px;
+  color: var(--muted);
+}
