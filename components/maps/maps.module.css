@@ -218,17 +218,13 @@
   flex-direction: column;
   gap: 2px;
   padding: 8px 12px;
-  border: 1px solid var(--hairline);
+  border: 1px solid color-mix(in srgb, var(--lane-color, var(--map)) 35%, var(--hairline));
   border-left: 3px solid var(--lane-color, var(--map));
   border-radius: 10px;
-  background: var(--canvas);
+  background: color-mix(in srgb, var(--lane-color, var(--map)) 12%, var(--canvas));
   min-width: 120px;
   color: var(--ink);
   text-decoration: none;
-}
-
-.timelineCardOpen {
-  background: var(--open-source);
 }
 
 .timelineCard time {

@@ -80,13 +80,12 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
                   .filter((entry) => formatMonthKey(parseDateUTC(entry.timeline!.released_at)) === key)
                   .sort((a, b) => a.timeline!.released_at.localeCompare(b.timeline!.released_at))
                   .map((entry) => {
-                    const open = entry.facts.open_source === true;
                     const date = parseDateUTC(entry.timeline!.released_at);
                     return (
                       <Link
                         key={entry.id}
                         href={`/${locale}/item/${entry.id}`}
-                        className={`${styles.timelineCard} ${open ? styles.timelineCardOpen : ''}`}
+                        className={styles.timelineCard}
                       >
                         <time dateTime={entry.timeline!.released_at}>
                           {date.toLocaleDateString(locale, {
