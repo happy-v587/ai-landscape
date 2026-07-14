@@ -24,14 +24,20 @@ function monthLabel(key: string) {
   return `${monthNames[Number(month) - 1]} ${year}`;
 }
 
-function laneColor(lane: string) {
-  let hash = 0;
-  for (const char of lane) {
-    hash = char.charCodeAt(0) + ((hash << 5) - hash);
-  }
-  const hue = Math.abs(hash) % 360;
-  return `hsl(${hue}, 72%, 45%)`;
-}
+const lanePalette = [
+  '#ef4444', // red
+  '#f97316', // orange
+  '#f59e0b', // amber
+  '#84cc16', // lime
+  '#10b981', // emerald
+  '#06b6d4', // cyan
+  '#3b82f6', // blue
+  '#6366f1', // indigo
+  '#8b5cf6', // violet
+  '#d946ef', // fuchsia
+  '#f43f5e', // rose
+  '#14b8a6', // teal
+];
 
 export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; locale: Locale }) {
   const timelineEntries = entries.filter((entry) => entry.timeline != null);
@@ -71,8 +77,8 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
         ))}
         {Object.entries(lanes)
           .sort(([a], [b]) => a.localeCompare(b))
-          .map(([lane, laneEntries]) => (
-          <div key={lane} className={styles.timelineLane} role="row" style={{ '--lane-color': laneColor(lane) } as CSSProperties}>
+          .map(([lane, laneEntries], index) => (
+          <div key={lane} className={styles.timelineLane} role="row" style={{ '--lane-color': lanePalette[index % lanePalette.length] } as CSSProperties}>
             <div className={styles.timelineProvider} role="rowheader">{lane}</div>
             {months.map((key) => (
               <div key={key} className={styles.timelineMonthCell}>
