@@ -1,0 +1,6 @@
+- id: apps-saas
+  name: { en: Apps & SaaS, zh: 应用与 SaaS }
+  presentation: scenario-map
+- id: agent-tools
+  name: { en: Agent & Tools, zh: Agent 与工具 }
+  presentation: capability-map

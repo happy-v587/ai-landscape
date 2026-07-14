@@ -1,0 +1,13 @@
+id: wrong-map
+kind: app
+map: agent-tools
+category: productivity
+name: { en: Wrong Map, zh: 错误地图 }
+summary: { en: Invalid category map fixture., zh: 无效分类地图测试条目。 }
+website: https://example.com/
+tags: [fixture]
+regions: [US]
+status: active
+related: []
+facts: {}
+sources: [{ url: https://example.com/, checked_at: 2026-07-14 }]

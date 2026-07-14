@@ -1,0 +1,4 @@
+- id: productivity
+  map: apps-saas
+  name: { en: Productivity, zh: 生产力 }
+  presentation: scenario-map

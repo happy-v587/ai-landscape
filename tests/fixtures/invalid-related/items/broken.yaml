@@ -1,0 +1,13 @@
+id: broken
+kind: app
+map: apps-saas
+category: productivity
+name: { en: Broken, zh: 损坏条目 }
+summary: { en: Invalid relationship fixture., zh: 无效关联测试条目。 }
+website: https://example.com/
+tags: [fixture]
+regions: [US]
+status: active
+related: [missing]
+facts: {}
+sources: [{ url: https://example.com/, checked_at: 2026-07-14 }]
