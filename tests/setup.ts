@@ -1,6 +1,9 @@
 import '@testing-library/jest-dom/vitest';
-import { vi } from 'vitest';
+import { cleanup } from '@testing-library/react';
+import { afterEach, vi } from 'vitest';
 import React from 'react';
+
+afterEach(cleanup);
 
 vi.mock('next/image', () => ({
   default: function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {

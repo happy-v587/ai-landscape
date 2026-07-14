@@ -37,9 +37,8 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--body);
-  padding: 8px 12px;
+  padding: 12px 12px;
   border-radius: 6px;
-  min-height: 36px;
   display: inline-flex;
   align-items: center;
 }
@@ -50,6 +49,11 @@
   text-decoration: none;
 }
 
+.active {
+  color: var(--ink);
+  border-bottom: 2px solid var(--map);
+}
+
 .actions {
   display: flex;
   align-items: center;
@@ -58,13 +62,18 @@
 
 .search {
   font-size: 14px;
-  color: var(--muted);
-  padding: 8px 16px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--canvas);
+  padding: 12px 16px;
   border: 1px solid var(--hairline);
   border-radius: 9999px;
-  min-height: 36px;
-  display: inline-flex;
-  align-items: center;
+  min-width: 180px;
+  outline: none;
+}
+
+.search::placeholder {
+  color: var(--muted);
 }
 
 .submit {
@@ -72,9 +81,8 @@
   font-weight: 500;
   color: var(--on-action);
   background: var(--action);
-  padding: 8px 16px;
+  padding: 12px 16px;
   border-radius: 6px;
-  min-height: 36px;
   display: inline-flex;
   align-items: center;
 }
