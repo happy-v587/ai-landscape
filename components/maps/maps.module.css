@@ -186,6 +186,7 @@
   text-align: center;
   padding: 4px 0;
   border-bottom: 1px solid var(--hairline);
+  border-right: 1px solid var(--hairline);
 }
 
 .timelineLane {
@@ -211,6 +212,7 @@
   min-height: 32px;
   padding: 4px 0;
   border-bottom: 1px dashed var(--lane-color, var(--hairline));
+  border-right: 1px solid var(--hairline);
 }
 
 .timelineCard {
