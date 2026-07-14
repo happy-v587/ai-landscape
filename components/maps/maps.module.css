@@ -226,7 +226,14 @@
   background: color-mix(in srgb, var(--lane-color, var(--map)) 12%, var(--canvas));
   min-width: 0;
   color: var(--ink);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
   text-decoration: none;
+}
+
+.timelineCard:hover {
+  background: color-mix(in srgb, var(--lane-color, var(--map)) 20%, var(--canvas));
 }
 
 .timelineCard time {
@@ -242,4 +249,53 @@
 .timelineCard span {
   font-size: 10px;
   color: var(--body);
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.modalDialog {
+  position: relative;
+  background: var(--canvas);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  max-width: 760px;
+  width: 100%;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.modalClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  border: 1px solid var(--hairline);
+  background: var(--canvas);
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modalClose:hover {
+  background: var(--canvas-subtle);
+}
+
+.modalContent {
+  padding: 32px;
 }

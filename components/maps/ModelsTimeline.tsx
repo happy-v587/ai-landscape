@@ -1,7 +1,10 @@
-import Link from 'next/link';
+'use client';
+
+import { useState } from 'react';
 import type { CSSProperties } from 'react';
 import type { CatalogEntry } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
+import { ItemModal } from './ItemModal';
 import styles from './maps.module.css';
 
 const monthNames = [
@@ -40,6 +43,7 @@ const lanePalette = [
 ];
 
 export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; locale: Locale }) {
+  const [selected, setSelected] = useState<CatalogEntry | null>(null);
   const timelineEntries = entries.filter((entry) => entry.timeline != null);
   if (timelineEntries.length === 0) return null;
 
@@ -88,10 +92,11 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
                   .map((entry) => {
                     const date = parseDateUTC(entry.timeline!.released_at);
                     return (
-                      <Link
+                      <button
                         key={entry.id}
-                        href={`/${locale}/item/${entry.id}`}
+                        type="button"
                         className={styles.timelineCard}
+                        onClick={() => setSelected(entry)}
                       >
                         <time dateTime={entry.timeline!.released_at}>
                           {date.toLocaleDateString(locale, {
@@ -102,7 +107,7 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
                         </time>
                         <strong>{entry.name[locale]}</strong>
                         <span>{entry.timeline!.capabilities.join(' · ')}</span>
-                      </Link>
+                      </button>
                     );
                   })}
               </div>
@@ -110,6 +115,14 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
           </div>
         ))}
       </div>
+      {selected && (
+        <ItemModal
+          entry={selected}
+          locale={locale}
+          entries={entries}
+          onClose={() => setSelected(null)}
+        />
+      )}
     </section>
   );
 }

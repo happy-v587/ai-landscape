@@ -4,6 +4,13 @@
   padding: 48px var(--page-gutter);
 }
 
+.detailCompact {
+  composes: detail;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .detailHeader {
   margin-bottom: 32px;
 }

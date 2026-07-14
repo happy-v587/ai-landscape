@@ -7,14 +7,16 @@ export function EntryDetail({
   entry,
   locale,
   related,
+  compact = false,
 }: {
   entry: CatalogEntry;
   locale: Locale;
   related: CatalogEntry[];
+  compact?: boolean;
 }) {
   const t = copy[locale];
   return (
-    <article className={styles.detail}>
+    <article className={compact ? styles.detailCompact : styles.detail}>
       <header className={styles.detailHeader}>
         <h1 className={styles.detailTitle}>{entry.name[locale]}</h1>
         <p className={styles.detailSummary}>{entry.summary[locale]}</p>
