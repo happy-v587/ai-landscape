@@ -1,0 +1,17 @@
+id: deepseek-v3
+kind: foundation-model
+map: models
+category: foundation-models
+name: { en: DeepSeek-V3, zh: DeepSeek-V3 }
+summary:
+  en: Open-weight mixture-of-experts language model.
+  zh: 开放权重的混合专家语言模型。
+website: https://www.deepseek.com/
+organization: deepseek
+tags: [llm, text, open-weights, moe, china]
+regions: [CN]
+status: active
+related: [deepseek]
+facts: { modalities: [text], license: MIT, parameters: '671B', context_window: 128K }
+timeline: { released_at: 2024-12-26, provider_lane: deepseek, capabilities: [reasoning] }
+sources: [{ url: https://www.deepseek.com/, checked_at: 2026-07-14 }]

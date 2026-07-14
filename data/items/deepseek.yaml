@@ -1,0 +1,15 @@
+id: deepseek
+kind: model-provider
+map: models
+category: model-providers
+name: { en: DeepSeek, zh: 深度求索 }
+summary:
+  en: AI company and model provider.
+  zh: 人工智能公司与模型提供方。
+website: https://www.deepseek.com/
+tags: [provider, llm]
+regions: [CN]
+status: active
+related: [deepseek-v3]
+facts: { open_source: true }
+sources: [{ url: https://www.deepseek.com/, checked_at: 2026-07-14 }]

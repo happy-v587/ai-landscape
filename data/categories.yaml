@@ -1,0 +1,20 @@
+- id: model-providers
+  map: models
+  name: { en: Model Providers, zh: 模型厂商 }
+  presentation: provider-lane
+- id: foundation-models
+  map: models
+  name: { en: Foundation Models, zh: 基础模型 }
+  presentation: timeline
+- id: inference
+  map: model-infra
+  name: { en: Inference, zh: 推理 }
+  presentation: lifecycle-map
+- id: coding-agents
+  map: agent-tools
+  name: { en: Coding Agents, zh: 编程 Agent }
+  presentation: capability-map
+- id: productivity
+  map: apps-saas
+  name: { en: Productivity, zh: 生产力 }
+  presentation: scenario-map

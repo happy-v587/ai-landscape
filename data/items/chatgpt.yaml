@@ -1,0 +1,16 @@
+id: chatgpt
+kind: desktop-mobile-app
+map: apps-saas
+category: productivity
+subcategory: assistant
+name: { en: ChatGPT, zh: ChatGPT }
+summary:
+  en: General-purpose AI assistant and productivity application.
+  zh: 通用 AI 助手与生产力应用。
+website: https://chatgpt.com/
+tags: [assistant, productivity, desktop, mobile]
+regions: [US]
+status: active
+related: []
+facts: { audience: individuals, platforms: [web, macos, windows, ios, android] }
+sources: [{ url: https://chatgpt.com/, checked_at: 2026-07-14 }]

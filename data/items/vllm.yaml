@@ -1,0 +1,16 @@
+id: vllm
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name: { en: vLLM, zh: vLLM }
+summary:
+  en: Open-source inference and serving engine.
+  zh: 开源推理与服务引擎。
+website: https://vllm.ai/
+tags: [inference, serving, open-source]
+regions: [US]
+status: active
+related: []
+facts: { deployment: [self-hosted], open_source: true }
+sources: [{ url: https://vllm.ai/, checked_at: 2026-07-14 }]

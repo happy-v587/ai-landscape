@@ -1,0 +1,4 @@
+open_source: { en: Open source, zh: 开源 }
+closed_source: { en: Closed source, zh: 闭源 }
+active: { en: Active, zh: 活跃 }
+archived: { en: Archived, zh: 已归档 }

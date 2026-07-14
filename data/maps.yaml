@@ -1,0 +1,12 @@
+- id: models
+  name: { en: Models, zh: 模型 }
+  presentation: timeline
+- id: model-infra
+  name: { en: Model Infra, zh: 模型基础设施 }
+  presentation: lifecycle-map
+- id: agent-tools
+  name: { en: Agent & Tools, zh: Agent 与工具 }
+  presentation: capability-map
+- id: apps-saas
+  name: { en: Apps & SaaS, zh: 应用与 SaaS }
+  presentation: scenario-map

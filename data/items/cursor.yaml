@@ -1,0 +1,16 @@
+id: cursor
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+subcategory: ide
+name: { en: Cursor, zh: Cursor }
+summary:
+  en: AI code editor for software teams.
+  zh: 面向软件团队的 AI 代码编辑器。
+website: https://cursor.com/
+tags: [ide, coding-agent]
+regions: [US]
+status: active
+related: []
+facts: { platforms: [macos, windows, linux], audience: developers }
+sources: [{ url: https://cursor.com/, checked_at: 2026-07-14 }]
