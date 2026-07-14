@@ -4,6 +4,10 @@ import path from 'node:path';
 
 export default defineConfig({
   plugins: [react()],
-  test: { environment: 'jsdom', setupFiles: ['./tests/setup.ts'] },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./tests/setup.ts'],
+    exclude: ['node_modules', 'tests/e2e/**/*', 'playwright.config.ts'],
+  },
   resolve: { alias: { '@': path.resolve(__dirname) } },
 });
