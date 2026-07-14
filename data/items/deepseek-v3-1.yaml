@@ -1,0 +1,26 @@
+id: deepseek-v3-1
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V3.1
+  zh: DeepSeek-V3.1
+summary:
+  en: Hybrid-reasoning model supporting both thinking and non-thinking modes.
+  zh: 支持思考模式与非思考模式的混合推理模型。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'reasoning']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-08-21
+  provider_lane: deepseek
+  capabilities: ['reasoning', 'text']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

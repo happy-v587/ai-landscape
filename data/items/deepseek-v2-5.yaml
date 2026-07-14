@@ -1,0 +1,26 @@
+id: deepseek-v2-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V2.5
+  zh: DeepSeek-V2.5
+summary:
+  en: Unified model combining general chat and coding capabilities.
+  zh: 融合通用对话与代码能力的统一模型。
+website: https://api-docs.deepseek.com/news/news0905
+organization: deepseek
+tags: ['llm', 'coding', 'moe', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2024-09-05
+  provider_lane: deepseek
+  capabilities: ['text', 'coding']
+sources:
+  - url: https://api-docs.deepseek.com/news/news0905
+    checked_at: 2026-07-14

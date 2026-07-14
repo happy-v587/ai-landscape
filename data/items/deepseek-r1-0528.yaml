@@ -1,0 +1,26 @@
+id: deepseek-r1-0528
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-R1-0528
+  zh: DeepSeek-R1-0528
+summary:
+  en: Enhanced reasoning model with improved math, coding and reduced hallucinations.
+  zh: 推理能力进一步增强的版本，数学、编程提升，幻觉降低。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'reasoning']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-05-28
+  provider_lane: deepseek
+  capabilities: ['reasoning']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

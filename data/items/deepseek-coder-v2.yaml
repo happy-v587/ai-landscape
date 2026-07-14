@@ -1,0 +1,26 @@
+id: deepseek-coder-v2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-Coder-V2
+  zh: DeepSeek-Coder-V2
+summary:
+  en: Code-specialized MoE model with strong math and reasoning abilities.
+  zh: 代码专用 MoE 模型，具备出色的数学与推理能力。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'coding', 'moe', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2024-06-14
+  provider_lane: deepseek
+  capabilities: ['coding', 'reasoning']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

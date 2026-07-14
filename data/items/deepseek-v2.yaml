@@ -1,0 +1,26 @@
+id: deepseek-v2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V2
+  zh: DeepSeek-V2
+summary:
+  en: MoE-based general-purpose model with MLA attention and efficient inference.
+  zh: 基于 MoE 的通用模型，采用 MLA 注意力与高效推理。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'moe', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2024-05-17
+  provider_lane: deepseek
+  capabilities: ['text']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

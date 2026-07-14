@@ -1,0 +1,26 @@
+id: deepseek-v3-0324
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V3-0324
+  zh: DeepSeek-V3-0324
+summary:
+  en: Mid-cycle upgrade of DeepSeek-V3 with stronger reasoning and front-end skills.
+  zh: DeepSeek-V3 的中期升级版本，推理与前端能力显著提升。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'moe']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-03-24
+  provider_lane: deepseek
+  capabilities: ['text']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

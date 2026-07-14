@@ -1,0 +1,26 @@
+id: deepseek-llm
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-LLM
+  zh: DeepSeek-LLM
+summary:
+  en: DeepSeek's early open-source general-purpose LLM series.
+  zh: 深度求索早期开源的通用大语言模型系列。
+website: https://arxiv.org/abs/2401.02954
+organization: deepseek
+tags: ['llm', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2024-01-05
+  provider_lane: deepseek
+  capabilities: ['text']
+sources:
+  - url: https://arxiv.org/abs/2401.02954
+    checked_at: 2026-07-14

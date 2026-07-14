@@ -1,0 +1,26 @@
+id: deepseek-r1
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-R1
+  zh: DeepSeek-R1
+summary:
+  en: Reasoning model trained with reinforcement learning, rivaling OpenAI o1.
+  zh: 通过强化学习训练的推理模型，性能对标 OpenAI o1。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'reasoning', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2025-01-20
+  provider_lane: deepseek
+  capabilities: ['reasoning']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

@@ -1,0 +1,26 @@
+id: deepseek-v3-2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V3.2
+  zh: DeepSeek-V3.2
+summary:
+  en: Successor to V3/R1 with unified chat and reasoner endpoints.
+  zh: V3/R1 的继任版本，统一了 chat 与 reasoner 接口。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'reasoning']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2025-12-01
+  provider_lane: deepseek
+  capabilities: ['reasoning', 'text']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14

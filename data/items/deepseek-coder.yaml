@@ -1,0 +1,26 @@
+id: deepseek-coder
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-Coder
+  zh: DeepSeek-Coder
+summary:
+  en: DeepSeek's first open-source code-centric language model.
+  zh: 深度求索首个开源的代码专用大模型。
+website: https://github.com/deepseek-ai/DeepSeek-Coder
+organization: deepseek
+tags: ['llm', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2023-11-02
+  provider_lane: deepseek
+  capabilities: ['coding']
+sources:
+  - url: https://github.com/deepseek-ai/DeepSeek-Coder
+    checked_at: 2026-07-14

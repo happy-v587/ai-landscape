@@ -1,0 +1,26 @@
+id: deepseek-v4
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V4
+  zh: DeepSeek-V4
+summary:
+  en: Next-generation DeepSeek API lineup with Pro and Flash variants.
+  zh: 下一代 DeepSeek API 系列，提供 Pro 与 Flash 版本。
+website: https://api-docs.deepseek.com/
+organization: deepseek
+tags: ['llm', 'reasoning']
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-04-24
+  provider_lane: deepseek
+  capabilities: ['reasoning', 'text']
+sources:
+  - url: https://api-docs.deepseek.com/updates/
+    checked_at: 2026-07-14
