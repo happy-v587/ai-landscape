@@ -1,0 +1,26 @@
+id: qwen3-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen3.5
+  zh: 通义千问 3.5
+summary:
+  en: Natively multimodal Qwen model series from Alibaba.
+  zh: 阿里云发布的原生多模态通义千问模型系列。
+website: https://www.alibabagroup.com/document-1960233590314762240
+organization: qwen
+tags: [llm, multimodal]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text, vision]
+  open_source: false
+timeline:
+  released_at: 2026-02-16
+  provider_lane: qwen
+  capabilities: [multimodal]
+sources:
+  - url: https://www.alibabagroup.com/document-1960233590314762240
+    checked_at: 2026-07-14

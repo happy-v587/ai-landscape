@@ -1,0 +1,26 @@
+id: qwen2-5-math
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5-Math
+  zh: 通义千问 2.5 Math
+summary:
+  en: Upgraded math-specialized models with CoT and tool-integrated reasoning.
+  zh: 升级后的数学专用模型，支持 CoT 与工具集成推理。
+website: https://qwenlm.github.io/blog/qwen2.5-math/
+organization: qwen
+tags: [llm, reasoning, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2024-09-19
+  provider_lane: qwen
+  capabilities: [reasoning]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2.5-math/
+    checked_at: 2026-07-14

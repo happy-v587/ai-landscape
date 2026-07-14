@@ -1,0 +1,26 @@
+id: qwen1-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen1.5
+  zh: 通义千问 1.5
+summary:
+  en: Improved Qwen series with broader size coverage and better multilingual capabilities.
+  zh: 尺寸覆盖更广、多语言能力更强的通义千问系列。
+website: https://qwenlm.github.io/blog/qwen1.5/
+organization: qwen
+tags: [llm, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2024-02-04
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen1.5/
+    checked_at: 2026-07-14

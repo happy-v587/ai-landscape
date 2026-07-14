@@ -1,0 +1,26 @@
+id: qwen-original
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen
+  zh: 通义千问
+summary:
+  en: The first open-weight Qwen language models from Alibaba Cloud.
+  zh: 阿里云通义千问首批开源权重语言模型。
+website: https://github.com/QwenLM/qwen
+organization: qwen
+tags: [llm, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2023-08-03
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://github.com/QwenLM/qwen
+    checked_at: 2026-07-14

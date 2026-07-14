@@ -12,7 +12,19 @@ website: https://qwen.ai/
 tags: [provider, llm, open-weights]
 regions: [CN]
 status: active
-related: [qwen3]
+related:
+  - qwen-original
+  - qwen1-5
+  - qwen2
+  - qwen2-math
+  - qwen2-vl
+  - qwen2-audio
+  - qwen2-5
+  - qwen2-5-math
+  - qwen2-5-coder
+  - qwen2-5-vl
+  - qwen3
+  - qwen3-5
 facts:
   open_source: true
 sources:

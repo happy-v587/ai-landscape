@@ -1,0 +1,26 @@
+id: qwen2-5-vl
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5-VL
+  zh: 通义千问 2.5 VL
+summary:
+  en: Flagship vision-language model with agentic visual capabilities.
+  zh: 具备智能体视觉能力的旗舰视觉语言模型。
+website: https://qwenlm.github.io/blog/qwen2.5-vl/
+organization: qwen
+tags: [llm, multimodal, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text, vision]
+  open_source: true
+timeline:
+  released_at: 2025-01-26
+  provider_lane: qwen
+  capabilities: [multimodal]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2.5-vl/
+    checked_at: 2026-07-14

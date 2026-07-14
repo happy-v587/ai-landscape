@@ -1,0 +1,26 @@
+id: qwen2-math
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2-Math
+  zh: 通义千问 2 Math
+summary:
+  en: Math-specialized models built on the Qwen2 series.
+  zh: 基于 Qwen2 的数学专用模型系列。
+website: https://qwenlm.github.io/blog/qwen2-math/
+organization: qwen
+tags: [llm, reasoning, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2024-08-08
+  provider_lane: qwen
+  capabilities: [reasoning]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2-math/
+    checked_at: 2026-07-14

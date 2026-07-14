@@ -1,0 +1,26 @@
+id: qwen2-vl
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2-VL
+  zh: 通义千问 2 VL
+summary:
+  en: Vision-language model with native image and video understanding.
+  zh: 具备原生图像与视频理解能力的视觉语言模型。
+website: https://qwenlm.github.io/blog/qwen2-vl/
+organization: qwen
+tags: [llm, multimodal, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text, vision]
+  open_source: true
+timeline:
+  released_at: 2024-08-29
+  provider_lane: qwen
+  capabilities: [multimodal]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2-vl/
+    checked_at: 2026-07-14

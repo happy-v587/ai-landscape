@@ -1,0 +1,26 @@
+id: qwen2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2
+  zh: 通义千问 2
+summary:
+  en: Next-generation Qwen LLMs with strong coding, math and multilingual support.
+  zh: 下一代通义千问大模型，强化代码、数学与多语言能力。
+website: https://qwenlm.github.io/blog/qwen2/
+organization: qwen
+tags: [llm, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2024-06-07
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2/
+    checked_at: 2026-07-14

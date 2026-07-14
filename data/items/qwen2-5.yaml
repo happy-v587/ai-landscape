@@ -1,0 +1,26 @@
+id: qwen2-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5
+  zh: 通义千问 2.5
+summary:
+  en: Large-scale open-source release of language, coding and math models.
+  zh: 大规模开源发布的语言、代码与数学模型系列。
+website: https://qwenlm.github.io/blog/qwen2.5/
+organization: qwen
+tags: [llm, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2024-09-19
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2.5/
+    checked_at: 2026-07-14

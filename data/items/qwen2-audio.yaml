@@ -1,0 +1,26 @@
+id: qwen2-audio
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2-Audio
+  zh: 通义千问 2 Audio
+summary:
+  en: Audio-language model accepting audio and text inputs.
+  zh: 接受音频与文本输入的音频语言模型。
+website: https://qwenlm.github.io/blog/qwen2-audio/
+organization: qwen
+tags: [llm, multimodal, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text, audio]
+  open_source: true
+timeline:
+  released_at: 2024-08-09
+  provider_lane: qwen
+  capabilities: [multimodal]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2-audio/
+    checked_at: 2026-07-14

@@ -1,0 +1,26 @@
+id: qwen2-5-coder
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5-Coder
+  zh: 通义千问 2.5 Coder
+summary:
+  en: Open-source coding model trained on 5.5 trillion code-related tokens.
+  zh: 在 5.5 万亿代码相关 token 上训练的开源代码模型。
+website: https://qwenlm.github.io/blog/qwen2.5-coder/
+organization: qwen
+tags: [llm, coding, open-weights]
+regions: [CN]
+status: active
+related: []
+facts:
+  modalities: [text]
+  open_source: true
+timeline:
+  released_at: 2024-11-12
+  provider_lane: qwen
+  capabilities: [coding]
+sources:
+  - url: https://qwenlm.github.io/blog/qwen2.5-coder/
+    checked_at: 2026-07-14
