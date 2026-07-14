@@ -147,3 +147,82 @@
   .subcategoryRow { flex-direction: column; }
   .subcategoryLabel { width: auto; text-align: left; line-height: 1.3; }
 }
+
+.timeline {
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.timelineGrid {
+  display: grid;
+  grid-template-columns: 160px repeat(9, minmax(120px, 1fr));
+  gap: 12px 8px;
+  min-width: 1200px;
+}
+
+.timelineMonth {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.timelineLane {
+  display: contents;
+}
+
+.timelineProvider {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 16px;
+  border-right: 2px solid var(--map);
+}
+
+.timelineLaneBody {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  min-height: 48px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--hairline);
+}
+
+.timelineCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: var(--canvas);
+  min-width: 120px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.timelineCardOpen {
+  background: var(--open-source);
+}
+
+.timelineCard time {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.timelineCard strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.timelineCard span {
+  font-size: 11px;
+  color: var(--body);
+}
