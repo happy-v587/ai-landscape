@@ -1,0 +1,20 @@
+id: label-studio
+kind: data-labeling
+map: model-infra
+category: data
+name:
+  en: Label Studio
+  zh: Label Studio
+summary:
+  en: Data labeling platform for preparing training and evaluation data.
+  zh: 用于准备训练与评测数据的数据标注平台。
+website: https://labelstud.io/
+tags: [data, labeling, open-source]
+regions: [US]
+status: active
+related: [huggingface-datasets]
+facts:
+  deployment: [cloud, self-hosted]
+sources:
+  - url: https://labelstud.io/
+    checked_at: 2026-07-14

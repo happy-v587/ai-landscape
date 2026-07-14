@@ -1,0 +1,20 @@
+id: pytorch
+kind: ml-framework
+map: model-infra
+category: training
+name:
+  en: PyTorch
+  zh: PyTorch
+summary:
+  en: Open-source machine learning framework for research and production.
+  zh: 面向研究与生产的开源机器学习框架。
+website: https://pytorch.org/
+tags: [training, framework, open-source]
+regions: [Global]
+status: active
+related: [deepspeed, trl]
+facts:
+  open_source: true
+sources:
+  - url: https://pytorch.org/
+    checked_at: 2026-07-14

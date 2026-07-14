@@ -1,0 +1,21 @@
+id: perplexity
+kind: research-app
+map: apps-saas
+category: research
+name:
+  en: Perplexity
+  zh: Perplexity
+summary:
+  en: AI-powered answer engine for research and knowledge discovery.
+  zh: 面向研究与知识发现的 AI 问答引擎。
+website: https://www.perplexity.ai/
+tags: [research, search, assistant]
+regions: [US]
+status: active
+related: []
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://www.perplexity.ai/
+    checked_at: 2026-07-14

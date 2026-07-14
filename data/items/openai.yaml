@@ -1,0 +1,20 @@
+id: openai
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: OpenAI
+  zh: OpenAI
+summary:
+  en: AI research and product company that develops the GPT model family.
+  zh: 开发 GPT 模型系列的人工智能研究与产品公司。
+website: https://openai.com/
+tags: [provider, llm, multimodal]
+regions: [US]
+status: active
+related: [gpt-4o]
+facts:
+  access: [api, chatgpt]
+sources:
+  - url: https://platform.openai.com/docs/models
+    checked_at: 2026-07-14

@@ -1,0 +1,20 @@
+id: google-deepmind
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: Google DeepMind
+  zh: Google DeepMind
+summary:
+  en: Google AI organization that develops the Gemini model family.
+  zh: 开发 Gemini 模型系列的 Google AI 组织。
+website: https://deepmind.google/
+tags: [provider, llm, multimodal]
+regions: [US, GB]
+status: active
+related: [gemini-1-5-pro]
+facts:
+  access: [api, vertex-ai]
+sources:
+  - url: https://ai.google.dev/gemini-api/docs/models
+    checked_at: 2026-07-14

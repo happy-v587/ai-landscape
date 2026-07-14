@@ -10,11 +10,35 @@
   map: model-infra
   name: { en: Inference, zh: 推理 }
   presentation: lifecycle-map
+- id: training
+  map: model-infra
+  name: { en: Training & Post-Training, zh: 训练与后训练 }
+  presentation: lifecycle-map
+- id: data
+  map: model-infra
+  name: { en: Data & Datasets, zh: 数据与数据集 }
+  presentation: lifecycle-map
+- id: evaluation-observability
+  map: model-infra
+  name: { en: Evaluation & Observability, zh: 评测与可观测性 }
+  presentation: lifecycle-map
 - id: coding-agents
   map: agent-tools
   name: { en: Coding Agents, zh: 编程 Agent }
   presentation: capability-map
+- id: agent-frameworks
+  map: agent-tools
+  name: { en: Agent Frameworks, zh: Agent 框架 }
+  presentation: capability-map
+- id: agent-runtimes
+  map: agent-tools
+  name: { en: Agent Runtime & SDK, zh: Agent 运行时与 SDK }
+  presentation: capability-map
 - id: productivity
   map: apps-saas
   name: { en: Productivity, zh: 生产力 }
+  presentation: scenario-map
+- id: research
+  map: apps-saas
+  name: { en: Research & Knowledge, zh: 研究与知识 }
   presentation: scenario-map

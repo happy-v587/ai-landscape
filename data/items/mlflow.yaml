@@ -1,0 +1,20 @@
+id: mlflow
+kind: ml-observability
+map: model-infra
+category: evaluation-observability
+name:
+  en: MLflow
+  zh: MLflow
+summary:
+  en: Open-source platform for experiment tracking, evaluation, and model lifecycle workflows.
+  zh: 用于实验追踪、评测与模型生命周期流程的开源平台。
+website: https://mlflow.org/
+tags: [observability, evaluation, open-source]
+regions: [Global]
+status: active
+related: [lm-eval-harness]
+facts:
+  open_source: true
+sources:
+  - url: https://mlflow.org/docs/latest/
+    checked_at: 2026-07-14

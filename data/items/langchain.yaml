@@ -1,0 +1,21 @@
+id: langchain
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: LangChain
+  zh: LangChain
+summary:
+  en: Framework for composing agents from models, tools, prompts, and middleware.
+  zh: 由模型、工具、提示词与中间件组合 Agent 的框架。
+website: https://www.langchain.com/
+tags: [agent, framework, open-source]
+regions: [US]
+status: active
+related: [langgraph]
+facts:
+  languages: [python, javascript]
+  open_source: true
+sources:
+  - url: https://docs.langchain.com/oss/python/langchain/overview
+    checked_at: 2026-07-14

@@ -1,0 +1,21 @@
+id: claude
+kind: desktop-mobile-app
+map: apps-saas
+category: productivity
+name:
+  en: Claude
+  zh: Claude
+summary:
+  en: General-purpose AI assistant application from Anthropic.
+  zh: Anthropic 推出的通用 AI 助手应用。
+website: https://claude.ai/
+tags: [assistant, productivity, web, mobile]
+regions: [US]
+status: active
+related: [anthropic, claude-3-5-sonnet]
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://claude.ai/
+    checked_at: 2026-07-14

@@ -1,0 +1,20 @@
+id: minimax
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: MiniMax
+  zh: MiniMax
+summary:
+  en: AI company offering multimodal models and applications.
+  zh: 提供多模态模型与应用的人工智能公司。
+website: https://www.minimaxi.com/
+tags: [provider, llm, multimodal]
+regions: [CN]
+status: active
+related: []
+facts:
+  access: [api, app]
+sources:
+  - url: https://www.minimaxi.com/
+    checked_at: 2026-07-14

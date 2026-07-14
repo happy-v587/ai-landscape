@@ -1,0 +1,21 @@
+id: langgraph
+kind: agent-runtime
+map: agent-tools
+category: agent-runtimes
+name:
+  en: LangGraph
+  zh: LangGraph
+summary:
+  en: Orchestration framework and runtime for long-running, stateful agents.
+  zh: 面向长时运行、有状态 Agent 的编排框架与运行时。
+website: https://www.langchain.com/langgraph
+tags: [agent, orchestration, open-source]
+regions: [US]
+status: active
+related: [langchain]
+facts:
+  capabilities: [durable-execution, human-in-the-loop, persistence]
+  open_source: true
+sources:
+  - url: https://docs.langchain.com/oss/python/langgraph/overview
+    checked_at: 2026-07-14

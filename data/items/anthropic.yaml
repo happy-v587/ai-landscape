@@ -1,0 +1,20 @@
+id: anthropic
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: Anthropic
+  zh: Anthropic
+summary:
+  en: AI safety and product company that develops the Claude model family.
+  zh: 开发 Claude 模型系列的 AI 安全与产品公司。
+website: https://www.anthropic.com/
+tags: [provider, llm, safety]
+regions: [US]
+status: active
+related: [claude-3-5-sonnet]
+facts:
+  access: [api, claude]
+sources:
+  - url: https://docs.anthropic.com/en/docs/about-claude/models/overview
+    checked_at: 2026-07-14

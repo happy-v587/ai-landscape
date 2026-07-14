@@ -1,0 +1,21 @@
+id: trl
+kind: post-training-library
+map: model-infra
+category: training
+name:
+  en: TRL
+  zh: TRL
+summary:
+  en: Hugging Face library for post-training transformer language models.
+  zh: Hugging Face 的 Transformer 语言模型后训练库。
+website: https://huggingface.co/docs/trl/index
+tags: [training, post-training, open-source]
+regions: [Global]
+status: active
+related: [deepspeed, pytorch]
+facts:
+  methods: [sft, dpo, grpo, reward-modeling]
+  open_source: true
+sources:
+  - url: https://huggingface.co/docs/trl/index
+    checked_at: 2026-07-14

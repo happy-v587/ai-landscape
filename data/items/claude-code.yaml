@@ -1,0 +1,20 @@
+id: claude-code
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Claude Code
+  zh: Claude Code
+summary:
+  en: Agentic coding tool that works in the terminal and developer workflows.
+  zh: 在终端与开发工作流中运行的 Agent 编程工具。
+website: https://docs.anthropic.com/en/docs/claude-code/overview
+tags: [coding-agent, cli, developer-tools]
+regions: [US]
+status: active
+related: [anthropic, claude-3-5-sonnet]
+facts:
+  platforms: [terminal]
+sources:
+  - url: https://docs.anthropic.com/en/docs/claude-code/overview
+    checked_at: 2026-07-14

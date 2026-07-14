@@ -1,0 +1,21 @@
+id: ai-sdk
+kind: agent-sdk
+map: agent-tools
+category: agent-runtimes
+name:
+  en: AI SDK
+  zh: AI SDK
+summary:
+  en: TypeScript toolkit for building AI applications and agents across web frameworks.
+  zh: 用于在多种 Web 框架中构建 AI 应用与 Agent 的 TypeScript 工具包。
+website: https://ai-sdk.dev/
+tags: [agent, sdk, typescript, open-source]
+regions: [US]
+status: active
+related: [openai-agents-sdk]
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://ai-sdk.dev/docs/introduction
+    checked_at: 2026-07-14

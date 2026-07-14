@@ -1,0 +1,21 @@
+id: notion-ai
+kind: productivity-app
+map: apps-saas
+category: productivity
+name:
+  en: Notion AI
+  zh: Notion AI
+summary:
+  en: AI features embedded in Notion for writing, knowledge, and team work.
+  zh: 内嵌于 Notion 的写作、知识与团队协作 AI 功能。
+website: https://www.notion.com/product/ai
+tags: [productivity, knowledge, collaboration]
+regions: [US]
+status: active
+related: []
+facts:
+  audience: [individuals, teams]
+  platforms: [web, macos, windows, ios, android]
+sources:
+  - url: https://www.notion.com/product/ai
+    checked_at: 2026-07-14

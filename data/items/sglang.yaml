@@ -1,0 +1,21 @@
+id: sglang
+kind: inference-engine
+map: model-infra
+category: inference
+name:
+  en: SGLang
+  zh: SGLang
+summary:
+  en: Open-source serving framework for language and multimodal models.
+  zh: 面向语言与多模态模型的开源服务框架。
+website: https://sgl-project.github.io/
+tags: [inference, serving, open-source]
+regions: [Global]
+status: active
+related: [vllm]
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://sgl-project.github.io/
+    checked_at: 2026-07-14

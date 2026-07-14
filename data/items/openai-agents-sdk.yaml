@@ -1,0 +1,21 @@
+id: openai-agents-sdk
+kind: agent-sdk
+map: agent-tools
+category: agent-runtimes
+name:
+  en: OpenAI Agents SDK
+  zh: OpenAI Agents SDK
+summary:
+  en: SDK for building text, voice, and sandboxed agents with a small set of primitives.
+  zh: 以少量原语构建文本、语音与沙箱 Agent 的 SDK。
+website: https://openai.github.io/openai-agents-js/
+tags: [agent, sdk, typescript, open-source]
+regions: [US]
+status: active
+related: [ai-sdk]
+facts:
+  languages: [typescript, python]
+  open_source: true
+sources:
+  - url: https://openai.github.io/openai-agents-js/
+    checked_at: 2026-07-14

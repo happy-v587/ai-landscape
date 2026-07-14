@@ -1,0 +1,26 @@
+id: gpt-4o
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-4o
+  zh: GPT-4o
+summary:
+  en: OpenAI multimodal model for text, vision, and audio interactions.
+  zh: OpenAI 推出的支持文本、视觉与音频交互的多模态模型。
+website: https://openai.com/index/hello-gpt-4o/
+organization: openai
+tags: [llm, multimodal, proprietary]
+regions: [US]
+status: active
+related: [openai]
+facts:
+  modalities: [text, image, audio]
+  access: [api, chatgpt]
+timeline:
+  released_at: 2024-05-13
+  provider_lane: openai
+  capabilities: [multimodal, realtime]
+sources:
+  - url: https://openai.com/index/hello-gpt-4o/
+    checked_at: 2026-07-14

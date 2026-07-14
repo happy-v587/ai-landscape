@@ -1,0 +1,26 @@
+id: gemini-1-5-pro
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 1.5 Pro
+  zh: Gemini 1.5 Pro
+summary:
+  en: Google multimodal model introduced with long-context capabilities.
+  zh: Google 推出的具备长上下文能力的多模态模型。
+website: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/
+organization: google-deepmind
+tags: [llm, multimodal, proprietary]
+regions: [US, GB]
+status: active
+related: [google-deepmind]
+facts:
+  modalities: [text, image, audio, video]
+  access: [api, vertex-ai]
+timeline:
+  released_at: 2024-02-15
+  provider_lane: google-deepmind
+  capabilities: [multimodal, long-context]
+sources:
+  - url: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/
+    checked_at: 2026-07-14

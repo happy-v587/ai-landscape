@@ -1,0 +1,20 @@
+id: huggingface-datasets
+kind: dataset-library
+map: model-infra
+category: data
+name:
+  en: Hugging Face Datasets
+  zh: Hugging Face Datasets
+summary:
+  en: Library and hub interface for accessing and processing datasets.
+  zh: 用于访问与处理数据集的库和数据中心接口。
+website: https://huggingface.co/docs/datasets/index
+tags: [data, datasets, open-source]
+regions: [Global]
+status: active
+related: [trl]
+facts:
+  open_source: true
+sources:
+  - url: https://huggingface.co/docs/datasets/index
+    checked_at: 2026-07-14

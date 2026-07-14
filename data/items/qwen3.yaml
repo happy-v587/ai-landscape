@@ -1,0 +1,26 @@
+id: qwen3
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen3
+  zh: 通义千问 3
+summary:
+  en: Open-weight Qwen model series with language and reasoning variants.
+  zh: 提供语言与推理变体的开放权重通义千问模型系列。
+website: https://qwen.ai/blog?id=qwen3
+organization: qwen
+tags: [llm, reasoning, open-weights]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  modalities: [text]
+  access: [api, self-hosted]
+timeline:
+  released_at: 2025-04-29
+  provider_lane: qwen
+  capabilities: [reasoning, multilingual]
+sources:
+  - url: https://github.com/QwenLM/Qwen3
+    checked_at: 2026-07-14

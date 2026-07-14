@@ -1,0 +1,20 @@
+id: qwen
+kind: model-provider
+map: models
+category: model-providers
+name:
+  en: Qwen
+  zh: 通义千问
+summary:
+  en: Alibaba Cloud model family and open model community.
+  zh: 阿里云的模型系列与开放模型社区。
+website: https://qwen.ai/
+tags: [provider, llm, open-weights]
+regions: [CN]
+status: active
+related: [qwen3]
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/QwenLM
+    checked_at: 2026-07-14

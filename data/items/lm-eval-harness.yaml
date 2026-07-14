@@ -1,0 +1,20 @@
+id: lm-eval-harness
+kind: evaluation-framework
+map: model-infra
+category: evaluation-observability
+name:
+  en: LM Evaluation Harness
+  zh: LM Evaluation Harness
+summary:
+  en: Open-source framework for evaluating language models across benchmarks.
+  zh: 跨基准评测语言模型的开源框架。
+website: https://github.com/EleutherAI/lm-evaluation-harness
+tags: [evaluation, benchmarks, open-source]
+regions: [Global]
+status: active
+related: [mlflow]
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/EleutherAI/lm-evaluation-harness
+    checked_at: 2026-07-14

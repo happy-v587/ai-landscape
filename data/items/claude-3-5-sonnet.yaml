@@ -1,0 +1,26 @@
+id: claude-3-5-sonnet
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude 3.5 Sonnet
+  zh: Claude 3.5 Sonnet
+summary:
+  en: Anthropic model released for reasoning, coding, and visual understanding.
+  zh: Anthropic 发布的推理、编程与视觉理解模型。
+website: https://www.anthropic.com/news/claude-3-5-sonnet
+organization: anthropic
+tags: [llm, vision, proprietary]
+regions: [US]
+status: active
+related: [anthropic]
+facts:
+  modalities: [text, image]
+  access: [api, claude]
+timeline:
+  released_at: 2024-06-20
+  provider_lane: anthropic
+  capabilities: [reasoning, coding, vision]
+sources:
+  - url: https://www.anthropic.com/news/claude-3-5-sonnet
+    checked_at: 2026-07-14

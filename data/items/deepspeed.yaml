@@ -1,0 +1,20 @@
+id: deepspeed
+kind: distributed-training
+map: model-infra
+category: training
+name:
+  en: DeepSpeed
+  zh: DeepSpeed
+summary:
+  en: Deep learning optimization library for distributed training and inference.
+  zh: 用于分布式训练与推理的深度学习优化库。
+website: https://www.deepspeed.ai/
+tags: [training, distributed, open-source]
+regions: [US]
+status: active
+related: [pytorch, trl]
+facts:
+  open_source: true
+sources:
+  - url: https://www.deepspeed.ai/
+    checked_at: 2026-07-14
