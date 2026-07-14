@@ -1,0 +1,22 @@
+id: openvino
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: OpenVINO
+  zh: OpenVINO
+summary:
+  en: Intel toolkit for optimizing and deploying deep learning models across hardware.
+  zh: Intel 用于跨硬件优化和部署深度学习模型的工具包。
+website: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit.html
+tags: [inference, optimization, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [edge, self-hosted]
+  open_source: true
+sources:
+  - url: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit.html
+    checked_at: 2026-07-14

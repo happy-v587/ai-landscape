@@ -1,0 +1,21 @@
+id: colossal-ai
+kind: distributed-training
+map: model-infra
+category: training
+subcategory: distributed-training
+name:
+  en: Colossal-AI
+  zh: Colossal-AI
+summary:
+  en: Unified deep learning system for large-scale model training.
+  zh: 面向大模型训练的统一深度学习系统。
+website: https://colossalai.org/
+tags: [training, distributed, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://colossalai.org/
+    checked_at: 2026-07-14

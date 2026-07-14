@@ -1,0 +1,21 @@
+id: tensorboard
+kind: ml-observability
+map: model-infra
+category: evaluation-observability
+subcategory: ml-observability
+name:
+  en: TensorBoard
+  zh: TensorBoard
+summary:
+  en: TensorFlow visualization toolkit widely used for tracking ML experiments.
+  zh: 广泛用于追踪机器学习实验的 TensorFlow 可视化工具。
+website: https://www.tensorflow.org/tensorboard
+tags: [observability, visualization, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://www.tensorflow.org/tensorboard
+    checked_at: 2026-07-14

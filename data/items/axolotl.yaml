@@ -1,0 +1,22 @@
+id: axolotl
+kind: post-training-library
+map: model-infra
+category: training
+subcategory: post-training-library
+name:
+  en: Axolotl
+  zh: Axolotl
+summary:
+  en: YAML-configured fine-tuning framework for LLMs and multimodal models.
+  zh: 通过 YAML 配置对大模型和多模态模型进行微调的框架。
+website: https://github.com/axolotl-ai-cloud/axolotl
+tags: [training, fine-tuning, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  methods: [lora, qlora, full-parameter]
+  open_source: true
+sources:
+  - url: https://github.com/axolotl-ai-cloud/axolotl
+    checked_at: 2026-07-14

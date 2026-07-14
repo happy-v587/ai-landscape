@@ -1,0 +1,21 @@
+id: triton
+kind: compiler-accelerator
+map: model-infra
+category: training
+subcategory: compiler-accelerator
+name:
+  en: Triton
+  zh: Triton
+summary:
+  en: OpenAI Python-like language and compiler for writing efficient GPU kernels.
+  zh: OpenAI 推出的类 Python 语言与编译器，用于编写高效 GPU 内核。
+website: https://github.com/triton-lang/triton
+tags: [kernel, compiler, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/triton-lang/triton
+    checked_at: 2026-07-14

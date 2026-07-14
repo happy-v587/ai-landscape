@@ -1,0 +1,21 @@
+id: flash-attention
+kind: compiler-accelerator
+map: model-infra
+category: training
+subcategory: compiler-accelerator
+name:
+  en: FlashAttention
+  zh: FlashAttention
+summary:
+  en: IO-aware exact attention algorithm that reduces memory and speeds up training.
+  zh: IO 感知的精确注意力算法，降低内存占用并加速训练。
+website: https://github.com/Dao-AILab/flash-attention
+tags: [kernel, attention, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/Dao-AILab/flash-attention
+    checked_at: 2026-07-14

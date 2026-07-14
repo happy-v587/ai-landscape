@@ -1,0 +1,22 @@
+id: clearml
+kind: ml-observability
+map: model-infra
+category: evaluation-observability
+subcategory: ml-observability
+name:
+  en: ClearML
+  zh: ClearML
+summary:
+  en: Open-source MLOps platform for experiment management, orchestration and observability.
+  zh: 开源 MLOps 平台，支持实验管理、编排与可观测性。
+website: https://clear.ml/
+tags: [observability, experiment-tracking, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://clear.ml/
+    checked_at: 2026-07-14

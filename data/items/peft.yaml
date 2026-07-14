@@ -1,0 +1,22 @@
+id: peft
+kind: post-training-library
+map: model-infra
+category: training
+subcategory: post-training-library
+name:
+  en: PEFT
+  zh: PEFT
+summary:
+  en: Hugging Face parameter-efficient fine-tuning library for LoRA, adapters, and more.
+  zh: Hugging Face 的参数高效微调库，支持 LoRA、适配器等。
+website: https://huggingface.co/docs/peft/index
+tags: [training, fine-tuning, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  methods: [lora, adapters, prompt-tuning]
+  open_source: true
+sources:
+  - url: https://huggingface.co/docs/peft/index
+    checked_at: 2026-07-14

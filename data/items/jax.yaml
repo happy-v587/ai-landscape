@@ -1,0 +1,21 @@
+id: jax
+kind: ml-framework
+map: model-infra
+category: training
+subcategory: ml-framework
+name:
+  en: JAX
+  zh: JAX
+summary:
+  en: Google high-performance numerical computing and ML framework.
+  zh: Google 的高性能数值计算与机器学习框架。
+website: https://jax.readthedocs.io/
+tags: [training, framework, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://jax.readthedocs.io/
+    checked_at: 2026-07-14

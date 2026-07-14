@@ -1,0 +1,22 @@
+id: onnx-runtime
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: ONNX Runtime
+  zh: ONNX Runtime
+summary:
+  en: Cross-platform inference runtime for ONNX models.
+  zh: 面向 ONNX 模型的跨平台推理运行时。
+website: https://onnxruntime.ai/
+tags: [inference, runtime, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [edge, cloud, self-hosted]
+  open_source: true
+sources:
+  - url: https://onnxruntime.ai/
+    checked_at: 2026-07-14

@@ -1,0 +1,22 @@
+id: opik
+kind: llm-observability
+map: model-infra
+category: evaluation-observability
+subcategory: llm-observability
+name:
+  en: Opik
+  zh: Opik
+summary:
+  en: Comet's open-source LLM evaluation and observability platform.
+  zh: Comet 推出的开源大模型评测与可观测性平台。
+website: https://www.comet.com/site/opik/
+tags: [observability, evaluation, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [cloud, self-hosted]
+  open_source: true
+sources:
+  - url: https://www.comet.com/site/opik/
+    checked_at: 2026-07-14

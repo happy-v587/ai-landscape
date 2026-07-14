@@ -1,0 +1,22 @@
+id: unsloth
+kind: post-training-library
+map: model-infra
+category: training
+subcategory: post-training-library
+name:
+  en: Unsloth
+  zh: Unsloth
+summary:
+  en: Fast memory-efficient fine-tuning library for LLMs.
+  zh: 快速且节省内存的大模型微调库。
+website: https://github.com/unslothai/unsloth
+tags: [training, fine-tuning, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  methods: [lora, qlora]
+  open_source: true
+sources:
+  - url: https://github.com/unslothai/unsloth
+    checked_at: 2026-07-14

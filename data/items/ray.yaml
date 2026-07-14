@@ -1,0 +1,22 @@
+id: ray
+kind: compute-orchestration
+map: model-infra
+category: training
+subcategory: compute-orchestration
+name:
+  en: Ray
+  zh: Ray
+summary:
+  en: Unified framework for scaling AI and Python workloads across clusters.
+  zh: 用于在集群上扩展 AI 与 Python 工作负载的统一框架。
+website: https://www.ray.io/
+tags: [orchestration, distributed, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://www.ray.io/
+    checked_at: 2026-07-14

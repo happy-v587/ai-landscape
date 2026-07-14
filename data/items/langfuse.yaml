@@ -1,0 +1,22 @@
+id: langfuse
+kind: llm-observability
+map: model-infra
+category: evaluation-observability
+subcategory: llm-observability
+name:
+  en: Langfuse
+  zh: Langfuse
+summary:
+  en: Open-source LLM engineering platform for tracing, evaluation and prompt management.
+  zh: 开源大模型工程平台，支持追踪、评测与 Prompt 管理。
+website: https://langfuse.com/
+tags: [observability, llm, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [cloud, self-hosted]
+  open_source: true
+sources:
+  - url: https://langfuse.com/
+    checked_at: 2026-07-14

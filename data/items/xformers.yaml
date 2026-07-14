@@ -1,0 +1,21 @@
+id: xformers
+kind: compiler-accelerator
+map: model-infra
+category: training
+subcategory: compiler-accelerator
+name:
+  en: xFormers
+  zh: xFormers
+summary:
+  en: Meta modular toolbox of optimized Transformer building blocks.
+  zh: Meta 推出的优化 Transformer 构建模块工具箱。
+website: https://github.com/facebookresearch/xformers
+tags: [kernel, optimization, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/facebookresearch/xformers
+    checked_at: 2026-07-14

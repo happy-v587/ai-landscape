@@ -1,0 +1,21 @@
+id: webdataset
+kind: dataset-library
+map: model-infra
+category: data
+subcategory: dataset-library
+name:
+  en: WebDataset
+  zh: WebDataset
+summary:
+  en: High-performance streaming data loader for large-scale training datasets.
+  zh: 面向大规模训练数据集的高性能流式数据加载器。
+website: https://github.com/webdataset/webdataset
+tags: [data, datasets, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/webdataset/webdataset
+    checked_at: 2026-07-14

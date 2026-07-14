@@ -1,0 +1,22 @@
+id: ctranslate2
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: CTranslate2
+  zh: CTranslate2
+summary:
+  en: Fast inference engine for Transformer models with quantization support.
+  zh: 支持量化的 Transformer 模型快速推理引擎。
+website: https://github.com/OpenNMT/CTranslate2
+tags: [inference, quantization, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://github.com/OpenNMT/CTranslate2
+    checked_at: 2026-07-14

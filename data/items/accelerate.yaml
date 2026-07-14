@@ -1,0 +1,21 @@
+id: accelerate
+kind: training-library
+map: model-infra
+category: training
+subcategory: training-library
+name:
+  en: Hugging Face Accelerate
+  zh: Hugging Face Accelerate
+summary:
+  en: Library for running PyTorch training across distributed setups with minimal code changes.
+  zh: 以最少代码改动在分布式环境下运行 PyTorch 训练的库。
+website: https://huggingface.co/docs/accelerate/index
+tags: [training, distributed, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://huggingface.co/docs/accelerate/index
+    checked_at: 2026-07-14

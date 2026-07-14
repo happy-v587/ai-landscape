@@ -1,0 +1,22 @@
+id: weights-biases
+kind: ml-observability
+map: model-infra
+category: evaluation-observability
+subcategory: ml-observability
+name:
+  en: Weights & Biases
+  zh: Weights & Biases
+summary:
+  en: MLOps platform for experiment tracking, model versioning, and visualization.
+  zh: 用于实验追踪、模型版本管理与可视化的 MLOps 平台。
+website: https://wandb.ai/
+tags: [observability, experiment-tracking]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [cloud, self-hosted]
+  open_source: false
+sources:
+  - url: https://wandb.ai/
+    checked_at: 2026-07-14

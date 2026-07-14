@@ -1,0 +1,21 @@
+id: promptfoo
+kind: evaluation-framework
+map: model-infra
+category: evaluation-observability
+subcategory: evaluation-framework
+name:
+  en: promptfoo
+  zh: promptfoo
+summary:
+  en: Open-source LLM prompt testing, red-teaming and evaluation framework.
+  zh: 开源的大模型 Prompt 测试、红队与评测框架。
+website: https://www.promptfoo.dev/
+tags: [evaluation, prompt-testing, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://www.promptfoo.dev/
+    checked_at: 2026-07-14

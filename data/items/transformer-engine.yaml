@@ -1,0 +1,21 @@
+id: transformer-engine
+kind: compiler-accelerator
+map: model-infra
+category: training
+subcategory: compiler-accelerator
+name:
+  en: Transformer Engine
+  zh: Transformer Engine
+summary:
+  en: NVIDIA library for accelerated Transformer training with FP8 precision.
+  zh: NVIDIA 用于以 FP8 精度加速 Transformer 训练的库。
+website: https://github.com/NVIDIA/TransformerEngine
+tags: [training, kernel, nvidia, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/NVIDIA/TransformerEngine
+    checked_at: 2026-07-14

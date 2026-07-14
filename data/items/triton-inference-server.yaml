@@ -1,0 +1,22 @@
+id: triton-inference-server
+kind: serving-framework
+map: model-infra
+category: inference
+subcategory: serving-framework
+name:
+  en: Triton Inference Server
+  zh: Triton Inference Server
+summary:
+  en: NVIDIA scalable serving framework for multiple ML frameworks.
+  zh: NVIDIA 支持多种 ML 框架的可扩展服务框架。
+website: https://developer.nvidia.com/triton-inference-server
+tags: [serving, nvidia, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://developer.nvidia.com/triton-inference-server
+    checked_at: 2026-07-14

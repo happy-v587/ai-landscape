@@ -1,0 +1,21 @@
+id: apache-airflow
+kind: data-integration
+map: model-infra
+category: data
+subcategory: data-integration
+name:
+  en: Apache Airflow
+  zh: Apache Airflow
+summary:
+  en: Platform to programmatically author, schedule and monitor data pipelines.
+  zh: 以编程方式编写、调度和监控数据管道的平台。
+website: https://airflow.apache.org/
+tags: [data, pipelines, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://airflow.apache.org/
+    checked_at: 2026-07-14

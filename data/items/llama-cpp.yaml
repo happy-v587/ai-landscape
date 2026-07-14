@@ -1,0 +1,22 @@
+id: llama-cpp
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: llama.cpp
+  zh: llama.cpp
+summary:
+  en: C++ inference engine for running LLMs efficiently on consumer hardware.
+  zh: 用 C++ 实现在消费级硬件上高效运行大模型的推理引擎。
+website: https://github.com/ggerganov/llama.cpp
+tags: [inference, quantization, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [edge, self-hosted]
+  open_source: true
+sources:
+  - url: https://github.com/ggerganov/llama.cpp
+    checked_at: 2026-07-14

@@ -1,0 +1,22 @@
+id: lmdeploy
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: LMDeploy
+  zh: LMDeploy
+summary:
+  en: OpenMMLab LLM deployment toolkit with TurboMind inference engine.
+  zh: OpenMMLab 的大模型部署工具包，集成 TurboMind 推理引擎。
+website: https://github.com/InternLM/lmdeploy
+tags: [inference, serving, open-source]
+regions: [CN]
+status: active
+related: []
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://github.com/InternLM/lmdeploy
+    checked_at: 2026-07-14

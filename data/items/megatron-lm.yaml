@@ -1,0 +1,21 @@
+id: megatron-lm
+kind: distributed-training
+map: model-infra
+category: training
+subcategory: distributed-training
+name:
+  en: Megatron-LM
+  zh: Megatron-LM
+summary:
+  en: NVIDIA framework for training large Transformer models at scale.
+  zh: NVIDIA 用于大规模训练 Transformer 模型的框架。
+website: https://github.com/NVIDIA/Megatron-LM
+tags: [training, distributed, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://github.com/NVIDIA/Megatron-LM
+    checked_at: 2026-07-14

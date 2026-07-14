@@ -1,0 +1,22 @@
+id: openrlhf
+kind: post-training-library
+map: model-infra
+category: training
+subcategory: post-training-library
+name:
+  en: OpenRLHF
+  zh: OpenRLHF
+summary:
+  en: Open-source framework for reinforcement learning from human feedback at scale.
+  zh: 面向大规模人类反馈强化学习的开源框架。
+website: https://github.com/OpenRLHF/OpenRLHF
+tags: [training, rlhf, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  methods: [ppo, dpo, reward-modeling]
+  open_source: true
+sources:
+  - url: https://github.com/OpenRLHF/OpenRLHF
+    checked_at: 2026-07-14
