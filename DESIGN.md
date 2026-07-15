@@ -95,7 +95,6 @@ spacing:
   section: 64px
   page-gutter: 32px
   max-width: 1440px
-  rail-width: 52px
   subcategory-label-width: 120px
 
 rounded:
@@ -114,14 +113,6 @@ components:
     backdropFilter: "blur(8px)"
     borderBottom: "1px solid {colors.hairline}"
     padding: "0 {spacing.page-gutter}"
-  map-rail:
-    width: "{spacing.rail-width}"
-    backgroundColor: "{colors.maps.<mapId>}"
-    textColor: "{colors.accent-on}"
-    writingMode: vertical-rl
-    fontSize: 13px
-    fontWeight: 600
-    letterSpacing: 1px
   category-label:
     fontFamily: "{typography.section-title.fontFamily}"
     fontSize: "{typography.section-title.fontSize}"
@@ -208,9 +199,9 @@ well-printed annual or exhibition catalog.
 
 ## Design Principles
 
-1. **Color means map identity.** Each map has one pigment color used for the
-   left rail, active navigation markers, and timeline lane borders. It is not
-   used as a decorative gradient or card shadow.
+1. **Color means map identity.** Each map has one pigment color used for
+   active navigation markers, category accents, and timeline lane borders. It is
+   not used as a decorative gradient or card shadow.
 2. **Borders, not shadows.** Elevation and grouping come from `1px` hairlines,
    the coordinate rule, and background shifts. No drop shadows on cards or chips.
 3. **Typography carries personality.** `Bricolage Grotesque` gives headings a
@@ -249,15 +240,16 @@ well-printed annual or exhibition catalog.
 
 ### Map Identity Colors
 
-| Map | Rail | Pill Background | Pill Text |
-|-----|------|-----------------|-----------|
+| Map | Accent | Pill Background | Pill Text |
+|-----|--------|-----------------|-----------|
 | Models | `#5b5bd6` | `#eaeaf9` | `#2e2e7d` |
 | Model Infra | `#2e7bbf` | `#e6f0f9` | `#15406b` |
 | Agent & Tools | `#c44a8c` | `#f9e6f0` | `#6b214b` |
 | Apps & SaaS | `#2e9e72` | `#e6f5ee` | `#15563d` |
 
-Map colors are used for the rail and subtle active markers only. Category pills
-on cards use the muted pastel background so they stay quiet.
+Map colors are used for active navigation markers, subtle accents, and timeline
+lane borders only. Category pills on cards use the muted pastel background so
+they stay quiet.
 
 ## Typography
 
@@ -292,7 +284,6 @@ Three typefaces, loaded via `next/font/google`:
 
 - Max content width: `1440px`, centered.
 - Page gutter: `32px` on desktop, `20px` on mobile.
-- Left rail: `52px` fixed width, map color, vertical map name.
 - Main canvas: fluid grid with `32px` gutters.
 
 ### Section Card
@@ -335,13 +326,6 @@ Three typefaces, loaded via `next/font/google`:
 - Right: search input, locale switch, submit button as subtle outline button.
 - Active map link underlined with the map identity color.
 
-### Map Rail
-
-- Full-height vertical strip on desktop.
-- Background uses the current map identity color.
-- White text, vertically rotated, centered.
-- Hidden on tablet/mobile; replaced by a top badge.
-
 ### Category Pill / Label
 
 - Section cards use an uppercase label above the coordinate rule.
@@ -381,7 +365,7 @@ grid line.
 
 | Token | Value | Use |
 |-------|-------|-----|
-| `none` | `0px` | Rail, full-width separators |
+| `none` | `0px` | Full-width separators |
 | `sm` | `6px` | Secondary chips, small badges |
 | `md` | `10px` | Primary chips, buttons, timeline cards |
 | `lg` | `16px` | Buttons, inputs |
@@ -396,7 +380,6 @@ No shadows. Depth comes from:
 - Hairline borders around cards and chips.
 - The coordinate rule inside section cards.
 - Background color changes for hover (`canvas-subtle`).
-- Map color rail on the left edge.
 - Frosted-glass navigation bar.
 
 ## Motion
@@ -412,16 +395,16 @@ Keep motion restrained and purposeful:
 
 | Breakpoint | Changes |
 |------------|---------|
-| `≥ 1280px` | Full canvas, rail visible, 2×2 directory |
+| `≥ 1280px` | Full canvas, 2×2 directory |
 | `1024–1279px` | Slightly reduced gutters |
-| `768–1023px` | Rail hidden, map badge in nav, directory stacks |
+| `768–1023px` | Map badge in nav, directory stacks |
 | `480–767px` | Section cards stack, subcategory rows vertical, timeline scrolls horizontally |
 | `< 480px` | Single-column items, badges hidden, search collapses to icon |
 
 ## Do's and Don'ts
 
 ### Do
-- Use map identity color only for the rail, active nav marker, and timeline lane.
+- Use map identity color only for the active nav marker, category accents, and timeline lane.
 - Keep chip heights consistent (`40px` / `32px`).
 - Use local SVG logos; fall back to monograms.
 - Reserve Accent Teal for interactive elements.

@@ -134,3 +134,9 @@
 - **原因**：原 hunter.io 回退不可靠，导致大量条目只显示首字母 Monogram；用户希望非模型地图以图标为主、名称为辅，需要可加载的真实 logo。
 - **实现**：共更新 116 个 YAML 文件；Simple Icons 46 个、GitHub 头像 37 个、官方站点/press kit 33 个；避免错误匹配（如 Flowise≠wise、Grok≠ngrok、Mastra≠astra）。
 - **文件**：`data/items/*.yaml`（116 个文件）。
+
+## 2026-07-15 移除地图页左侧 rail
+
+- **决策**：移除地图详情页左侧的彩色竖条 rail（`MapRail`），地图内容区占满整宽。
+- **原因**：用户认为左侧竖条不好看；去掉后页面更干净，内容区更宽，阅读体验更开阔。
+- **文件**：`components/maps/MapShell.tsx`、`components/maps/maps.module.css`、`app/globals.css`、`DESIGN.md`；删除 `components/maps/MapRail.tsx`。

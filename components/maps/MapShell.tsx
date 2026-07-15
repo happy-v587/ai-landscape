@@ -2,7 +2,6 @@ import type { CatalogEntry, MapId } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
 import { ModelsTimeline } from './ModelsTimeline';
 import { CapabilityMap } from './CapabilityMap';
-import { MapRail } from './MapRail';
 import styles from './maps.module.css';
 
 export function groupEntries(entries: CatalogEntry[]) {
@@ -37,7 +36,6 @@ export function MapShell({
 }) {
   return (
     <div className={styles.mapPage} data-map={map}>
-      <MapRail map={map} locale={locale} />
       <div className={styles.mapCanvas}>
         {map === 'models' ? (
           <ModelsTimeline entries={entries} locale={locale} />

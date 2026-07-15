@@ -1,21 +1,3 @@
-.rail {
-  width: var(--rail-width);
-  background: var(--map);
-  color: var(--accent-on);
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  min-height: 100vh;
-  position: sticky;
-  top: var(--nav-height);
-}
-
 .sectionCard {
   background: var(--canvas);
   border: 1px solid var(--hairline);
@@ -254,13 +236,11 @@
 .monogramSm { width: 22px; height: 22px; font-size: 10px; }
 
 .mapPage {
-  display: flex;
   min-height: calc(100vh - var(--nav-height));
 }
 
 .mapCanvas {
-  flex: 1;
-  max-width: calc(var(--max-width) - var(--rail-width));
+  max-width: var(--max-width);
   padding: 40px var(--page-gutter);
   margin: 0 auto;
 }
@@ -271,8 +251,6 @@
 }
 
 @media (max-width: 768px) {
-  .rail { display: none; }
-  .mapPage { display: block; }
   .mapCanvas { max-width: 100%; padding: 24px var(--page-gutter); }
   .sectionCard { padding: 24px; }
   .subcategoryRow { flex-direction: column; gap: 12px; }
