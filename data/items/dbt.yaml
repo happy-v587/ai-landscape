@@ -1,0 +1,22 @@
+id: dbt
+kind: data-integration
+map: model-infra
+category: data
+subcategory: data-integration
+name:
+  en: dbt
+  zh: dbt
+summary:
+  en: Data transformation workflow tool for analytics and machine learning pipelines.
+  zh: 用于分析和机器学习流水线数据转换的工作流工具。
+website: https://www.getdbt.com/
+tags: [data, etl, analytics, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [cloud, self-hosted]
+  open_source: true
+sources:
+  - url: https://www.getdbt.com/
+    checked_at: 2026-07-14

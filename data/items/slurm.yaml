@@ -1,0 +1,22 @@
+id: slurm
+kind: compute-orchestration
+map: model-infra
+category: training
+subcategory: compute-orchestration
+name:
+  en: Slurm
+  zh: Slurm
+summary:
+  en: Open-source workload manager for Linux clusters and supercomputers.
+  zh: 面向 Linux 集群和超级计算机的开源工作负载管理器。
+website: https://slurm.schedmd.com/
+tags: [compute, scheduling, cluster, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://slurm.schedmd.com/
+    checked_at: 2026-07-14

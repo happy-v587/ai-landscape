@@ -1,0 +1,21 @@
+id: cvat
+kind: data-labeling
+map: model-infra
+category: data
+subcategory: data-labeling
+name:
+  en: CVAT
+  zh: CVAT
+summary:
+  en: Open-source computer vision annotation tool for image and video labeling.
+  zh: 开源计算机视觉标注工具，用于图像和视频标注。
+website: https://www.cvat.ai/
+tags: [data, labeling, vision, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://www.cvat.ai/
+    checked_at: 2026-07-14

@@ -1,0 +1,22 @@
+id: huggingface-transformers
+kind: training-library
+map: model-infra
+category: training
+subcategory: training-library
+name:
+  en: Transformers
+  zh: Transformers
+summary:
+  en: Hugging Face library providing pretrained models and training utilities for NLP and beyond.
+  zh: Hugging Face 提供的预训练模型和训练工具库，覆盖自然语言处理等领域。
+website: https://huggingface.co/docs/transformers
+tags: [training, inference, models, open-source]
+regions: [US]
+status: active
+related: [huggingface-datasets, accelerate]
+facts:
+  methods: [pre-training, fine-tuning]
+  open_source: true
+sources:
+  - url: https://huggingface.co/docs/transformers
+    checked_at: 2026-07-14

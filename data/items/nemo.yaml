@@ -1,0 +1,22 @@
+id: nemo
+kind: distributed-training
+map: model-infra
+category: training
+subcategory: distributed-training
+name:
+  en: NVIDIA NeMo
+  zh: NVIDIA NeMo
+summary:
+  en: NVIDIA toolkit for building, customizing and deploying generative AI models.
+  zh: NVIDIA 用于构建、定制和部署生成式 AI 模型的工具包。
+website: https://www.nvidia.com/en-us/ai-data-science/products/nemo/
+tags: [training, fine-tuning, deployment, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  methods: [pre-training, fine-tuning]
+  open_source: true
+sources:
+  - url: https://www.nvidia.com/en-us/ai-data-science/products/nemo/
+    checked_at: 2026-07-14

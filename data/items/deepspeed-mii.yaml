@@ -1,0 +1,22 @@
+id: deepspeed-mii
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: DeepSpeed-MII
+  zh: DeepSpeed-MII
+summary:
+  en: Low-latency, high-throughput inference engine from the DeepSpeed team.
+  zh: DeepSpeed 团队推出的低延迟、高吞吐推理引擎。
+website: https://github.com/microsoft/DeepSpeed-MII
+tags: [inference, serving, open-source]
+regions: [US]
+status: active
+related: [deepspeed]
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://github.com/microsoft/DeepSpeed-MII
+    checked_at: 2026-07-14

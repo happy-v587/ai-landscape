@@ -1,0 +1,22 @@
+id: bentoml
+kind: serving-framework
+map: model-infra
+category: inference
+subcategory: serving-framework
+name:
+  en: BentoML
+  zh: BentoML
+summary:
+  en: Framework for building, serving and deploying machine learning models.
+  zh: 用于构建、服务和部署机器学习模型的框架。
+website: https://www.bentoml.com/
+tags: [inference, serving, deployment, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://www.bentoml.com/
+    checked_at: 2026-07-14

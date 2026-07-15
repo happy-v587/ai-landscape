@@ -1,0 +1,22 @@
+id: xtuner
+kind: post-training-library
+map: model-infra
+category: training
+subcategory: post-training-library
+name:
+  en: XTuner
+  zh: XTuner
+summary:
+  en: Efficient fine-tuning toolkit supporting LLMs and multimodal models.
+  zh: 支持大语言模型和多模态模型的高效微调工具包。
+website: https://github.com/InternLM/xtuner
+tags: [training, fine-tuning, open-source]
+regions: [CN]
+status: active
+related: []
+facts:
+  methods: [lora, qlora, full-parameter]
+  open_source: true
+sources:
+  - url: https://github.com/InternLM/xtuner
+    checked_at: 2026-07-14

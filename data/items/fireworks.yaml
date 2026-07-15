@@ -1,0 +1,22 @@
+id: fireworks
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: Fireworks AI
+  zh: Fireworks AI
+summary:
+  en: Managed inference platform optimized for fast and cost-effective LLM serving.
+  zh: 针对快速且经济高效的大模型服务优化的托管推理平台。
+website: https://fireworks.ai/
+tags: [inference, serving, closed-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [cloud]
+  open_source: false
+sources:
+  - url: https://fireworks.ai/
+    checked_at: 2026-07-14

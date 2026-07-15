@@ -1,0 +1,22 @@
+id: paddlepaddle
+kind: ml-framework
+map: model-infra
+category: training
+subcategory: ml-framework
+name:
+  en: PaddlePaddle
+  zh: 飞桨
+summary:
+  en: Baidu's open-source deep learning platform with industry-focused tools.
+  zh: 百度开源的深度学习平台，提供面向工业应用的工具。
+website: https://www.paddlepaddle.org.cn/
+tags: [framework, training, open-source]
+regions: [CN]
+status: active
+related: []
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://www.paddlepaddle.org.cn/
+    checked_at: 2026-07-14

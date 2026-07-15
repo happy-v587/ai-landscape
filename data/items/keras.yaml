@@ -1,0 +1,22 @@
+id: keras
+kind: ml-framework
+map: model-infra
+category: training
+subcategory: ml-framework
+name:
+  en: Keras
+  zh: Keras
+summary:
+  en: High-level neural network API that runs on top of TensorFlow and JAX.
+  zh: 运行在 TensorFlow 和 JAX 之上的高级神经网络 API。
+website: https://keras.io/
+tags: [framework, training, open-source]
+regions: [US]
+status: active
+related: [pytorch, jax]
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://keras.io/
+    checked_at: 2026-07-14

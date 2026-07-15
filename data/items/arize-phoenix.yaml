@@ -1,0 +1,22 @@
+id: arize-phoenix
+kind: llm-observability
+map: model-infra
+category: evaluation-observability
+subcategory: llm-observability
+name:
+  en: Arize Phoenix
+  zh: Arize Phoenix
+summary:
+  en: Open-source observability tool for LLM, agent and computer vision applications.
+  zh: 面向大模型、Agent 和计算机视觉应用的开源可观测性工具。
+website: https://phoenix.arize.com/
+tags: [observability, llm, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://phoenix.arize.com/
+    checked_at: 2026-07-14

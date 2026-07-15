@@ -1,0 +1,22 @@
+id: langsmith
+kind: llm-observability
+map: model-infra
+category: evaluation-observability
+subcategory: llm-observability
+name:
+  en: LangSmith
+  zh: LangSmith
+summary:
+  en: LangChain's platform for debugging, testing, evaluating and monitoring LLM applications.
+  zh: LangChain 推出的用于调试、测试、评估和监控大模型应用的平台。
+website: https://smith.langchain.com/
+tags: [observability, llm, closed-source]
+regions: [US]
+status: active
+related: [langchain]
+facts:
+  deployment: [cloud]
+  open_source: false
+sources:
+  - url: https://smith.langchain.com/
+    checked_at: 2026-07-14

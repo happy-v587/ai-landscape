@@ -1,0 +1,22 @@
+id: prefect
+kind: data-integration
+map: model-infra
+category: data
+subcategory: data-integration
+name:
+  en: Prefect
+  zh: Prefect
+summary:
+  en: Modern workflow orchestration tool for data and ML pipelines.
+  zh: 面向数据和机器学习流水线的现代工作流编排工具。
+website: https://www.prefect.io/
+tags: [data, orchestration, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [cloud, self-hosted]
+  open_source: true
+sources:
+  - url: https://www.prefect.io/
+    checked_at: 2026-07-14

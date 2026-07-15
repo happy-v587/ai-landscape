@@ -1,0 +1,22 @@
+id: nanotron
+kind: distributed-training
+map: model-infra
+category: training
+subcategory: distributed-training
+name:
+  en: Nanotron
+  zh: Nanotron
+summary:
+  en: Hugging Face library for pre-training and post-training LLMs at scale.
+  zh: Hugging Face 推出的大规模预训练和后训练大语言模型库。
+website: https://github.com/huggingface/nanotron
+tags: [training, distributed, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  methods: [pre-training, post-training]
+  open_source: true
+sources:
+  - url: https://github.com/huggingface/nanotron
+    checked_at: 2026-07-14

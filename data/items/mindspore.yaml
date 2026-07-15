@@ -1,0 +1,22 @@
+id: mindspore
+kind: ml-framework
+map: model-infra
+category: training
+subcategory: ml-framework
+name:
+  en: MindSpore
+  zh: MindSpore
+summary:
+  en: Huawei's open-source deep learning framework for all-scenario AI.
+  zh: 华为开源的面向全场景人工智能的深度学习框架。
+website: https://www.mindspore.cn/
+tags: [framework, training, open-source]
+regions: [CN]
+status: active
+related: []
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://www.mindspore.cn/
+    checked_at: 2026-07-14

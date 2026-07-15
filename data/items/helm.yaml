@@ -1,0 +1,21 @@
+id: helm
+kind: evaluation-framework
+map: model-infra
+category: evaluation-observability
+subcategory: evaluation-framework
+name:
+  en: HELM
+  zh: HELM
+summary:
+  en: Holistic evaluation framework for language models from Stanford CRFM.
+  zh: 斯坦福 CRFM 推出的语言模型整体评估框架。
+website: https://crfm.stanford.edu/helm/
+tags: [evaluation, benchmark, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://crfm.stanford.edu/helm/
+    checked_at: 2026-07-14

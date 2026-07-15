@@ -1,0 +1,22 @@
+id: together
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: Together AI
+  zh: Together AI
+summary:
+  en: Inference and fine-tuning platform for open-source generative models.
+  zh: 面向开源生成式模型的推理与微调平台。
+website: https://www.together.ai/
+tags: [inference, serving, closed-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [cloud]
+  open_source: false
+sources:
+  - url: https://www.together.ai/
+    checked_at: 2026-07-14

@@ -1,0 +1,22 @@
+id: tensorflow-serving
+kind: serving-framework
+map: model-infra
+category: inference
+subcategory: serving-framework
+name:
+  en: TensorFlow Serving
+  zh: TensorFlow Serving
+summary:
+  en: Flexible serving system for machine learning models from Google.
+  zh: Google 推出的灵活机器学习模型服务系统。
+website: https://www.tensorflow.org/tfx/guide/serving
+tags: [inference, serving, tensorflow, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://www.tensorflow.org/tfx/guide/serving
+    checked_at: 2026-07-14

@@ -1,0 +1,22 @@
+id: torchserve
+kind: serving-framework
+map: model-infra
+category: inference
+subcategory: serving-framework
+name:
+  en: TorchServe
+  zh: TorchServe
+summary:
+  en: PyTorch model serving framework with multi-model and versioning support.
+  zh: PyTorch 模型服务框架，支持多模型和版本管理。
+website: https://pytorch.org/serve/
+tags: [inference, serving, pytorch, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://pytorch.org/serve/
+    checked_at: 2026-07-14

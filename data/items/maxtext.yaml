@@ -1,0 +1,22 @@
+id: maxtext
+kind: distributed-training
+map: model-infra
+category: training
+subcategory: distributed-training
+name:
+  en: MaxText
+  zh: MaxText
+summary:
+  en: Google Cloud's high-performance LLM training framework built on JAX.
+  zh: Google Cloud 基于 JAX 构建的高性能大语言模型训练框架。
+website: https://github.com/google/maxtext
+tags: [training, distributed, jax, open-source]
+regions: [US]
+status: active
+related: [jax]
+facts:
+  methods: [pre-training]
+  open_source: true
+sources:
+  - url: https://github.com/google/maxtext
+    checked_at: 2026-07-14

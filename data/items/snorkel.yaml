@@ -1,0 +1,21 @@
+id: snorkel
+kind: data-labeling
+map: model-infra
+category: data
+subcategory: data-labeling
+name:
+  en: Snorkel
+  zh: Snorkel
+summary:
+  en: Data-centric AI platform for programmatic labeling and weak supervision.
+  zh: 面向程序化标注和弱监督的数据-centric AI 平台。
+website: https://snorkel.ai/
+tags: [data, labeling, weak-supervision, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://snorkel.ai/
+    checked_at: 2026-07-14

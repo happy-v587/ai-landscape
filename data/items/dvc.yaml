@@ -1,0 +1,21 @@
+id: dvc
+kind: dataset-library
+map: model-infra
+category: data
+subcategory: dataset-library
+name:
+  en: DVC
+  zh: DVC
+summary:
+  en: Version control system for machine learning datasets, models and experiments.
+  zh: 面向机器学习数据集、模型和实验的版本控制系统。
+website: https://dvc.org/
+tags: [data, versioning, mlops, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  open_source: true
+sources:
+  - url: https://dvc.org/
+    checked_at: 2026-07-14
