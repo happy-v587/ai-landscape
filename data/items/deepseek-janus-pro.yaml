@@ -1,0 +1,24 @@
+id: deepseek-janus-pro
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-Janus-Pro
+  zh: DeepSeek-Janus-Pro
+summary:
+  en: Enhanced version of Janus with improved data and model scaling.
+  zh: Janus 的增强版本，通过改进的数据和模型缩放提升能力。
+website: https://www.deepseek.com/
+tags: [model, multimodal, vision, open-source]
+regions: [CN]
+status: active
+related: [deepseek]
+facts:
+  open_source: true
+timeline:
+  released_at: 2025-01-27
+  provider_lane: deepseek
+  capabilities: [multimodal]
+sources:
+  - url: https://www.deepseek.com/
+    checked_at: 2026-07-14

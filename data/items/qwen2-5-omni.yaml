@@ -1,0 +1,24 @@
+id: qwen2-5-omni
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5-Omni
+  zh: 通义千问 2.5-Omni
+summary:
+  en: End-to-end multimodal model supporting text, image, audio and video.
+  zh: 端到端多模态模型，支持文本、图像、音频和视频。
+website: https://qwenlm.github.io/
+tags: [model, multimodal, open-source]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  open_source: true
+timeline:
+  released_at: 2025-03-06
+  provider_lane: qwen
+  capabilities: [multimodal]
+sources:
+  - url: https://qwenlm.github.io/
+    checked_at: 2026-07-14

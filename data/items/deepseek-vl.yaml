@@ -1,0 +1,24 @@
+id: deepseek-vl
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-VL
+  zh: DeepSeek-VL
+summary:
+  en: DeepSeek's vision-language model for multimodal understanding.
+  zh: 深度求索推出的视觉语言模型，用于多模态理解。
+website: https://www.deepseek.com/
+tags: [model, multimodal, vision, open-source]
+regions: [CN]
+status: active
+related: [deepseek]
+facts:
+  open_source: true
+timeline:
+  released_at: 2024-03-11
+  provider_lane: deepseek
+  capabilities: [multimodal]
+sources:
+  - url: https://www.deepseek.com/
+    checked_at: 2026-07-14

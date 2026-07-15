@@ -1,0 +1,24 @@
+id: qwen3-coder
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen3-Coder
+  zh: 通义千问 3-Coder
+summary:
+  en: Code-specialized model in the Qwen3 series.
+  zh: 通义千问 3 系列中专门针对代码的模型。
+website: https://qwenlm.github.io/
+tags: [model, coding, open-source]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  open_source: true
+timeline:
+  released_at: 2025-07-14
+  provider_lane: qwen
+  capabilities: [coding]
+sources:
+  - url: https://qwenlm.github.io/
+    checked_at: 2026-07-14

@@ -1,0 +1,24 @@
+id: qwen3-vl
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen3-VL
+  zh: 通义千问 3-VL
+summary:
+  en: Vision-language model in the Qwen3 series with agentic interaction.
+  zh: 通义千问 3 系列视觉语言模型，支持智能体交互。
+website: https://qwenlm.github.io/
+tags: [model, multimodal, vision, open-source]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  open_source: true
+timeline:
+  released_at: 2025-09-22
+  provider_lane: qwen
+  capabilities: [multimodal]
+sources:
+  - url: https://qwenlm.github.io/
+    checked_at: 2026-07-14

@@ -1,0 +1,24 @@
+id: qwen1-5-moe
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen1.5-MoE
+  zh: 通义千问 1.5-MoE
+summary:
+  en: Alibaba's first Mixture-of-Experts model in the Qwen1.5 series.
+  zh: 阿里巴巴通义千问 1.5 系列首个混合专家模型。
+website: https://qwenlm.github.io/
+tags: [model, moe, open-source]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  open_source: true
+timeline:
+  released_at: 2024-03-28
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://qwenlm.github.io/
+    checked_at: 2026-07-14

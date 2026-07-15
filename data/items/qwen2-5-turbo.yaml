@@ -1,0 +1,24 @@
+id: qwen2-5-turbo
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5-Turbo
+  zh: 通义千问 2.5-Turbo
+summary:
+  en: Cost-efficient long-context model in the Qwen2.5 series.
+  zh: 通义千问 2.5 系列中具备成本效益的长上下文模型。
+website: https://qwenlm.github.io/
+tags: [model, open-source]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  open_source: true
+timeline:
+  released_at: 2024-11-15
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://qwenlm.github.io/
+    checked_at: 2026-07-14

@@ -1,0 +1,24 @@
+id: qwen2-5-max
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen2.5-Max
+  zh: 通义千问 2.5-Max
+summary:
+  en: Flagship model of the Qwen2.5 series with strongest overall capabilities.
+  zh: 通义千问 2.5 系列旗舰模型，综合能力最强。
+website: https://qwenlm.github.io/
+tags: [model, closed-source]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  open_source: false
+timeline:
+  released_at: 2025-01-28
+  provider_lane: qwen
+  capabilities: [text, multilingual]
+sources:
+  - url: https://qwenlm.github.io/
+    checked_at: 2026-07-14

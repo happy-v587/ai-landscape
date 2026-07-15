@@ -1,0 +1,24 @@
+id: deepseek-janus
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-Janus
+  zh: DeepSeek-Janus
+summary:
+  en: DeepSeek's unified multimodal model for image understanding and generation.
+  zh: 深度求索推出的统一多模态模型，支持图像理解和生成。
+website: https://www.deepseek.com/
+tags: [model, multimodal, vision, open-source]
+regions: [CN]
+status: active
+related: [deepseek]
+facts:
+  open_source: true
+timeline:
+  released_at: 2025-01-27
+  provider_lane: deepseek
+  capabilities: [multimodal]
+sources:
+  - url: https://www.deepseek.com/
+    checked_at: 2026-07-14

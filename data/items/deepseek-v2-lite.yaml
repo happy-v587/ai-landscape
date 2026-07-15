@@ -1,0 +1,24 @@
+id: deepseek-v2-lite
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V2-Lite
+  zh: DeepSeek-V2-Lite
+summary:
+  en: Lightweight variant of DeepSeek-V2 with efficient MLA architecture.
+  zh: DeepSeek-V2 的轻量版，采用高效的 MLA 架构。
+website: https://www.deepseek.com/
+tags: [model, open-source]
+regions: [CN]
+status: active
+related: [deepseek]
+facts:
+  open_source: true
+timeline:
+  released_at: 2024-05-15
+  provider_lane: deepseek
+  capabilities: [text]
+sources:
+  - url: https://www.deepseek.com/
+    checked_at: 2026-07-14

@@ -1,0 +1,24 @@
+id: deepseek-math
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-Math
+  zh: DeepSeek-Math
+summary:
+  en: DeepSeek model specialized for mathematical reasoning via RL training.
+  zh: 深度求索推出的专注于数学推理的模型，采用强化学习训练。
+website: https://www.deepseek.com/
+tags: [model, math, open-source]
+regions: [CN]
+status: active
+related: [deepseek]
+facts:
+  open_source: true
+timeline:
+  released_at: 2024-02-05
+  provider_lane: deepseek
+  capabilities: [reasoning]
+sources:
+  - url: https://www.deepseek.com/
+    checked_at: 2026-07-14
