@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ModelsTimeline } from '@/components/maps/ModelsTimeline';
 import { CapabilityMap } from '@/components/maps/CapabilityMap';
 import type { CatalogEntry } from '@/lib/catalog/types';
@@ -39,6 +40,14 @@ function MapSection({
           <CapabilityMap entries={entries} locale={locale} categoryLabels={categoryLabels} />
         )}
       </div>
+      <footer className={styles.mapSectionFooter}>
+        <span>
+          {entries.length} {locale === 'en' ? 'entries' : '条目'}
+        </span>
+        <Link href={`/${locale}/maps/${mapId}`} className={styles.mapSectionExplore}>
+          {locale === 'en' ? 'Explore →' : '探索 →'}
+        </Link>
+      </footer>
     </section>
   );
 }
