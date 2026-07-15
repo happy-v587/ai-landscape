@@ -105,24 +105,8 @@
   }
 }
 
-.mapGuide::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--map);
-  transform: scaleY(0);
-  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
-}
-
 .mapGuide:hover {
   transform: translateX(12px);
-}
-
-.mapGuide:hover::before {
-  transform: scaleY(1);
 }
 
 .atlasIndex:has(.mapGuide:hover) .mapGuide:not(:hover) {
