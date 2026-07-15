@@ -82,6 +82,6 @@
 
 ## 2026-07-15 项目本地 Skill 目录
 
-- **决策**：在仓库根目录创建 `.agents/skills/claude/frontend-design/` 和 `.agents/skills/codex/frontend-design/`，把全局 `frontend-design` skill 复制为项目本地版本。
-- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill；本地副本可与项目一起版本控制，Claude 和 CodeX 可以分别演进。
-- **文件**：`.agents/skills/claude/frontend-design/SKILL.md`、`.agents/skills/codex/frontend-design/SKILL.md`。
+- **决策**：在仓库根目录分别创建 `.claude/skills/frontend-design/` 和 `.codex/skills/frontend-design/`，把全局 `frontend-design` skill 复制为项目本地版本。
+- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill；Claude Code 扫描 `.claude/skills/<name>/SKILL.md`，Codex 扫描 `.codex/skills/<name>/SKILL.md`（也支持 `.agents/skills/`），分开存放可以按各自工具规范演进。
+- **文件**：`.claude/skills/frontend-design/SKILL.md`、`.codex/skills/frontend-design/SKILL.md`。
