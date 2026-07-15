@@ -104,14 +104,11 @@ npx playwright screenshot --viewport-size=1600,1200 http://localhost:3000/zh /tm
 - 验证流程、踩坑、可复用模式 → `docs/RUNBOOK.md`
 - 保持 `CLAUDE.md` 简洁，只放索引规则和引用
 
-### 同步项目本地 Skill
+### 项目本地 Skill 维护
 
-项目本地 skill 以 `.agents/skills/<name>/SKILL.md` 为正本，`.claude/skills/<name>/` 和 `.codex/skills/<name>/` 为复制件。
+项目本地 skill 以 `.agents/skills/<name>/SKILL.md` 为正本：
 
-编辑正本后运行：
+- `.claude/skills/frontend-design/SKILL.md`
+- `.codex/skills/frontend-design/SKILL.md`
 
-```bash
-npm run sync-skills
-```
-
-然后提交同步后的复制件。
+这两个文件内部只保存一行相对路径，指向 `.agents/skills/frontend-design/SKILL.md`。编辑时只修改正本；如需让工具实际加载 skill，目前需要手动把正本内容复制/同步到对应目录（因为标准 skill 解析器不会自动跟随纯文本路径引用）。
