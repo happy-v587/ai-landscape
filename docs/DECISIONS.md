@@ -82,8 +82,8 @@
 
 ## 2026-07-15 项目本地 Skill 目录
 
-- **决策**：以 `.agents/skills/frontend-design/` 为唯一正本，`.claude/skills/frontend-design/SKILL.md` 和 `.codex/skills/frontend-design/SKILL.md` 只保存一行相对路径引用。
-- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill，但不想同时维护两份内容；文件内部用相对路径指向正本，明确告知维护者改哪一份。
+- **决策**：以 `.agents/skills/frontend-design/` 为唯一正本，`.claude/skills/frontend-design/` 和 `.codex/skills/frontend-design/` 用符号链接指向正本。
+- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill，但不想同时维护两份内容；Claude Code 扫描 `.claude/skills/<name>/SKILL.md`，Codex 扫描 `.codex/skills/<name>/SKILL.md`，通过 symlink 可以只改正本就同步到两个工具，同时保留工具可识别的完整 SKILL.md 内容。
 - **文件**：
   - 正本：`.agents/skills/frontend-design/SKILL.md`、`.agents/skills/frontend-design/LICENSE.txt`
-  - 引用：`.claude/skills/frontend-design/SKILL.md`、`.codex/skills/frontend-design/SKILL.md`
+  - 符号链接：`.claude/skills/frontend-design/SKILL.md`、`.claude/skills/frontend-design/LICENSE.txt`、`.codex/skills/frontend-design/SKILL.md`、`.codex/skills/frontend-design/LICENSE.txt`

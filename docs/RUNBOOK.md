@@ -108,7 +108,7 @@ npx playwright screenshot --viewport-size=1600,1200 http://localhost:3000/zh /tm
 
 项目本地 skill 以 `.agents/skills/<name>/SKILL.md` 为正本：
 
-- `.claude/skills/frontend-design/SKILL.md`
-- `.codex/skills/frontend-design/SKILL.md`
+- `.claude/skills/frontend-design/SKILL.md` → `.agents/skills/frontend-design/SKILL.md`
+- `.codex/skills/frontend-design/SKILL.md` → `.agents/skills/frontend-design/SKILL.md`
 
-这两个文件内部只保存一行相对路径，指向 `.agents/skills/frontend-design/SKILL.md`。编辑时只修改正本；如需让工具实际加载 skill，目前需要手动把正本内容复制/同步到对应目录（因为标准 skill 解析器不会自动跟随纯文本路径引用）。
+`.claude/skills/frontend-design/` 和 `.codex/skills/frontend-design/` 是符号链接目录，编辑时只修改 `.agents/skills/frontend-design/SKILL.md` 即可同步到两个工具。
