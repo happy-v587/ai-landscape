@@ -6,9 +6,10 @@ test('homepage shows four map cards', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Apps & SaaS' })).toBeVisible();
 });
 
-test('homepage renders the models timeline', async ({ page }) => {
+test('homepage links to map pages', async ({ page }) => {
   await page.goto('/en');
-  await expect(page.getByRole('rowheader', { name: 'deepseek' })).toBeVisible();
+  await page.getByRole('link', { name: /Models Foundation models and release timelines/ }).click();
+  await expect(page).toHaveURL(/\/en\/maps\/models/);
 });
 
 test('switches language', async ({ page }) => {

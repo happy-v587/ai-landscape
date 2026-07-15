@@ -99,3 +99,10 @@
 - **决策**：桌面端把四个地图卡片固定为等高 2×2 网格，卡片主体内部滚动，底部加探索入口；移动端恢复单列自适应。
 - **原因**：原 `grid-auto-rows: minmax(520px, auto)` 导致不同内容量的卡片高度不一致，有的很长、有的很窄，视觉上不舒服；等高图版更像统一尺寸的地图图版，也更有 Field Atlas 的图鉴感。
 - **文件**：`components/site/home.module.css`、`components/site/FullLandscape.tsx`。
+
+## 2026-07-15 首页改为 Atlas Index 引导卡片
+
+- **决策**：移除首页嵌入的四个地图预览，改为四个大型引导卡片（Atlas Index Plates），每张卡片展示地图名称、一句话介绍、数据统计、关键洞察和探索入口，点击跳转到对应地图页。
+- **原因**：用户认为嵌入地图的 2×2 框视觉上不舒服；希望首页更像目录/引导页，有数据总结、介绍说明，并带苹果风格的交互艺术感。
+- **交互**：卡片进入有错落淡入动画；hover 时卡片上浮、边框变色、出现柔和阴影，其他卡片轻微变暗；按下时轻微缩放。
+- **文件**：`components/site/FullLandscape.tsx`、`components/site/home.module.css`、`app/[locale]/page.tsx`、`tests/e2e/landscape.spec.ts`。

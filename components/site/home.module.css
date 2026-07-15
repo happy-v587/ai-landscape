@@ -1,15 +1,15 @@
 .fullLandscape {
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .hero {
   text-align: center;
-  padding: 80px var(--page-gutter) 56px;
+  padding: 100px var(--page-gutter) 64px;
 }
 
 .title {
   font-family: var(--font-display);
-  font-size: 72px;
+  font-size: 76px;
   font-weight: 600;
   letter-spacing: -2.5px;
   line-height: 1.05;
@@ -29,34 +29,42 @@
 .mapGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
   gap: 32px;
   padding: 0 var(--page-gutter);
   max-width: var(--max-width);
   margin: 0 auto;
-  min-height: calc(100vh - var(--nav-height) - 240px);
-  max-height: 900px;
+  min-height: calc(100vh - var(--nav-height) - 280px);
+  max-height: 840px;
 }
 
-.mapSection {
+.mapPlate {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   background: var(--canvas);
   border: 1px solid var(--hairline);
-  border-radius: 20px;
+  border-radius: 24px;
+  padding: 36px;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
   overflow: hidden;
-  transition: border-color 150ms ease;
   opacity: 0;
-  transform: translateY(16px);
-  animation: fadeInUp 500ms ease forwards;
+  transform: translateY(24px);
+  animation: plateEnter 700ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 300ms ease,
+              box-shadow 300ms ease,
+              opacity 300ms ease;
 }
 
-.mapSection:nth-child(1) { animation-delay: 0ms; }
-.mapSection:nth-child(2) { animation-delay: 80ms; }
-.mapSection:nth-child(3) { animation-delay: 160ms; }
-.mapSection:nth-child(4) { animation-delay: 240ms; }
+.mapPlate:nth-child(1) { animation-delay: 0ms; }
+.mapPlate:nth-child(2) { animation-delay: 100ms; }
+.mapPlate:nth-child(3) { animation-delay: 200ms; }
+.mapPlate:nth-child(4) { animation-delay: 300ms; }
 
-@keyframes fadeInUp {
+@keyframes plateEnter {
   to {
     opacity: 1;
     transform: translateY(0);
@@ -64,88 +72,154 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mapSection {
+  .mapPlate {
     opacity: 1;
     transform: none;
     animation: none;
   }
 }
 
-.mapSection:hover {
-  border-color: var(--hairline-hover);
+.mapPlate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--map);
+  opacity: 0.85;
+  transition: height 300ms ease, opacity 300ms ease;
 }
 
-.mapSectionTitle {
-  font-family: var(--font-display);
-  margin: 0;
-  padding: 18px 24px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -0.25px;
-  background: var(--canvas-paper);
-  border-bottom: 1px solid var(--hairline);
-  color: var(--ink);
+.mapPlate:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--map) 50%, var(--hairline));
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.08);
+}
+
+.mapPlate:hover::before {
+  height: 6px;
+  opacity: 1;
+}
+
+.mapGrid:has(.mapPlate:hover) .mapPlate:not(:hover) {
+  opacity: 0.7;
+}
+
+.mapPlate:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.mapPlate:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.plateHeader {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.mapSectionTitle::before {
-  content: '';
-  width: 6px;
-  height: 6px;
+.plateDot {
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--map);
+  flex-shrink: 0;
 }
 
-.mapSectionBody {
-  flex: 1;
-  padding: 24px;
-  overflow: auto;
-  background: var(--canvas-paper);
-  min-height: 0;
+.plateTitle {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+  margin: 0;
+  color: var(--ink);
 }
 
-.mapSectionFooter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 24px;
-  background: var(--canvas);
-  border-top: 1px solid var(--hairline);
+.plateDescription {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--body);
+  margin: 0;
+  max-width: 360px;
+}
+
+.plateStats {
+  display: flex;
+  gap: 32px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.plateStat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plateStat strong {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.plateStat span {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   color: var(--muted);
 }
 
-.mapSectionExplore {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 500;
-  color: var(--accent);
+.plateInsight {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--body);
+  margin: 0;
 }
 
-.mapSectionExplore:hover {
-  text-decoration: underline;
+.plateAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--accent);
+  margin-top: 4px;
+  transition: gap 200ms ease;
+}
+
+.mapPlate:hover .plateAction {
+  gap: 12px;
 }
 
 @media (max-width: 1024px) {
   .mapGrid {
     grid-template-columns: 1fr;
     grid-template-rows: none;
-    grid-auto-rows: minmax(420px, auto);
+    grid-auto-rows: minmax(320px, auto);
     min-height: auto;
     max-height: none;
   }
-  .title { font-size: 52px; letter-spacing: -1.5px; }
-  .hero { padding-top: 56px; }
+  .title { font-size: 56px; letter-spacing: -1.5px; }
+  .hero { padding-top: 72px; }
 }
 
 @media (max-width: 640px) {
-  .hero { padding: 40px 20px 32px; }
-  .title { font-size: 40px; letter-spacing: -1px; }
+  .hero { padding: 48px 20px 40px; }
+  .title { font-size: 42px; letter-spacing: -1px; }
   .subtitle { font-size: 16px; }
   .mapGrid { padding: 0 20px; gap: 20px; }
-  .mapSectionBody { padding: 16px; }
-  .mapSectionTitle { padding: 14px 18px; }
+  .mapPlate { padding: 28px; gap: 14px; }
+  .plateTitle { font-size: 26px; }
+  .plateStat strong { font-size: 30px; }
+  .plateStats { gap: 24px; }
 }

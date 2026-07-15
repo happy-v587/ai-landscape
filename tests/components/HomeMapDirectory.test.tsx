@@ -9,7 +9,6 @@ it('renders all four map sections on the homepage', () => {
     <FullLandscape
       entries={entries}
       locale="en"
-      categoryLabels={{}}
     />
   );
   expect(screen.getByRole('heading', { name: 'AI Landscape' })).toBeInTheDocument();

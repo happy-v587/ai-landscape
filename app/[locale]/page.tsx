@@ -6,17 +6,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   assertLocale(locale);
   const catalog = loadCatalog();
-  const categoryLabels = Object.fromEntries(
-    [...catalog.categoriesById.values()].map((category) => [
-      category.id,
-      category.name[locale],
-    ])
-  );
   return (
     <FullLandscape
       entries={catalog.entries}
       locale={locale}
-      categoryLabels={categoryLabels}
     />
   );
 }

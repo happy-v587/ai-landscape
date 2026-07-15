@@ -273,10 +273,19 @@ Three typefaces, loaded via `next/font/google`:
 
 ### Homepage
 
-- Hero region: large display title (72px), one-line subtitle, no search input in hero.
-- Map directory: a `2×2` grid on desktop, single column on mobile.
-- Each map section card: white background, hairline border, map-color dot marker
-  next to the title, live preview of the map's content (capability map or timeline).
+- Hero region: large display title (76px), one-line subtitle, no search input in hero.
+- Atlas Index: a `2×2` grid of large directory plates on desktop, single column on mobile.
+- Each plate is a doorway to a map, not a preview. It contains:
+  - Map-color dot + map name in display type.
+  - A one-sentence description of the map's purpose.
+  - Two large statistics: entry count and category count.
+  - A compact insight line (e.g., "12 providers · 46 releases").
+  - An "Explore" arrow call-to-action.
+- Apple-like interactions:
+  - Staggered entrance animation (fade + translate-y).
+  - Hover lift: plate translates up, border shifts toward map color, soft shadow appears.
+  - Non-hovered plates dim slightly to focus attention on the hovered plate.
+  - Active press scales down subtly.
 
 ### Page Grid
 
