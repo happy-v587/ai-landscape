@@ -85,6 +85,7 @@
 - **决策**：`model-infra`、`agent-tools`、`apps-saas` 三个地图的条目chip只展示图标（logo），不展示名称；图标优先从条目的 `logo` 字段读取，否则通过 Hunter Logo API (`https://logos.hunter.io/{domain}`) 根据 `website` 自动推导；无图标时回退到单色首字母 monogram。
 - **原因**：用户希望非模型板块用图标展示，视觉更清爽；246 个条目手动搜索 logo 不现实，Hunter API 是免费的域名换 logo 服务，可自动覆盖大部分条目。
 - **实现**：新增 `lib/catalog/logo.ts` 处理 logo URL 推导；`ItemChip` 新增 `mode="logo"` 支持纯图标展示；`CapabilityMap` 对非模型地图统一使用 `mode="logo"`；schema 中 `logo` 字段放宽为任意字符串（允许外部 URL）。
+- **后续调整**：在 logo 下方增加 10px 小号名称标签，避免纯图标无法识别条目。
 - **文件**：`lib/catalog/schema.ts`、`lib/catalog/logo.ts`、`components/maps/ItemChip.tsx`、`components/maps/CapabilityMap.tsx`、`components/maps/maps.module.css`、`tests/components/ItemChip.test.tsx`。
 
 ## 2026-07-15 项目本地 Skill 目录

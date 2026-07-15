@@ -313,7 +313,8 @@ Three typefaces, loaded via `next/font/google`:
   - Primary: `40px` height, `10px` radius, logo + name.
   - Secondary: `32px` height, `6px` radius, logo + name.
 - **Logo-only mode** (used on Model Infra, Agent & Tools, Apps & SaaS maps):
-  - `46px × 46px` square, `12px` radius, centered logo/monogram only.
+  - `64px × 78px` rounded tile, `12px` radius, centered logo/monogram with a small name label below.
+  - Label: `10px`, muted body color, max 2 lines, ellipsis.
 - Logo source priority:
   1. Explicit `logo` field in entry YAML (local path or external URL).
   2. Derived from `website` domain via `https://logos.hunter.io/{domain}`.

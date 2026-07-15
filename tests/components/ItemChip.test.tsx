@@ -27,9 +27,9 @@ it('renders the entry name and a logo derived from website', () => {
   expect(img).toHaveAttribute('src', 'https://logos.hunter.io/cursor.com');
 });
 
-it('renders logo-only mode without the name', () => {
+it('renders logo-only mode with a small label below the logo', () => {
   render(<ItemChip entry={entry} entries={[entry]} locale="en" size="primary" mode="logo" />);
-  expect(screen.queryByText('Cursor')).not.toBeInTheDocument();
+  expect(screen.getByText('Cursor')).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Cursor' })).toBeInTheDocument();
 });
 

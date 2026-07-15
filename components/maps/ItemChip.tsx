@@ -50,7 +50,11 @@ export function ItemChip({
         ) : (
           <Monogram name={entry.name[locale]} size={mode === 'logo' ? 'md' : size === 'primary' ? 'md' : 'sm'} />
         )}
-        {mode !== 'logo' && <span className={styles.itemName}>{entry.name[locale]}</span>}
+        {mode === 'logo' ? (
+          <span className={styles.itemLogoLabel}>{entry.name[locale]}</span>
+        ) : (
+          <span className={styles.itemName}>{entry.name[locale]}</span>
+        )}
       </button>
       {selected && (
         <ItemModal
