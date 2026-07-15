@@ -82,6 +82,8 @@
   color: var(--ink);
   text-decoration: none;
   height: 44px;
+  font: inherit;
+  cursor: pointer;
 }
 
 .itemPrimary:hover,

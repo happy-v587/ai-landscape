@@ -1,28 +1,50 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import type { CatalogEntry } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
 import { Monogram } from './Monogram';
+import { ItemModal } from './ItemModal';
 import styles from './maps.module.css';
 
 export function ItemChip({
   entry,
+  entries,
   locale,
   size,
 }: {
-  entry: { id: string; name: Record<Locale, string>; logo?: string };
+  entry: CatalogEntry;
+  entries: CatalogEntry[];
   locale: Locale;
   size: 'primary' | 'secondary';
 }) {
+  const [selected, setSelected] = useState(false);
   const className = size === 'primary' ? styles.itemPrimary : styles.itemSecondary;
   const logoSize = size === 'primary' ? 24 : 18;
   return (
-    <Link href={`/${locale}/item/${entry.id}`} className={className}>
-      {entry.logo ? (
-        <Image src={entry.logo} alt="" width={logoSize} height={logoSize} />
-      ) : (
-        <Monogram name={entry.name[locale]} size={size === 'primary' ? 'md' : 'sm'} />
+    <>
+      <button
+        type="button"
+        className={className}
+        onClick={() => setSelected(true)}
+        aria-label={entry.name[locale]}
+      >
+        {entry.logo ? (
+          <Image src={entry.logo} alt="" width={logoSize} height={logoSize} />
+        ) : (
+          <Monogram name={entry.name[locale]} size={size === 'primary' ? 'md' : 'sm'} />
+        )}
+        <span className={styles.itemName}>{entry.name[locale]}</span>
+      </button>
+      {selected && (
+        <ItemModal
+          entry={entry}
+          locale={locale}
+          entries={entries}
+          onClose={() => setSelected(false)}
+        />
       )}
-      <span className={styles.itemName}>{entry.name[locale]}</span>
-    </Link>
+    </>
   );
 }

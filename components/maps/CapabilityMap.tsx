@@ -21,7 +21,7 @@ export function CapabilityMap({
           {Object.entries(subcategories).map(([subcategory, group]) => (
             <SubcategoryRow key={subcategory} label={subcategory}>
               {group.map((entry) => (
-                <ItemChip key={entry.id} entry={entry} locale={locale} size="primary" />
+                <ItemChip key={entry.id} entry={entry} entries={entries} locale={locale} size="primary" />
               ))}
             </SubcategoryRow>
           ))}
