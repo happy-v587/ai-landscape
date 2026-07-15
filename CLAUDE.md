@@ -41,7 +41,7 @@ Run a single Playwright test: `npx playwright test tests/e2e/landscape.spec.ts`.
 - `components/catalog/` — search and detail views.
 - CSS modules live next to their components; global styles and CSS variables are in `app/globals.css`.
 
-**Design system:** `DESIGN.md` is the source of truth. Key constraints: light canvas, map-specific identity colors, no decorative gradients, no shadows, 8px grid, hairline borders, and logo-driven chips with monogram fallbacks.
+**Design system:** `DESIGN.md` is the source of truth. Current direction is "Field Atlas": warm paper canvas, muted pigment map colors, the `Bricolage Grotesque` display face, no decorative gradients, no shadows, hairline borders, coordinate-rule motif, and logo-driven chips with monogram fallbacks.
 
 **Testing:**
 - Vitest with `jsdom` and `@testing-library/react` for unit/component tests. Setup is in `tests/setup.ts`, which mocks `next/image` and `next/link`.

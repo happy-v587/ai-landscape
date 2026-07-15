@@ -90,10 +90,11 @@ npx playwright screenshot --viewport-size=1600,1200 http://localhost:3000/zh /tm
 ### 大型 UI 重构的工作流程
 
 1. 先用 Superpower/PlanMode 输出设计计划，明确方向、配色、字体、签名元素。
-2. 更新 `DESIGN.md` 作为新的视觉系统单一事实来源。
+2. 更新 `DESIGN.md` 作为新的视觉系统单一事实来源；**任何视觉改动都应先改 DESIGN.md，再改代码**。
 3. 先改 `globals.css` 和 `app/layout.tsx`（字体），再逐个组件替换样式。
 4. 每次改完后跑完整验证：`npm test && npm run build && npm run test:e2e`。
 5. 提交前检查 `git status`，警惕 `next-env.d.ts` 或文档文件被意外移动。
+6. 若 DESIGN.md 和代码实现出现偏差，以 DESIGN.md 为准并同步修正代码；避免让旧描述持续存在。
 
 ### 知识沉淀补录
 

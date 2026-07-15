@@ -273,11 +273,10 @@ Three typefaces, loaded via `next/font/google`:
 
 ### Homepage
 
-- Hero region: large display title, one-line subtitle, prominent search input.
+- Hero region: large display title (72px), one-line subtitle, no search input in hero.
 - Map directory: a `2×2` grid on desktop, single column on mobile.
-- Each map card: white background, hairline border, left `4px` map accent strip,
-  title in display face, short description, outlined category pills, entry count,
-  and a subtle "Explore" link.
+- Each map section card: white background, hairline border, map-color dot marker
+  next to the title, live preview of the map's content (capability map or timeline).
 
 ### Page Grid
 
