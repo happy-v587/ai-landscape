@@ -1,0 +1,90 @@
+name: 添加产品 / Add Product
+description: 向 AI Landscape 提交一个新的产品或项目
+labels: ["add-product"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 产品名称 / Product Name
+      placeholder: 例如：LangChain
+    validations:
+      required: true
+
+  - type: dropdown
+    id: map
+    attributes:
+      label: 所属地图 / Map
+      options:
+        - 模型 / Models
+        - 模型基础设施 / Model Infra
+        - Agent 与工具 / Agent & Tools
+        - 应用与 SaaS / Apps & SaaS
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: 分类 / Category
+      placeholder: 例如：Agent Frameworks、Coding Agents、Inference
+
+  - type: input
+    id: website
+    attributes:
+      label: 官网 / Website
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 一句话简介 / One-line Summary
+      placeholder: 用一句话描述这个产品是什么、能做什么。
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细介绍 / Detailed Description
+      placeholder: 补充背景、核心功能、适用场景等。
+
+  - type: dropdown
+    id: open_source
+    attributes:
+      label: 是否开源 / Open Source
+      options:
+        - 是 / Yes
+        - 否 / No
+        - 部分开源 / Partial
+
+  - type: input
+    id: regions
+    attributes:
+      label: 地区 / Regions
+      placeholder: 例如：US、CN、Global
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: 标签 / Tags
+      placeholder: 例如：agent, framework, open-source, coding
+
+  - type: textarea
+    id: related
+    attributes:
+      label: 相关产品 / Related Products
+      placeholder: 列出与本产品相关的其他已收录产品名称。
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: 参考来源 / Sources
+      placeholder: 官方发布链接、文档、新闻等可验证来源。
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注 / Notes
+      placeholder: 其他需要说明的内容。

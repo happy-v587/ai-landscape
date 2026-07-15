@@ -40,7 +40,14 @@ export function GlobalNav({ locale }: { locale: Locale }) {
         <div className={styles.actions}>
           <input type="search" aria-label={t.search} placeholder={t.search} className={styles.search} />
           <Link href={`/${alternate}`} className={styles.locale}>{t.language}</Link>
-          <Link href={`/${locale}/submit`} className={styles.submit}>{t.submit}</Link>
+          <a
+            href="https://github.com/happy-v587/ai-landscape/issues/new?template=add-product.yml"
+            className={styles.submit}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t.submit}
+          </a>
         </div>
       </div>
     </header>
