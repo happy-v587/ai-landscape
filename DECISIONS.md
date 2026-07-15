@@ -24,3 +24,43 @@
 
 - **决策**：厂商按 A-Z 排序后，颜色从固定 palette 数组循环选取。
 - **原因**：避免新增厂商时手动维护颜色；确保不同厂商可区分。
+
+## 2026-07-15 模型时间轴加宽并压缩卡片
+
+- **决策**：时间轴月份列最小宽度从 96px 提升到 130px，同时压缩卡片、行高和间距。
+- **原因**：用户反馈时间轴太窄且数据量大时显得拥挤；需要在宽度和紧凑度之间取得平衡。
+- **文件**：`components/maps/ModelsTimeline.tsx`、`components/maps/maps.module.css`
+
+## 2026-07-15 Agent & Tools 数据补全
+
+- **决策**：在 Agent & Tools 地图中新增框架、Coding Agent 和运行时/SDK 条目。
+- **原因**：原地图内容稀疏，用户希望覆盖 LangChain、LlamaIndex、Coding CLI 等主流工具。
+- **新增条目**：AutoGen、CrewAI、Dify、Flowise、Langflow、LlamaIndex、Mastra、n8n、PydanticAI、Semantic Kernel、Aider、Cline、Cody、Continue、Devin、GitHub Copilot、Kilo Code、OpenHands、Roo Code、OpenAI Codex CLI、Google ADK、Composio、MCP 等。
+
+## 2026-07-15 应用与 SaaS 新增「聊天」分类
+
+- **决策**：在 Apps & SaaS 地图下新增 `chat` 分类，并将主要 AI 助手/chat 产品归入其中。
+- **原因**：各家都有 Chat 产品，原地图缺少这一类；用户明确要求添加。
+- **新增条目**：ChatGPT、Claude、Gemini、Grok、Kimi 智能助手、豆包、文心一言、通义千问、讯飞星火、腾讯元宝、海螺 AI、智谱清言、Microsoft Copilot、Poe。
+
+## 2026-07-15 模型基础设施数据补全
+
+- **决策**：在模型基础设施地图中补充推理、训练、数据、评测可观测等类别的知名工具。
+- **原因**：用户认为原数据太少，需要更全面地覆盖该领域。
+- **新增条目**：Ollama、BentoML、TorchServe、TensorFlow Serving、DeepSpeed-MII、Fireworks AI、Together AI、Transformers、Nanotron、MaxText、XTuner、NVIDIA NeMo、Keras、PaddlePaddle、MindSpore、dbt、Dagster、Prefect、DVC、CVAT、Snorkel、LangSmith、Arize Phoenix、Evidently AI、HELM、XLA、Slurm 等。
+
+## 2026-07-15 DeepSeek 与千问时间线补全
+
+- **决策**：补充 DeepSeek 和 Qwen 系列模型的发布时间线条目。
+- **原因**：用户反馈这两个厂商的模型数据不全，缺少 MoE、VL、Janus、Max、Omni 等版本。
+- **新增条目**：DeepSeek-MoE、DeepSeek-Math、DeepSeek-VL、DeepSeek-VL2、DeepSeek-Janus、DeepSeek-Janus-Pro、DeepSeek-V2-Lite；Qwen1.5-MoE、Qwen2.5-Max、Qwen2.5-Turbo、Qwen2.5-Omni、Qwen3-Coder、Qwen3-VL、Qwen3.5-Max。
+
+## 2026-07-15 使用 Vercel Analytics
+
+- **决策**：引入 `@vercel/analytics` 并在根布局中插入 `<Analytics />`。
+- **原因**：需要统计线上访问数据；Vercel 提供开箱即用的 Analytics 组件。
+
+## 2026-07-15 建立知识沉淀机制
+
+- **决策**：重要决策写入 `DECISIONS.md`，验证流程和踩坑记录写入 `RUNBOOK.md`，并在 `CLAUDE.md` 中引用。
+- **原因**：避免把每次对话都塞进 `CLAUDE.md` 造成噪音；让长期可复用的知识结构化沉淀。

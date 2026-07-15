@@ -40,3 +40,48 @@ npm run start
 1. 用 `Write` 创建 `data/items/<id>.yaml`
 2. 保持 schema 一致：`id`、`kind`、`map`、`category`、`name`、`summary`、`website`、`tags`、`regions`、`status`、`related`、`facts`、`sources`
 3. 运行 `npm test` 验证 schema
+
+### 新增一个地图分类
+
+1. 在 `data/categories.yaml` 中添加分类，指定 `map` 和 `presentation`
+2. 在条目 YAML 中设置对应的 `category`（和 `subcategory`）
+3. 重新构建以生成静态页面
+
+### 新增模型时间轴条目
+
+1. 创建 `data/items/<id>.yaml`
+2. 设置 `timeline.released_at`（ISO 日期）、`timeline.provider_lane`（厂商标识，用于排序和颜色）、`timeline.capabilities`
+3. 模型地图按 `provider_lane` A-Z 排序，颜色从 `lanePalette` 循环分配
+
+### 新增 Agent / 模型基础设施条目
+
+- Agent 框架：`category: agent-frameworks`，`map: agent-tools`
+- Coding Agent：`category: coding-agents`，`map: agent-tools`
+- Agent 运行时：`category: agent-runtimes`，`map: agent-tools`
+- 模型基础设施：参考 `data/categories.yaml` 中已有的 `category` 和条目里的 `subcategory`
+
+### 部署到 Vercel
+
+```bash
+git push origin main
+npx vercel --prod --yes
+```
+
+首次部署需要登录 Vercel CLI。部署后 Vercel 会自动关联 GitHub 仓库，后续 push 到 `main` 会自动重新部署。
+
+### 用 Playwright 截图验证
+
+```bash
+npm run start
+npx playwright screenshot --viewport-size=1600,1200 http://localhost:3000/zh /tmp/screenshot.png
+```
+
+如果截图看起来是旧样式，先检查端口 3000 是否被旧进程占用。
+
+### 提交前检查清单
+
+- `npm test` 通过
+- `npm run build` 通过
+- `npm run test:e2e` 通过
+- `next-env.d.ts` 未被意外修改
+- 没有未跟踪的临时文件
