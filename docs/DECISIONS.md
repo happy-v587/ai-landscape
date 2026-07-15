@@ -82,8 +82,9 @@
 
 ## 2026-07-15 项目本地 Skill 目录
 
-- **决策**：以 `.agents/skills/frontend-design/` 为唯一正本，`.claude/skills/frontend-design/` 和 `.codex/skills/frontend-design/` 用符号链接指向正本。
-- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill，但不想同时维护两份内容；Claude Code 扫描 `.claude/skills/<name>/SKILL.md`，Codex 扫描 `.codex/skills/<name>/SKILL.md`，通过 symlink 可以只改一处就同步到两个工具。
+- **决策**：以 `.agents/skills/frontend-design/` 为唯一正本，`.claude/skills/frontend-design/` 和 `.codex/skills/frontend-design/` 保存复制件；每个复制件顶部用注释写明正本相对路径，并提供 `npm run sync-skills` 脚本自动同步。
+- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill，但不想同时维护两份内容；Claude Code 扫描 `.claude/skills/<name>/SKILL.md`，Codex 扫描 `.codex/skills/<name>/SKILL.md`，通过「正本 + 同步脚本」可以只改一处就同步到两个工具，同时文件内部保留对正本的引用说明。
 - **文件**：
   - 正本：`.agents/skills/frontend-design/SKILL.md`、`.agents/skills/frontend-design/LICENSE.txt`
-  - 引用：`.claude/skills/frontend-design/SKILL.md`、`.codex/skills/frontend-design/SKILL.md`
+  - 复制件：`.claude/skills/frontend-design/SKILL.md`、`.codex/skills/frontend-design/SKILL.md`
+  - 同步脚本：`scripts/sync-skills.js`

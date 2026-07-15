@@ -103,3 +103,15 @@ npx playwright screenshot --viewport-size=1600,1200 http://localhost:3000/zh /tm
 - 决策和原因 → `docs/DECISIONS.md`
 - 验证流程、踩坑、可复用模式 → `docs/RUNBOOK.md`
 - 保持 `CLAUDE.md` 简洁，只放索引规则和引用
+
+### 同步项目本地 Skill
+
+项目本地 skill 以 `.agents/skills/<name>/SKILL.md` 为正本，`.claude/skills/<name>/` 和 `.codex/skills/<name>/` 为复制件。
+
+编辑正本后运行：
+
+```bash
+npm run sync-skills
+```
+
+然后提交同步后的复制件。
