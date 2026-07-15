@@ -54,3 +54,10 @@ Run a single Playwright test: `npx playwright test tests/e2e/landscape.spec.ts`.
 - There is no `public/` directory yet. Logos are intended to be local SVGs at `public/logos/<id>.svg`; until they exist, entries render monograms.
 - All catalog and map pages are statically generated. The only potential server route is `/api/submissions`, which is not currently present in the codebase.
 - The project is configured for Vercel (see `.vercel/project.json`). The build command is `npm run build`.
+
+## 知识沉淀 / Knowledge retention
+
+当完成一个完整功能或做出重要设计选择时，主动总结决策及原因，并使用 SuperPowers Skill 或个人沉淀文档记录。细节记录存放于：
+
+- [DECISIONS.md](./DECISIONS.md) — 重要决策及原因
+- [RUNBOOK.md](./RUNBOOK.md) — 验证流程、踩坑记录、复用模式
