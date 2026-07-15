@@ -1,10 +1,10 @@
 ---
-name: claude-frontend-design
-description: Project-local frontend design guidance for Claude. Distinctive, intentional visual design for the AI Landscape site, based on the Field Atlas direction.
+name: frontend-design
+description: Project-local frontend design guidance for the AI Landscape site. Distinctive, intentional visual design based on the Field Atlas direction.
 license: Complete terms in LICENSE.txt
 ---
 
-# Claude Frontend Design
+# Frontend Design
 
 Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has already rejected proposals that felt templated, and is paying for a distinctive point of view: make deliberate, opinionated choices about palette, typography, and layout that are specific to this brief, and take one real aesthetic risk you can justify.
 
