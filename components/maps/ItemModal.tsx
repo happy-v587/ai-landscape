@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { EntryDetail } from '@/components/catalog/EntryDetail';
 import type { CatalogEntry } from '@/lib/catalog/types';
 import type { Locale } from '@/lib/i18n';
@@ -22,14 +23,21 @@ export function ItemModal({
       if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKey);
+      document.body.style.overflow = originalOverflow;
+    };
   }, [onClose]);
 
   const related = entry.related
     .map((id) => entries.find((item) => item.id === id))
     .filter((item): item is CatalogEntry => !!item);
 
-  return (
+  return createPortal(
     <div
       className={styles.modalOverlay}
       onClick={onClose}
@@ -50,6 +58,7 @@ export function ItemModal({
           <EntryDetail entry={entry} locale={locale} related={related} compact />
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

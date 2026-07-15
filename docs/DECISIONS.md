@@ -88,6 +88,12 @@
 - **后续调整**：在 logo 下方增加 10px 小号名称标签，避免纯图标无法识别条目。
 - **文件**：`lib/catalog/schema.ts`、`lib/catalog/logo.ts`、`components/maps/ItemChip.tsx`、`components/maps/CapabilityMap.tsx`、`components/maps/maps.module.css`、`tests/components/ItemChip.test.tsx`。
 
+## 2026-07-15 弹窗使用 Portal 渲染到 body
+
+- **决策**：条目详情弹窗通过 `createPortal` 直接挂载到 `document.body`，并锁定背景滚动。
+- **原因**：弹窗原先随组件树渲染，在地图卡片等带 `overflow` 或层叠上下文的容器内可能被裁剪或定位异常；挂到 body 可确保它真正以整个屏幕/视口为中心，不被其他元素盖住。
+- **文件**：`components/maps/ItemModal.tsx`。
+
 ## 2026-07-15 项目本地 Skill 目录
 
 - **决策**：以 `.agents/skills/frontend-design/` 为唯一正本，`.claude/skills/frontend-design/` 和 `.codex/skills/frontend-design/` 用符号链接指向正本。
