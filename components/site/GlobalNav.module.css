@@ -138,6 +138,23 @@
   text-decoration: none;
 }
 
+.github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: var(--body);
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.github:hover {
+  background: var(--canvas-subtle);
+  color: var(--ink);
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .inner { gap: 16px; padding: 0 20px; }
   .links { display: none; }
