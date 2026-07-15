@@ -309,8 +309,15 @@ Three typefaces, loaded via `next/font/google`:
 
 ### Item Chip
 
-- Primary: `40px` height, `10px` radius.
-- Secondary: `32px` height, `6px` radius.
+- **Name mode** (default on Models map):
+  - Primary: `40px` height, `10px` radius, logo + name.
+  - Secondary: `32px` height, `6px` radius, logo + name.
+- **Logo-only mode** (used on Model Infra, Agent & Tools, Apps & SaaS maps):
+  - `46px × 46px` square, `12px` radius, centered logo/monogram only.
+- Logo source priority:
+  1. Explicit `logo` field in entry YAML (local path or external URL).
+  2. Derived from `website` domain via `https://logos.hunter.io/{domain}`.
+  3. Monogram fallback using map color and entry initials.
 - Hover: background shifts to `--canvas-subtle`, border darkens.
 - Active/pressed: `scale(0.98)`.
 - Focus: `2px` accent outline.

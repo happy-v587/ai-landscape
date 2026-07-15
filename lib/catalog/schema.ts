@@ -18,7 +18,7 @@ export const catalogEntrySchema = z
     name: localizedText,
     summary: localizedText,
     website: z.string().url(),
-    logo: z.string().startsWith('/').optional(),
+    logo: z.string().optional(),
     organization: z.string().optional(),
     subcategory: z.string().min(1).optional(),
     tags: z.array(z.string()).min(1),

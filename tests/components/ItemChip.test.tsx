@@ -19,8 +19,26 @@ const entry: CatalogEntry = {
   sources: [{ url: 'https://cursor.com/', checked_at: '2026-07-14' }],
 };
 
-it('renders the entry name and a monogram fallback', () => {
-  render(<ItemChip entry={entry} entries={[entry]} locale="en" size="primary" />);
+it('renders the entry name and a logo derived from website', () => {
+  const { container } = render(<ItemChip entry={entry} entries={[entry]} locale="en" size="primary" />);
   expect(screen.getByText('Cursor')).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Cursor' })).toBeInTheDocument();
+  const img = container.querySelector('img');
+  expect(img).toHaveAttribute('src', 'https://logos.hunter.io/cursor.com');
+});
+
+it('renders logo-only mode without the name', () => {
+  render(<ItemChip entry={entry} entries={[entry]} locale="en" size="primary" mode="logo" />);
+  expect(screen.queryByText('Cursor')).not.toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Cursor' })).toBeInTheDocument();
+});
+
+it('falls back to monogram when no logo or website is available', () => {
+  const noLogoEntry: CatalogEntry = {
+    ...entry,
+    website: 'invalid',
+    logo: undefined,
+  };
+  render(<ItemChip entry={noLogoEntry} entries={[noLogoEntry]} locale="en" size="primary" />);
   expect(screen.getByLabelText('Cursor monogram')).toBeInTheDocument();
 });
