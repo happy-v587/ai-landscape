@@ -79,3 +79,9 @@
 - **决策**：`CLAUDE.md` 放在仓库根目录，`DECISIONS.md` 和 `RUNBOOK.md` 放在 `docs/` 目录。
 - **原因**：用户明确要求 `CLAUDE.md` 在根目录以便工具自动读取；决策/手册类文档统一放在 `docs/` 沉淀。
 - **注意**：`AGENTS.md` 需同步指向 `./CLAUDE.md`。
+
+## 2026-07-15 项目本地 Skill 目录
+
+- **决策**：在仓库根目录创建 `.agents/skills/claude/frontend-design/` 和 `.agents/skills/codex/frontend-design/`，把全局 `frontend-design` skill 复制为项目本地版本。
+- **原因**：用户希望后续针对 AI Landscape 的 Field Atlas 方向持续迭代这个 skill；本地副本可与项目一起版本控制，Claude 和 CodeX 可以分别演进。
+- **文件**：`.agents/skills/claude/frontend-design/SKILL.md`、`.agents/skills/codex/frontend-design/SKILL.md`。
