@@ -1,0 +1,22 @@
+id: minimax-chat
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: MiniMax Chat
+  zh: MiniMax 智能助手
+summary:
+  en: MiniMax's official AI assistant and chat application, offering multimodal conversation and content creation.
+  zh: MiniMax 官方 AI 助手与聊天应用，支持多模态对话与内容创作。
+website: https://chat.minimaxi.com/
+logo: https://cdn.simpleicons.org/minimax
+tags: [assistant, chat, web, mobile, multimodal]
+regions: [CN]
+status: active
+related: [minimax]
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://chat.minimaxi.com/
+    checked_at: 2026-07-15

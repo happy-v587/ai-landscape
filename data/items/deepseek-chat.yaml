@@ -1,0 +1,22 @@
+id: deepseek-chat
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: DeepSeek Chat
+  zh: DeepSeek 对话
+summary:
+  en: DeepSeek's official web chat assistant, supporting general dialogue and reasoning mode.
+  zh: 深度求索官方网页对话助手，支持通用对话与推理模式。
+website: https://chat.deepseek.com/
+logo: https://cdn.simpleicons.org/deepseek
+tags: [assistant, chat, web, mobile]
+regions: [CN, US]
+status: active
+related: [deepseek]
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://chat.deepseek.com/
+    checked_at: 2026-07-15
