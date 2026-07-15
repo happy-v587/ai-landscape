@@ -66,15 +66,17 @@ export function FullLandscape({
             : '全球 AI 生态的中英文双语地图。'}
         </p>
       </section>
-      {mapOrder.map((mapId) => (
-        <MapSection
-          key={mapId}
-          mapId={mapId}
-          entries={byMap[mapId]}
-          locale={locale}
-          categoryLabels={categoryLabels}
-        />
-      ))}
+      <div className={styles.mapGrid}>
+        {mapOrder.map((mapId) => (
+          <MapSection
+            key={mapId}
+            mapId={mapId}
+            entries={byMap[mapId]}
+            locale={locale}
+            categoryLabels={categoryLabels}
+          />
+        ))}
+      </div>
     </div>
   );
 }
