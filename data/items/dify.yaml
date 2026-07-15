@@ -1,0 +1,21 @@
+id: dify
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: Dify
+  zh: Dify
+summary:
+  en: Open-source LLM application development platform with visual workflow and agents.
+  zh: 开源大模型应用开发平台，支持可视化工作流与 Agent。
+website: https://dify.ai/
+tags: [agent, no-code, open-source]
+regions: [CN]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://dify.ai/
+    checked_at: 2026-07-14

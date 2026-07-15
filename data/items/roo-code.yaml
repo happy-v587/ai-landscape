@@ -1,0 +1,21 @@
+id: roo-code
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Roo Code
+  zh: Roo Code
+summary:
+  en: VS Code plugin forked from Cline that adds enhanced agentic coding modes and custom API support.
+  zh: 从 Cline 分支出来的 VS Code 插件，增加了增强的 Agent 编程模式和自定义 API 支持。
+website: https://roocode.com/
+tags: [coding, agent, ide, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://roocode.com/
+    checked_at: 2026-07-14

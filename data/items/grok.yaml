@@ -1,0 +1,21 @@
+id: grok
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: Grok
+  zh: Grok
+summary:
+  en: xAI's conversational AI assistant with real-time access to X and web data.
+  zh: xAI 推出的会话式 AI 助手，可实时访问 X 和网页数据。
+website: https://grok.com/
+tags: [assistant, chat, web, mobile]
+regions: [US]
+status: active
+related: []
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://grok.com/
+    checked_at: 2026-07-14

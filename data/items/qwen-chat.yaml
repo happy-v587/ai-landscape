@@ -1,0 +1,21 @@
+id: qwen-chat
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: Tongyi Qianwen
+  zh: 通义千问
+summary:
+  en: Alibaba Cloud's general-purpose AI assistant and chat application.
+  zh: 阿里云推出的通用 AI 助手与聊天应用。
+website: https://tongyi.aliyun.com/
+tags: [assistant, chat, web, mobile]
+regions: [CN]
+status: active
+related: [qwen]
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://tongyi.aliyun.com/
+    checked_at: 2026-07-14

@@ -1,7 +1,7 @@
 id: claude
 kind: desktop-mobile-app
 map: apps-saas
-category: productivity
+category: chat
 name:
   en: Claude
   zh: Claude

@@ -1,0 +1,21 @@
+id: pydantic-ai
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: PydanticAI
+  zh: PydanticAI
+summary:
+  en: Python agent framework built around type-safe structured outputs.
+  zh: 围绕类型安全结构化输出构建的 Python Agent 框架。
+website: https://ai.pydantic.dev/
+tags: [agent, framework, python, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://ai.pydantic.dev/
+    checked_at: 2026-07-14

@@ -1,0 +1,21 @@
+id: mcp
+kind: agent-runtime
+map: agent-tools
+category: agent-runtimes
+name:
+  en: Model Context Protocol
+  zh: Model Context Protocol
+summary:
+  en: Open protocol for connecting AI assistants to external data sources, tools, and services.
+  zh: 将 AI 助手连接到外部数据源、工具和服务的开放协议。
+website: https://modelcontextprotocol.io/
+tags: [protocol, runtime, tool-use, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: []
+  open_source: true
+sources:
+  - url: https://modelcontextprotocol.io/
+    checked_at: 2026-07-14

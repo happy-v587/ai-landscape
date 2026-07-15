@@ -1,8 +1,7 @@
 id: chatgpt
 kind: desktop-mobile-app
 map: apps-saas
-category: productivity
-subcategory: assistant
+category: chat
 name: { en: ChatGPT, zh: ChatGPT }
 summary:
   en: General-purpose AI assistant and productivity application.

@@ -1,0 +1,21 @@
+id: kilo-code
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Kilo Code
+  zh: Kilo Code
+summary:
+  en: Agentic coding extension for VS Code focused on speed and one-shot task completion.
+  zh: 面向 VS Code 的 Agent 编程扩展，专注于速度和一次性任务完成。
+website: https://kilocode.ai/
+tags: [coding, agent, ide, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://kilocode.ai/
+    checked_at: 2026-07-14

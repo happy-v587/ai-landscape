@@ -1,0 +1,21 @@
+id: codex-cli
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: OpenAI Codex CLI
+  zh: OpenAI Codex CLI
+summary:
+  en: Lightweight coding agent in the terminal powered by OpenAI's Codex model and reasoning.
+  zh: 由 OpenAI Codex 模型和推理能力驱动的轻量级终端编程 Agent。
+website: https://github.com/openai/codex
+tags: [coding, agent, cli, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://github.com/openai/codex
+    checked_at: 2026-07-14

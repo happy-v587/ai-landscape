@@ -1,0 +1,21 @@
+id: cody
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Sourcegraph Cody
+  zh: Sourcegraph Cody
+summary:
+  en: AI coding assistant with deep codebase context search and enterprise-grade code intelligence.
+  zh: 具备深度代码库上下文搜索和企业级代码智能的 AI 编程助手。
+website: https://sourcegraph.com/cody
+tags: [coding, agent, ide, closed-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: []
+  open_source: false
+sources:
+  - url: https://sourcegraph.com/cody
+    checked_at: 2026-07-14

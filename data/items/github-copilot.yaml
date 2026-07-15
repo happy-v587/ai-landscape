@@ -1,0 +1,21 @@
+id: github-copilot
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: GitHub Copilot
+  zh: GitHub Copilot
+summary:
+  en: AI pair programmer integrated into editors and GitHub with code suggestions, chat, and agentic capabilities.
+  zh: 集成在编辑器和 GitHub 中的 AI 结对程序员，提供代码建议、聊天和 Agent 能力。
+website: https://github.com/features/copilot
+tags: [coding, agent, ide, closed-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: []
+  open_source: false
+sources:
+  - url: https://github.com/features/copilot
+    checked_at: 2026-07-14

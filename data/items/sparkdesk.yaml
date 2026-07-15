@@ -1,0 +1,21 @@
+id: sparkdesk
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: SparkDesk
+  zh: 讯飞星火
+summary:
+  en: iFlytek's cognitive large model chat and productivity assistant.
+  zh: 科大讯飞推出的认知大模型聊天与生产力助手。
+website: https://xinghuo.xfyun.cn/
+tags: [assistant, chat, web, mobile]
+regions: [CN]
+status: active
+related: []
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://xinghuo.xfyun.cn/
+    checked_at: 2026-07-14

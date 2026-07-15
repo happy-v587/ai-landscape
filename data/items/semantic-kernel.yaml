@@ -1,0 +1,21 @@
+id: semantic-kernel
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: Semantic Kernel
+  zh: Semantic Kernel
+summary:
+  en: Microsoft SDK for integrating AI services and agents into enterprise apps.
+  zh: 微软用于将 AI 服务与 Agent 集成到企业应用的 SDK。
+website: https://github.com/microsoft/semantic-kernel
+tags: [agent, sdk, enterprise, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [csharp, python, java, typescript]
+  open_source: true
+sources:
+  - url: https://github.com/microsoft/semantic-kernel
+    checked_at: 2026-07-14

@@ -1,0 +1,21 @@
+id: cline
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Cline
+  zh: Cline
+summary:
+  en: VS Code extension that acts as an autonomous coding agent using tools, browser, and terminal.
+  zh: VS Code 扩展，可作为使用工具、浏览器和终端的自主编程 Agent。
+website: https://github.com/cline/cline
+tags: [coding, agent, ide, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://github.com/cline/cline
+    checked_at: 2026-07-14

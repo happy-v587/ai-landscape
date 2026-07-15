@@ -1,0 +1,21 @@
+id: hailuo-ai
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: Hailuo AI
+  zh: 海螺 AI
+summary:
+  en: MiniMax's AI assistant for chat, voice, and video creation.
+  zh: MiniMax 推出的 AI 助手，支持聊天、语音和视频创作。
+website: https://hailuoai.com/
+tags: [assistant, chat, web, mobile]
+regions: [CN]
+status: active
+related: [minimax]
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://hailuoai.com/
+    checked_at: 2026-07-14

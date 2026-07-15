@@ -1,0 +1,21 @@
+id: n8n
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: n8n
+  zh: n8n
+summary:
+  en: Workflow automation platform with AI agent nodes and self-hosting option.
+  zh: 支持 AI Agent 节点和自托管选项的工作流自动化平台。
+website: https://n8n.io/
+tags: [agent, automation, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [self-hosted, cloud]
+  open_source: true
+sources:
+  - url: https://n8n.io/
+    checked_at: 2026-07-14

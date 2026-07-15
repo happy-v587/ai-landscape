@@ -1,0 +1,21 @@
+id: openhands
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: OpenHands
+  zh: OpenHands
+summary:
+  en: Open-source platform for AI software engineering agents that can solve real GitHub issues and PRs.
+  zh: 用于 AI 软件工程 Agent 的开源平台，可解决真实 GitHub Issue 和 PR。
+website: https://www.all-hands.dev/
+tags: [coding, agent, open-source, research]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://www.all-hands.dev/
+    checked_at: 2026-07-14

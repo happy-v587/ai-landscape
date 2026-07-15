@@ -1,0 +1,21 @@
+id: aider
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Aider
+  zh: Aider
+summary:
+  en: Terminal-based AI coding assistant that edits code in local repositories with multi-file support.
+  zh: 基于终端的 AI 编程助手，可在本地仓库中多文件编辑代码。
+website: https://aider.chat/
+tags: [coding, agent, cli, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://aider.chat/
+    checked_at: 2026-07-14

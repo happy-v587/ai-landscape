@@ -1,0 +1,21 @@
+id: devin
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Devin
+  zh: Devin
+summary:
+  en: Autonomous AI software engineer from Cognition that can plan, code, test, and deploy projects.
+  zh: Cognition 推出的自主 AI 软件工程师，可规划、编码、测试和部署项目。
+website: https://www.cognition.ai/
+tags: [coding, agent, closed-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: []
+  open_source: false
+sources:
+  - url: https://www.cognition.ai/
+    checked_at: 2026-07-14

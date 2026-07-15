@@ -1,0 +1,21 @@
+id: continue
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name:
+  en: Continue
+  zh: Continue
+summary:
+  en: Open-source AI coding assistant for JetBrains and VS Code with autocomplete, chat, and edit modes.
+  zh: 适用于 JetBrains 和 VS Code 的开源 AI 编程助手，支持自动补全、聊天和编辑模式。
+website: https://www.continue.dev/
+tags: [coding, agent, ide, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://www.continue.dev/
+    checked_at: 2026-07-14

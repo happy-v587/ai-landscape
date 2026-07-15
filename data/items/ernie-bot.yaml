@@ -1,0 +1,21 @@
+id: ernie-bot
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: ERNIE Bot
+  zh: 文心一言
+summary:
+  en: Baidu's knowledge-enhanced large language model chat application.
+  zh: 百度推出的知识增强大语言模型聊天应用。
+website: https://yiyan.baidu.com/
+tags: [assistant, chat, web, mobile]
+regions: [CN]
+status: active
+related: []
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://yiyan.baidu.com/
+    checked_at: 2026-07-14

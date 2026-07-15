@@ -1,0 +1,21 @@
+id: autogen
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: AutoGen
+  zh: AutoGen
+summary:
+  en: Microsoft framework for building multi-agent conversational systems.
+  zh: 微软用于构建多智能体对话系统的框架。
+website: https://github.com/microsoft/autogen
+tags: [agent, framework, multi-agent, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [python, dotnet]
+  open_source: true
+sources:
+  - url: https://github.com/microsoft/autogen
+    checked_at: 2026-07-14

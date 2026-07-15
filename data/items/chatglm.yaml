@@ -1,0 +1,21 @@
+id: chatglm
+kind: desktop-mobile-app
+map: apps-saas
+category: chat
+name:
+  en: ChatGLM
+  zh: 智谱清言
+summary:
+  en: Zhipu AI's conversational AI assistant based on the GLM model family.
+  zh: 智谱 AI 基于 GLM 模型家族推出的对话式 AI 助手。
+website: https://chatglm.cn/
+tags: [assistant, chat, web, mobile]
+regions: [CN]
+status: active
+related: [zhipu-ai]
+facts:
+  audience: [individuals, teams]
+  platforms: [web, ios, android]
+sources:
+  - url: https://chatglm.cn/
+    checked_at: 2026-07-14

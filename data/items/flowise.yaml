@@ -1,0 +1,21 @@
+id: flowise
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: Flowise
+  zh: Flowise
+summary:
+  en: Low-code drag-and-drop tool for building LLM workflows and agents.
+  zh: 用于通过拖拽方式构建大模型工作流与 Agent 的低代码工具。
+website: https://flowiseai.com/
+tags: [agent, no-code, open-source]
+regions: [Global]
+status: active
+related: []
+facts:
+  deployment: [self-hosted]
+  open_source: true
+sources:
+  - url: https://flowiseai.com/
+    checked_at: 2026-07-14

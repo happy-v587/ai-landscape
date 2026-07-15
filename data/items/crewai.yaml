@@ -1,0 +1,21 @@
+id: crewai
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: CrewAI
+  zh: CrewAI
+summary:
+  en: Framework for orchestrating role-based autonomous agent crews.
+  zh: 用于编排基于角色的自主 Agent 团队的框架。
+website: https://www.crewai.com/
+tags: [agent, framework, multi-agent, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [python]
+  open_source: true
+sources:
+  - url: https://docs.crewai.com/
+    checked_at: 2026-07-14

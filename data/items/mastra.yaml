@@ -1,0 +1,21 @@
+id: mastra
+kind: agent-framework
+map: agent-tools
+category: agent-frameworks
+name:
+  en: Mastra
+  zh: Mastra
+summary:
+  en: TypeScript-native framework for building and deploying AI agents.
+  zh: 用于构建和部署 AI Agent 的 TypeScript 原生框架。
+website: https://mastra.ai/
+tags: [agent, framework, typescript, open-source]
+regions: [US]
+status: active
+related: []
+facts:
+  languages: [typescript]
+  open_source: true
+sources:
+  - url: https://mastra.ai/
+    checked_at: 2026-07-14

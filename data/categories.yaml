@@ -42,3 +42,7 @@
   map: apps-saas
   name: { en: Research & Knowledge, zh: 研究与知识 }
   presentation: scenario-map
+- id: chat
+  map: apps-saas
+  name: { en: Chat, zh: 聊天 }
+  presentation: scenario-map
