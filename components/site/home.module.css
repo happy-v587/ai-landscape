@@ -106,8 +106,36 @@
 
 .explore:hover { text-decoration: none; }
 
+.fullLandscape {
+  padding-bottom: 48px;
+}
+
+.mapSection {
+  margin-bottom: 32px;
+}
+
+.mapSectionTitle {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 10;
+  margin: 0;
+  padding: 16px var(--page-gutter);
+  font-size: 20px;
+  font-weight: 600;
+  background: var(--canvas-subtle);
+  border-bottom: 1px solid var(--hairline);
+  color: var(--map);
+}
+
+.mapSectionBody {
+  background: var(--canvas-subtle);
+  padding: 24px var(--page-gutter);
+}
+
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; }
   .title { font-size: 36px; }
   .search { min-width: unset; width: 100%; }
+  .mapSectionTitle { font-size: 18px; }
+  .mapSectionBody { padding: 16px var(--page-gutter); }
 }
