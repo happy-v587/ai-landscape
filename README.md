@@ -4,6 +4,8 @@ A bilingual, statically-generated map of the global AI ecosystem.
 
 [中文介绍](./README.zh-CN.md)
 
+**Live site:** [llm-landscape.vercel.app](https://llm-landscape.vercel.app)
+
 ## What is this?
 
 AI Landscape organizes the fast-moving AI space into four visual maps:

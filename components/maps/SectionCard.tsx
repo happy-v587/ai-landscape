@@ -9,7 +9,14 @@ export function SectionCard({
 }) {
   return (
     <section className={styles.sectionCard}>
-      <h2 className={styles.categoryPill}>{category}</h2>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.categoryLabel}>{category}</h2>
+        <div className={styles.coordinateRule}>
+          <span className={styles.coordinateTick} />
+          <span className={styles.coordinateLine} />
+          <span className={styles.coordinateTick} />
+        </div>
+      </div>
       <div className={styles.sectionBody}>{children}</div>
     </section>
   );

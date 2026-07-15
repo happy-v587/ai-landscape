@@ -62,8 +62,8 @@ export function FullLandscape({
         <h1 className={styles.title}>AI Landscape</h1>
         <p className={styles.subtitle}>
           {locale === 'en'
-            ? 'A bilingual map of the global AI ecosystem.'
-            : '全球 AI 生态的中英文双语地图。'}
+            ? 'A field atlas of models, infrastructure, agents, and applications.'
+            : '模型、基础设施、Agent 与应用的中英文生态地图。'}
         </p>
       </section>
       <div className={styles.mapGrid}>

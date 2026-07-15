@@ -1,68 +1,68 @@
 ---
-version: alpha
+version: beta
 name: AI Landscape Visual System
 description: >
-  A high-density, logo-driven landscape interface for mapping the AI ecosystem.
-  Light canvas, map-specific pastel category pills, strict 8px grid, precise typography,
-  and no decorative gradients. Optimized for scanning many entries, categories, and
-  relationships at a glance.
+  A refined "Field Atlas" interface for mapping the AI ecosystem. The design
+  treats the site as a research annual or exhibition catalog: warm paper canvas,
+  strong typographic hierarchy, muted pigment map colors, and a signature
+  coordinate-rule motif that registers each section on the page.
 
 colors:
   canvas: "#ffffff"
-  canvas-subtle: "#f7f8fa"
-  ink: "#111827"
-  body: "#4b5563"
-  muted: "#9ca3af"
-  hairline: "#e5e7eb"
-  hairline-hover: "#d1d5db"
-  action: "#2563eb"
-  action-focus: "#1d4ed8"
-  action-on-dark: "#60a5fa"
-  on-action: "#ffffff"
+  canvas-paper: "#f6f4ef"
+  canvas-subtle: "#edeae3"
+  ink: "#111111"
+  body: "#555550"
+  muted: "#9c9a93"
+  hairline: "#d8d5cc"
+  hairline-hover: "#b8b5ad"
+  accent: "#3d5a5a"
+  accent-focus: "#2a3f3f"
+  accent-on: "#ffffff"
   maps:
-    models: "#6366f1"
-    model-infra: "#3b82f6"
-    agent-tools: "#ec4899"
-    apps-saas: "#10b981"
+    models: "#5b5bd6"
+    model-infra: "#2e7bbf"
+    agent-tools: "#c44a8c"
+    apps-saas: "#2e9e72"
   map-pills:
-    models-bg: "#eef2ff"
-    models-text: "#312e81"
-    model-infra-bg: "#eff6ff"
-    model-infra-text: "#1e40af"
-    agent-tools-bg: "#fce7f3"
-    agent-tools-text: "#831843"
-    apps-saas-bg: "#ecfdf5"
-    apps-saas-text: "#065f46"
-  open-source: "#dbeafe"
+    models-bg: "#eaeaf9"
+    models-text: "#2e2e7d"
+    model-infra-bg: "#e6f0f9"
+    model-infra-text: "#15406b"
+    agent-tools-bg: "#f9e6f0"
+    agent-tools-text: "#6b214b"
+    apps-saas-bg: "#e6f5ee"
+    apps-saas-text: "#15563d"
+  open-source: "#e8f4f4"
   closed-source: "#ffffff"
-  rank-gold: "#f59e0b"
-  rank-silver: "#6b7280"
-  rank-bronze: "#92400e"
-  error: "#dc2626"
+  error: "#b91c1c"
 
 typography:
-  fontFamily: "Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+  displayFamily: "Bricolage Grotesque, system-ui, sans-serif"
+  bodyFamily: "Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
   monoFamily: "JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
+  page-title:
+    fontSize: 72px
+    fontWeight: 600
+    lineHeight: 1.05
+    letterSpacing: -2px
   map-title:
-    fontSize: 36px
+    fontSize: 42px
     fontWeight: 600
-    lineHeight: 1.2
-    letterSpacing: -0.5px
+    lineHeight: 1.1
+    letterSpacing: -1px
   section-title:
-    fontSize: 24px
-    fontWeight: 600
-    lineHeight: 1.3
-    letterSpacing: -0.25px
-  category-pill:
-    fontSize: 12px
-    fontWeight: 600
-    lineHeight: 1
-    letterSpacing: 0.5px
-    textTransform: uppercase
-  subcategory:
     fontSize: 13px
     fontWeight: 600
+    lineHeight: 1
+    letterSpacing: 1px
+    textTransform: uppercase
+  subcategory:
+    fontSize: 12px
+    fontWeight: 600
     lineHeight: 1.3
+    letterSpacing: 0.3px
+    textTransform: uppercase
   item-primary:
     fontSize: 14px
     fontWeight: 500
@@ -72,13 +72,14 @@ typography:
     fontWeight: 500
     lineHeight: 1.3
   body:
-    fontSize: 14px
+    fontSize: 15px
     fontWeight: 400
-    lineHeight: 1.5
+    lineHeight: 1.55
   caption:
-    fontSize: 12px
-    fontWeight: 400
-    lineHeight: 1.4
+    fontSize: 11px
+    fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: 0.3px
   nav:
     fontSize: 14px
     fontWeight: 500
@@ -91,60 +92,63 @@ spacing:
   lg: 16px
   xl: 24px
   xxl: 32px
-  section: 48px
-  page-gutter: 24px
+  section: 64px
+  page-gutter: 32px
   max-width: 1440px
-  rail-width: 48px
-  subcategory-label-width: 128px
+  rail-width: 52px
+  subcategory-label-width: 120px
 
 rounded:
   none: 0px
   sm: 6px
   md: 10px
   lg: 16px
+  xl: 20px
   pill: 9999px
   full: 9999px
 
 components:
   global-nav:
-    height: 56px
-    backgroundColor: "{colors.canvas}"
+    height: 64px
+    backgroundColor: "rgba(255, 255, 255, 0.92)"
+    backdropFilter: "blur(8px)"
     borderBottom: "1px solid {colors.hairline}"
     padding: "0 {spacing.page-gutter}"
   map-rail:
     width: "{spacing.rail-width}"
     backgroundColor: "{colors.maps.<mapId>}"
-    textColor: "{colors.on-action}"
+    textColor: "{colors.accent-on}"
     writingMode: vertical-rl
-    fontSize: 14px
+    fontSize: 13px
     fontWeight: 600
     letterSpacing: 1px
-  category-pill:
-    backgroundColor: "{colors.map-pills.<mapId>-bg}"
-    textColor: "{colors.map-pills.<mapId>-text}"
-    borderRadius: "{rounded.pill}"
-    padding: "6px 12px"
-    typography: "{typography.category-pill}"
+  category-label:
+    fontFamily: "{typography.section-title.fontFamily}"
+    fontSize: "{typography.section-title.fontSize}"
+    color: "{colors.body}"
+  coordinate-rule:
+    height: 1px
+    backgroundColor: "{colors.hairline}"
   section-card:
     backgroundColor: "{colors.canvas}"
     border: "1px solid {colors.hairline}"
-    borderRadius: "{rounded.lg}"
-    padding: "{spacing.lg}"
+    borderRadius: "{rounded.xl}"
+    padding: "{spacing.xxl}"
   subcategory-row:
-    gap: "{spacing.md}"
-    separator: "1px dashed {colors.hairline}"
+    gap: "{spacing.lg}"
+    separator: "1px solid {colors.hairline}"
   item-chip-primary:
-    height: 36px
+    height: 40px
     gap: 8px
-    padding: "0 10px"
+    padding: "0 12px"
     border: "1px solid {colors.hairline}"
     borderRadius: "{rounded.md}"
-    logoSize: 24px
+    logoSize: 22px
     typography: "{typography.item-primary}"
   item-chip-secondary:
-    height: 28px
+    height: 32px
     gap: 6px
-    padding: "0 8px"
+    padding: "0 10px"
     border: "1px solid {colors.hairline}"
     borderRadius: "{rounded.sm}"
     logoSize: 18px
@@ -156,34 +160,35 @@ components:
     fontSize: 10px
     fontWeight: 600
   timeline-axis:
-    height: 28px
-    borderTop: "1px solid {colors.hairline}"
+    height: 32px
+    borderBottom: "1px solid {colors.hairline}"
     typography: "{typography.caption}"
   timeline-card:
-    minWidth: 120px
-    padding: "8px 12px"
-    border: "1px solid {colors.hairline}"
-    borderRadius: "{rounded.md}"
+    minWidth: 140px
+    padding: "6px 8px"
+    border: "1px solid color-mix(in srgb, var(--lane-color) 30%, {colors.hairline})"
+    borderLeft: "3px solid var(--lane-color)"
+    borderRadius: "{rounded.sm}"
     openSourceBackground: "{colors.open-source}"
     closedSourceBackground: "{colors.closed-source}"
   search-input:
-    height: 40px
-    padding: "0 16px"
+    height: 48px
+    padding: "0 20px"
     border: "1px solid {colors.hairline}"
     borderRadius: "{rounded.pill}"
     typography: "{typography.body}"
   button-primary:
     height: 40px
-    padding: "0 20px"
-    backgroundColor: "{colors.action}"
-    textColor: "{colors.on-action}"
+    padding: "0 18px"
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.accent-on}"
     borderRadius: "{rounded.md}"
     typography: "{typography.nav}"
   button-secondary:
     height: 40px
-    padding: "0 20px"
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.action}"
+    padding: "0 18px"
+    backgroundColor: "transparent"
+    textColor: "{colors.accent}"
     border: "1px solid {colors.hairline}"
     borderRadius: "{rounded.md}"
     typography: "{typography.nav}"
@@ -191,218 +196,234 @@ components:
 
 ## Overview
 
-The AI Landscape interface is a **technical ecosystem map**, not a marketing page.
-The design borrows the density and readability of engineering architecture diagrams:
-logo-driven entries, grouped by capability, with clear hierarchy created through
-spacing, borders, and restrained color coding.
+The AI Landscape interface is a **technical ecosystem atlas** — a reference work
+rather than a marketing surface. The redesign moves away from the generic
+AI-startup palette (pastel pills, `Inter` everywhere, flat cards) toward an
+editorial, material feeling: a warm paper canvas, a characterful grotesque
+display face, muted pigment colors, and a single signature motif.
 
-The previous Apple-style gallery vocabulary is replaced with a system that:
-- Shows many entries at once without feeling cluttered.
-- Uses color only for map/category identity and status, not decoration.
-- Keeps a light, neutral canvas so that product logos remain the focal point.
-- Maintains strict alignment and consistent sizing so the page feels engineered,
-  not accidental.
+The system still prioritizes density and scannability, because the page's job
+is to show many entries at once. But it does so with the quiet confidence of a
+well-printed annual or exhibition catalog.
 
 ## Design Principles
 
-1. **Color means category.** Each map has a single identity color used for the
-   left rail and its category pills. No other rainbow accents appear.
+1. **Color means map identity.** Each map has one pigment color used for the
+   left rail, active navigation markers, and timeline lane borders. It is not
+   used as a decorative gradient or card shadow.
 2. **Borders, not shadows.** Elevation and grouping come from `1px` hairlines,
-   dashed row separators, and background changes. No drop shadows on cards or chips.
-3. **Logos are content.** Entries are visualized as logo + name chips. Missing logos
-   fall back to a neutral monogram, never a broken image.
-4. **Density with rhythm.** Sections are dense, but whitespace inside cards and
-   between rows prevents crowding.
-5. **Responsive degradation.** On small screens, groups stack, labels move above
-   rows, and the timeline becomes horizontally scrollable.
+   the coordinate rule, and background shifts. No drop shadows on cards or chips.
+3. **Typography carries personality.** `Bricolage Grotesque` gives headings a
+   slightly irregular, characterful voice; `Inter` keeps body copy neutral and
+   readable; `JetBrains Mono` handles metadata.
+4. **The coordinate rule is the signature.** Each section card is registered by
+   a thin horizontal rule that extends from its category label. This is the one
+   memorable detail that embodies the "atlas" metaphor.
+5. **Logos are content.** Entries are logo + name chips. Missing logos fall back
+   to a neutral monogram.
+6. **Responsive degradation.** On small screens groups stack, labels move above
+   rows, and the timeline scrolls horizontally.
 
 ## Color
 
 ### Neutral Palette
-- **Canvas** (`#ffffff`): primary background.
-- **Canvas Subtle** (`#f7f8fa`): page backdrop, hover backgrounds, and alternating
-  section rows.
-- **Ink** (`#111827`): headings, primary text, and selected/active states.
-- **Body** (`#4b5563`): secondary text, subcategory labels, and metadata.
-- **Muted** (`#9ca3af`): placeholders, disabled text, and subtle dividers.
-- **Hairline** (`#e5e7eb`): card borders, row separators, and chip borders.
-- **Hairline Hover** (`#d1d5db`): hover state for bordered elements.
+
+| Token | Hex | Use |
+|-------|-----|-----|
+| `canvas` | `#ffffff` | Card and modal backgrounds. |
+| `canvas-paper` | `#f6f4ef` | Page background — warm, slightly greyed paper. |
+| `canvas-subtle` | `#edeae3` | Hover backgrounds, alternating rows. |
+| `ink` | `#111111` | Headings and primary text. |
+| `body` | `#555550` | Secondary text and labels. |
+| `muted` | `#9c9a93` | Placeholders, disabled text, axis labels. |
+| `hairline` | `#d8d5cc` | Borders, rules, separators. |
+| `hairline-hover` | `#b8b5ad` | Hover borders. |
 
 ### Action Palette
-- **Action Blue** (`#2563eb`): links, primary buttons, focus rings, and active
-  filter states. The only interactive accent in the neutral UI layer.
-- **Action Focus** (`#1d4ed8`): pressed/focus state.
-- **Action on Dark** (`#60a5fa`): link color when used on dark surfaces (rare).
+
+| Token | Hex | Use |
+|-------|-----|-----|
+| `accent` | `#3d5a5a` | Links, primary buttons, focus rings — a deep teal/slate. |
+| `accent-focus` | `#2a3f3f` | Pressed/focus state. |
+| `accent-on` | `#ffffff` | Text on accent surfaces. |
 
 ### Map Identity Colors
-Each map receives one color used for the left rail and category pills:
 
 | Map | Rail | Pill Background | Pill Text |
 |-----|------|-----------------|-----------|
-| Models | `#6366f1` | `#eef2ff` | `#312e81` |
-| Model Infra | `#3b82f6` | `#eff6ff` | `#1e40af` |
-| Agent & Tools | `#ec4899` | `#fce7f3` | `#831843` |
-| Apps & SaaS | `#10b981` | `#ecfdf5` | `#065f46` |
+| Models | `#5b5bd6` | `#eaeaf9` | `#2e2e7d` |
+| Model Infra | `#2e7bbf` | `#e6f0f9` | `#15406b` |
+| Agent & Tools | `#c44a8c` | `#f9e6f0` | `#6b214b` |
+| Apps & SaaS | `#2e9e72` | `#e6f5ee` | `#15563d` |
 
-### Status Colors
-- **Open Source** (`#dbeafe`): timeline card fill for open-weight/open-source entries.
-- **Closed Source** (`#ffffff`): timeline card fill for closed-source entries (white
-  with hairline border).
-- **Rank Gold / Silver / Bronze**: small ranking badges for leaderboards.
+Map colors are used for the rail and subtle active markers only. Category pills
+on cards use the muted pastel background so they stay quiet.
 
 ## Typography
 
-The interface uses a single sans-serif family (`Inter`) and a monospace family for
-metadata such as version strings or dates.
+Three typefaces, loaded via `next/font/google`:
 
-| Token | Size | Weight | Line Height | Use |
-|-------|------|--------|-------------|-----|
-| `map-title` | 36px | 600 | 1.2 | Page title above the map |
-| `section-title` | 24px | 600 | 1.3 | Detail page section headings |
-| `category-pill` | 12px | 600 | 1 | Section category labels |
-| `subcategory` | 13px | 600 | 1.3 | Row labels inside cards |
-| `item-primary` | 14px | 500 | 1.3 | Major entries |
-| `item-secondary` | 13px | 500 | 1.3 | Secondary entries |
-| `body` | 14px | 400 | 1.5 | Paragraphs and descriptions |
-| `caption` | 12px | 400 | 1.4 | Badges, dates, metadata |
-| `nav` | 14px | 500 | 1 | Global navigation |
+| Role | Face | Use |
+|------|------|-----|
+| Display | **Bricolage Grotesque** | Page titles, map titles, card titles. |
+| Body | **Inter** | Body copy, labels, chips, navigation. |
+| Mono | **JetBrains Mono** | Dates, versions, metadata, timeline axis. |
 
 ## Layout
 
 ### Homepage
 
-The homepage is a compact directory of the four maps rather than a gallery of
-full-bleed tiles.
-
-- Hero region: centered title, one-line subtitle, and a prominent search input.
+- Hero region: large display title, one-line subtitle, prominent search input.
 - Map directory: a `2×2` grid on desktop, single column on mobile.
-- Each map card:
-  - `16px` radius, white background, hairline border.
-  - Left `4px` accent strip in the map identity color.
-  - Title in `section-title` style.
-  - Short description in `body` style.
-  - 2–3 representative category pills.
-  - Entry count caption.
-  - Primary "Explore" button aligned bottom-right.
+- Each map card: white background, hairline border, left `4px` map accent strip,
+  title in display face, short description, outlined category pills, entry count,
+  and a subtle "Explore" link.
 
 ### Page Grid
+
 - Max content width: `1440px`, centered.
-- Page gutter: `24px` on desktop, `16px` on mobile.
-- Left rail: `48px` fixed width, map color, vertical map name.
-- Main canvas: 12-column fluid grid with `24px` gutters.
+- Page gutter: `32px` on desktop, `20px` on mobile.
+- Left rail: `52px` fixed width, map color, vertical map name.
+- Main canvas: fluid grid with `32px` gutters.
 
 ### Section Card
-- White background, `16px` radius, `1px` hairline border.
-- Internal padding: `16px`.
-- Category pill positioned top-left, `16px` from edges.
-- Subcategory rows stacked vertically, separated by `1px dashed` hairlines.
+
+- White background, `20px` radius, `1px` hairline border.
+- Internal padding: `32px`.
+- Category label above the coordinate rule.
+- Coordinate rule: `1px` hairline extending full-width, with small vertical ticks.
 
 ### Subcategory Row
-- Left label column: `128px` fixed, right-aligned text.
-- Right items area: flex wrap, `12px` gap.
+
+- Left label column: `120px` fixed, uppercase, right-aligned.
+- Right items area: flex wrap, `10px` gap.
 - On mobile, label moves above the items.
 
 ### Item Chip
-- Two sizes maintain hierarchy.
-- All chips align to a `28px` or `36px` height.
-- Logo is vertically centered, never stretched.
-- Text truncation with ellipsis if the name exceeds `160px`.
+
+- Primary: `40px` height, `10px` radius.
+- Secondary: `32px` height, `6px` radius.
+- Hover: background shifts to `--canvas-subtle`, border darkens.
+- Active/pressed: `scale(0.98)`.
+- Focus: `2px` accent outline.
 
 ## Components
 
 ### Global Navigation
-- Fixed 56px height, white background, bottom hairline.
-- Left: site title and map tabs.
-- Right: search input, locale switch, submit button.
-- Active map tab underlined with the map identity color.
+
+- Fixed `64px` height, frosted-glass white background (`rgba(255,255,255,0.92)`
+  + `backdrop-filter: blur(8px)`), bottom hairline.
+- Left: site title in display face.
+- Center: map links as understated text.
+- Right: search input, locale switch, submit button as subtle outline button.
+- Active map link underlined with the map identity color.
 
 ### Map Rail
+
 - Full-height vertical strip on desktop.
 - Background uses the current map identity color.
 - White text, vertically rotated, centered.
 - Hidden on tablet/mobile; replaced by a top badge.
 
-### Category Pill
-- Map-colored pastel background, dark text.
-- Uppercase, letter-spaced, rounded pill.
-- Clicking a pill toggles a filter for that category.
+### Category Pill / Label
 
-### Section Card
-- Container for one capability area.
-- No shadow; border defines the edge.
-- Cards stack vertically with `24px` gaps.
+- Section cards use an uppercase label above the coordinate rule.
+- Directory cards use outlined pills with the map color text.
+- Filter pills use the muted map-pastel background.
 
-### Item Chip
-- Default state: transparent background, hairline border.
-- Hover: `canvas-subtle` background, darker border.
-- Active/pressed: `scale(0.98)`.
-- Focus: `2px` action-blue outline.
-- Badges appended inline after the name.
+### Coordinate Rule
+
+The signature element. A `1px` horizontal rule spans the section card, starting
+from a small vertical tick under the category label and ending at another tick
+near the right edge. It registers the section on the page like a surveyor's
+grid line.
 
 ### Timeline (Models Map)
-- Provider column on the left with logo and name.
+
+- Provider column on the left with name.
 - Horizontal month axis across the bottom.
 - Each model appears as a card placed along the date axis.
-- Card background indicates open/closed source.
-- Connecting dots/lines between related model releases are optional and must be
-  subtle (`1px dashed` hairline).
+- Card uses its provider's lane color for the left border.
+- Connecting dots/lines between related releases are subtle (`1px dashed`
+  hairline).
 
 ### Search & Filters
-- Search input is pill-shaped, `40px` height.
+
+- Search input is pill-shaped, `48px` height.
 - Active filters shown as removable pills.
 - Empty states include a clear-filters action.
+
+### Modal
+
+- Overlay: `rgba(17, 17, 17, 0.5)`.
+- Dialog: white, `20px` radius, no shadow (or a very subtle one), max-width
+  `760px`.
+- Close button: subtle outline circle.
 
 ## Shapes
 
 | Token | Value | Use |
 |-------|-------|-----|
-| `none` | 0px | Rail, full-width separators |
-| `sm` | 6px | Secondary chips, small badges |
-| `md` | 10px | Primary chips, buttons, timeline cards |
-| `lg` | 16px | Section cards |
-| `pill` | 9999px | Pills, search input, filter tags |
-| `full` | 9999px | Avatars/monograms |
+| `none` | `0px` | Rail, full-width separators |
+| `sm` | `6px` | Secondary chips, small badges |
+| `md` | `10px` | Primary chips, buttons, timeline cards |
+| `lg` | `16px` | Buttons, inputs |
+| `xl` | `20px` | Section cards, modal |
+| `pill` | `9999px` | Pills, search input, filter tags |
+| `full` | `9999px` | Avatars/monograms |
 
 ## Elevation & Depth
 
-This system uses **no shadows**. Depth and grouping come from:
+No shadows. Depth comes from:
+
 - Hairline borders around cards and chips.
-- Dashed separators between rows.
+- The coordinate rule inside section cards.
 - Background color changes for hover (`canvas-subtle`).
 - Map color rail on the left edge.
+- Frosted-glass navigation bar.
+
+## Motion
+
+Keep motion restrained and purposeful:
+
+- Page load: sections fade + translate-y by `16px` with a `60ms` stagger.
+- Card/chip hover: border and background color transitions (`150ms ease`).
+- Modal: overlay fades in, dialog scales from `0.98` to `1`.
+- Respect `prefers-reduced-motion`.
 
 ## Responsive Behavior
 
 | Breakpoint | Changes |
 |------------|---------|
-| `≥ 1280px` | Full 12-column canvas, rail visible, 5-column item rows possible |
-| `1024–1279px` | 10-column canvas, rail visible, slightly smaller chips |
-| `768–1023px` | Rail hidden, map badge in global nav, sections remain multi-column |
-| `480–767px` | Section cards stack, subcategory rows become vertical, timeline scrolls horizontally |
+| `≥ 1280px` | Full canvas, rail visible, 2×2 directory |
+| `1024–1279px` | Slightly reduced gutters |
+| `768–1023px` | Rail hidden, map badge in nav, directory stacks |
+| `480–767px` | Section cards stack, subcategory rows vertical, timeline scrolls horizontally |
 | `< 480px` | Single-column items, badges hidden, search collapses to icon |
 
 ## Do's and Don'ts
 
 ### Do
-- Use the map identity color only for the rail and category pills.
-- Keep chip heights consistent (`28px` or `36px`).
+- Use map identity color only for the rail, active nav marker, and timeline lane.
+- Keep chip heights consistent (`40px` / `32px`).
 - Use local SVG logos; fall back to monograms.
-- Reserve Action Blue for interactive elements.
+- Reserve Accent Teal for interactive elements.
 - Use `caption` size for badges and metadata.
 - Provide horizontal scrolling for the model timeline on mobile.
+- Respect `prefers-reduced-motion`.
 
 ### Don't
 - Don't add decorative gradients.
-- Don't use shadows on cards, chips, or buttons.
+- Don't use shadows on cards, chips, or buttons (modal overlay excepted).
 - Don't mix more than one accent color per map.
 - Don't display broken logo links; always use a fallback.
 - Don't shrink touch targets below `44 × 44px` on mobile.
-- Don't use body text smaller than `12px`.
+- Don't use body text smaller than `11px`.
 
 ## Logo & Asset Guidelines
 
 - Store logos in `public/logos/<id>.svg`.
 - SVGs should be square viewboxes (e.g. `0 0 24 24` or `0 0 48 48`).
 - Prefer monochrome or brand-color SVGs; the page does not recolor them.
-- If no logo exists, render a `28px` or `36px` rounded monogram using the map
-  identity color and the entry's initials.
+- If no logo exists, render a rounded monogram using the map identity color and
+  the entry's initials.

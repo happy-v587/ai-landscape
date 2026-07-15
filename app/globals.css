@@ -1,27 +1,31 @@
 :root {
+  /* Field Atlas palette */
   --canvas: #ffffff;
-  --canvas-subtle: #f7f8fa;
-  --ink: #111827;
-  --body: #4b5563;
-  --muted: #9ca3af;
-  --hairline: #e5e7eb;
-  --hairline-hover: #d1d5db;
-  --action: #2563eb;
-  --action-focus: #1d4ed8;
-  --action-on-dark: #60a5fa;
-  --on-action: #ffffff;
-  --open-source: #dbeafe;
+  --canvas-paper: #f6f4ef;
+  --canvas-subtle: #edeae3;
+  --ink: #111111;
+  --body: #555550;
+  --muted: #9c9a93;
+  --hairline: #d8d5cc;
+  --hairline-hover: #b8b5ad;
+  --accent: #3d5a5a;
+  --accent-focus: #2a3f3f;
+  --accent-on: #ffffff;
+  --open-source: #e8f4f4;
   --closed-source: #ffffff;
-  --nav-height: 56px;
-  --rail-width: 48px;
+
+  --nav-height: 64px;
+  --rail-width: 52px;
   --max-width: 1440px;
-  --page-gutter: 24px;
+  --page-gutter: 32px;
+
+
 }
 
-[data-map="models"] { --map: #6366f1; --pill-bg: #eef2ff; --pill-text: #312e81; }
-[data-map="model-infra"] { --map: #3b82f6; --pill-bg: #eff6ff; --pill-text: #1e40af; }
-[data-map="agent-tools"] { --map: #ec4899; --pill-bg: #fce7f3; --pill-text: #831843; }
-[data-map="apps-saas"] { --map: #10b981; --pill-bg: #ecfdf5; --pill-text: #065f46; }
+[data-map="models"] { --map: #5b5bd6; --pill-bg: #eaeaf9; --pill-text: #2e2e7d; }
+[data-map="model-infra"] { --map: #2e7bbf; --pill-bg: #e6f0f9; --pill-text: #15406b; }
+[data-map="agent-tools"] { --map: #c44a8c; --pill-bg: #f9e6f0; --pill-text: #6b214b; }
+[data-map="apps-saas"] { --map: #2e9e72; --pill-bg: #e6f5ee; --pill-text: #15563d; }
 
 * { box-sizing: border-box; }
 
@@ -29,14 +33,14 @@ html { color-scheme: light; }
 
 body {
   margin: 0;
-  background: var(--canvas-subtle);
+  background: var(--canvas-paper);
   color: var(--ink);
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   line-height: 1.5;
 }
 
-a { color: var(--action); text-decoration: none; }
+a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 button, a, input, select { min-height: 44px; }
