@@ -93,3 +93,9 @@
 - **决策**：在全局导航右上角添加 GitHub 图标，点击跳转到项目仓库主页。
 - **原因**：方便访问者快速找到项目源码；用户明确要求放在网页右上角。
 - **文件**：`components/site/GlobalNav.tsx`、`components/site/GlobalNav.module.css`。
+
+## 2026-07-15 首页 2×2 地图卡片改为等高图版
+
+- **决策**：桌面端把四个地图卡片固定为等高 2×2 网格，卡片主体内部滚动，底部加探索入口；移动端恢复单列自适应。
+- **原因**：原 `grid-auto-rows: minmax(520px, auto)` 导致不同内容量的卡片高度不一致，有的很长、有的很窄，视觉上不舒服；等高图版更像统一尺寸的地图图版，也更有 Field Atlas 的图鉴感。
+- **文件**：`components/site/home.module.css`、`components/site/FullLandscape.tsx`。
