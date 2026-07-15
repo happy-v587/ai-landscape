@@ -87,3 +87,9 @@
 - **文件**：
   - 正本：`.agents/skills/frontend-design/SKILL.md`、`.agents/skills/frontend-design/LICENSE.txt`
   - 符号链接：`.claude/skills/frontend-design/SKILL.md`、`.claude/skills/frontend-design/LICENSE.txt`、`.codex/skills/frontend-design/SKILL.md`、`.codex/skills/frontend-design/LICENSE.txt`
+
+## 2026-07-15 导航栏添加 GitHub 图标链接
+
+- **决策**：在全局导航右上角添加 GitHub 图标，点击跳转到项目仓库主页。
+- **原因**：方便访问者快速找到项目源码；用户明确要求放在网页右上角。
+- **文件**：`components/site/GlobalNav.tsx`、`components/site/GlobalNav.module.css`。
