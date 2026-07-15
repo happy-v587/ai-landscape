@@ -85,3 +85,20 @@ npx playwright screenshot --viewport-size=1600,1200 http://localhost:3000/zh /tm
 - `npm run test:e2e` 通过
 - `next-env.d.ts` 未被意外修改
 - 没有未跟踪的临时文件
+- 知识文档已按规则更新（大/小任务均需记录）
+
+### 大型 UI 重构的工作流程
+
+1. 先用 Superpower/PlanMode 输出设计计划，明确方向、配色、字体、签名元素。
+2. 更新 `DESIGN.md` 作为新的视觉系统单一事实来源。
+3. 先改 `globals.css` 和 `app/layout.tsx`（字体），再逐个组件替换样式。
+4. 每次改完后跑完整验证：`npm test && npm run build && npm run test:e2e`。
+5. 提交前检查 `git status`，警惕 `next-env.d.ts` 或文档文件被意外移动。
+
+### 知识沉淀补录
+
+如果对话中忘记即时记录，应在任务结束后补录：
+
+- 决策和原因 → `docs/DECISIONS.md`
+- 验证流程、踩坑、可复用模式 → `docs/RUNBOOK.md`
+- 保持 `CLAUDE.md` 简洁，只放索引规则和引用

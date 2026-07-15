@@ -64,3 +64,18 @@
 
 - **决策**：重要决策写入 `DECISIONS.md`，验证流程和踩坑记录写入 `RUNBOOK.md`，并在 `CLAUDE.md` 中引用。
 - **原因**：避免把每次对话都塞进 `CLAUDE.md` 造成噪音；让长期可复用的知识结构化沉淀。
+
+## 2026-07-15 Field Atlas UI 重构
+
+- **决策**：采用 "Field Atlas" 视觉方向对全站 UI 进行重构。
+- **原因**：原有界面偏 AI/SaaS 通用模板感（ pastel 药丸、Inter 全局、扁平细线卡片）；用户希望更有高级感、更不像普通 AI 生成界面。
+- **方向**：把站点视为研究图鉴/展览手册，而非 Web 应用面板；用暖纸色画布、有个性的无衬线显示字体、降饱和颜料色，以及一条「坐标线」作为签名元素。
+- **字体**：标题 `Bricolage Grotesque`、正文 `Inter`、元数据 `JetBrains Mono`，通过 `next/font/google` 加载。
+- **签名元素**：`SectionCard` 顶部从分类标签向右延伸的 1px 坐标线，类似测量图注册线。
+- **文件**：`app/globals.css`、`app/layout.tsx`、`DESIGN.md`、`components/site/GlobalNav.module.css`、`components/site/home.module.css`、`components/site/FullLandscape.tsx`、`components/maps/maps.module.css`、`components/maps/SectionCard.tsx`、`components/maps/ModelsTimeline.tsx`、`components/catalog/catalog.module.css`。
+
+## 2026-07-15 CLAUDE.md 保持在仓库根目录
+
+- **决策**：`CLAUDE.md` 放在仓库根目录，`DECISIONS.md` 和 `RUNBOOK.md` 放在 `docs/` 目录。
+- **原因**：用户明确要求 `CLAUDE.md` 在根目录以便工具自动读取；决策/手册类文档统一放在 `docs/` 沉淀。
+- **注意**：`AGENTS.md` 需同步指向 `./CLAUDE.md`。
