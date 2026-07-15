@@ -10,6 +10,7 @@ summary:
   en: IO-aware exact attention algorithm that reduces memory and speeds up training.
   zh: IO 感知的精确注意力算法，降低内存占用并加速训练。
 website: https://github.com/Dao-AILab/flash-attention
+logo: https://github.com/Dao-AILab.png
 tags: [kernel, attention, open-source]
 regions: [Global]
 status: active

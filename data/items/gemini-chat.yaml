@@ -9,6 +9,7 @@ summary:
   en: Google's general-purpose AI assistant and conversational application.
   zh: Google 推出的通用 AI 助手与会话应用。
 website: https://gemini.google.com/
+logo: https://cdn.simpleicons.org/googlegemini
 tags: [assistant, chat, web, mobile]
 regions: [US]
 status: active

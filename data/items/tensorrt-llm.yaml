@@ -10,6 +10,7 @@ summary:
   en: NVIDIA inference engine for optimized LLM serving on GPUs.
   zh: NVIDIA 面向 GPU 优化的大模型推理引擎。
 website: https://developer.nvidia.com/tensorrt-llm
+logo: https://cdn.simpleicons.org/nvidia
 tags: [inference, serving, nvidia]
 regions: [US]
 status: active

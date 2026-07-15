@@ -10,6 +10,7 @@ summary:
   en: NVIDIA toolkit for building, customizing and deploying generative AI models.
   zh: NVIDIA 用于构建、定制和部署生成式 AI 模型的工具包。
 website: https://www.nvidia.com/en-us/ai-data-science/products/nemo/
+logo: https://cdn.simpleicons.org/nvidia
 tags: [training, fine-tuning, deployment, open-source]
 regions: [US]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: Open-source LLM engineering platform for tracing, evaluation and prompt management.
   zh: 开源大模型工程平台，支持追踪、评测与 Prompt 管理。
 website: https://langfuse.com/
+logo: https://langfuse.com/favicon-32x32.png
 tags: [observability, llm, open-source]
 regions: [Global]
 status: active

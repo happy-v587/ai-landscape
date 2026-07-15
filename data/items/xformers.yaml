@@ -10,6 +10,7 @@ summary:
   en: Meta modular toolbox of optimized Transformer building blocks.
   zh: Meta 推出的优化 Transformer 构建模块工具箱。
 website: https://github.com/facebookresearch/xformers
+logo: https://github.com/facebookresearch.png
 tags: [kernel, optimization, open-source]
 regions: [US]
 status: active

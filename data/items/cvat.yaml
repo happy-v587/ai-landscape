@@ -10,6 +10,7 @@ summary:
   en: Open-source computer vision annotation tool for image and video labeling.
   zh: 开源计算机视觉标注工具，用于图像和视频标注。
 website: https://www.cvat.ai/
+logo: https://cdn.prod.website-files.com/62bebfb83044de7f13ae257e/62da63f718f65c320cb54695_FAV%20S.png
 tags: [data, labeling, vision, open-source]
 regions: [US]
 status: active

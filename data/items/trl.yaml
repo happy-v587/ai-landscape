@@ -9,6 +9,7 @@ summary:
   en: Hugging Face library for post-training transformer language models.
   zh: Hugging Face 的 Transformer 语言模型后训练库。
 website: https://huggingface.co/docs/trl/index
+logo: https://github.com/huggingface.png
 tags: [training, post-training, open-source]
 regions: [Global]
 status: active

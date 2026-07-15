@@ -9,6 +9,7 @@ summary:
   en: Data framework for building context-augmented LLM and agent applications.
   zh: 用于构建上下文增强的大模型与 Agent 应用的数据框架。
 website: https://www.llamaindex.ai/
+logo: https://www.llamaindex.ai/favicon.svg
 tags: [agent, framework, rag, open-source]
 regions: [US]
 status: active

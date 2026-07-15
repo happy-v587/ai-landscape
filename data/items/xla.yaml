@@ -10,6 +10,7 @@ summary:
   en: Accelerated linear algebra compiler for machine learning workloads.
   zh: 面向机器学习工作负载的加速线性代数编译器。
 website: https://openxla.org/xla
+logo: https://github.com/openxla.png
 tags: [compiler, accelerator, open-source]
 regions: [US]
 status: active

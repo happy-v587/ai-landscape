@@ -10,6 +10,7 @@ summary:
   en: Framework for building, serving and deploying machine learning models.
   zh: 用于构建、服务和部署机器学习模型的框架。
 website: https://www.bentoml.com/
+logo: https://cdn.simpleicons.org/bentoml
 tags: [inference, serving, deployment, open-source]
 regions: [US]
 status: active

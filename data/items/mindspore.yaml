@@ -10,6 +10,7 @@ summary:
   en: Huawei's open-source deep learning framework for all-scenario AI.
   zh: 华为开源的面向全场景人工智能的深度学习框架。
 website: https://www.mindspore.cn/
+logo: https://www.mindspore.cn/_static/logo1_light.Hy-yY9OS.png
 tags: [framework, training, open-source]
 regions: [CN]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: NVIDIA framework for training large Transformer models at scale.
   zh: NVIDIA 用于大规模训练 Transformer 模型的框架。
 website: https://github.com/NVIDIA/Megatron-LM
+logo: https://github.com/NVIDIA.png
 tags: [training, distributed, open-source]
 regions: [US]
 status: active

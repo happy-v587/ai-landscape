@@ -9,6 +9,7 @@ summary:
   en: ByteDance's AI assistant for conversation, creation, and daily tasks.
   zh: 字节跳动推出的 AI 助手，支持对话、创作和日常任务。
 website: https://www.doubao.com/
+logo: https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/favicon/new-doubao/128x128.png
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

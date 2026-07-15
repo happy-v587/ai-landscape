@@ -10,6 +10,7 @@ summary:
   en: Version control system for machine learning datasets, models and experiments.
   zh: 面向机器学习数据集、模型和实验的版本控制系统。
 website: https://dvc.org/
+logo: https://cdn.simpleicons.org/dvc
 tags: [data, versioning, mlops, open-source]
 regions: [US]
 status: active

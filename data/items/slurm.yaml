@@ -10,6 +10,7 @@ summary:
   en: Open-source workload manager for Linux clusters and supercomputers.
   zh: 面向 Linux 集群和超级计算机的开源工作负载管理器。
 website: https://slurm.schedmd.com/
+logo: https://slurm.schedmd.com/favicon.ico
 tags: [compute, scheduling, cluster, open-source]
 regions: [US]
 status: active

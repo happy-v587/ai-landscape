@@ -10,6 +10,7 @@ summary:
   en: NVIDIA scalable serving framework for multiple ML frameworks.
   zh: NVIDIA 支持多种 ML 框架的可扩展服务框架。
 website: https://developer.nvidia.com/triton-inference-server
+logo: https://cdn.simpleicons.org/nvidia
 tags: [serving, nvidia, open-source]
 regions: [US]
 status: active

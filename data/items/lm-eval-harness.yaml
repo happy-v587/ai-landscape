@@ -9,6 +9,7 @@ summary:
   en: Open-source framework for evaluating language models across benchmarks.
   zh: 跨基准评测语言模型的开源框架。
 website: https://github.com/EleutherAI/lm-evaluation-harness
+logo: https://github.com/EleutherAI.png
 tags: [evaluation, benchmarks, open-source]
 regions: [Global]
 status: active

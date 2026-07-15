@@ -9,6 +9,7 @@ summary:
   en: iFlytek's cognitive large model chat and productivity assistant.
   zh: 科大讯飞推出的认知大模型聊天与生产力助手。
 website: https://xinghuo.xfyun.cn/
+logo: https://xinghuo.xfyun.cn/spark-icon.ico
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

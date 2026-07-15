@@ -10,6 +10,7 @@ summary:
   en: OpenAI Python-like language and compiler for writing efficient GPU kernels.
   zh: OpenAI 推出的类 Python 语言与编译器，用于编写高效 GPU 内核。
 website: https://github.com/triton-lang/triton
+logo: https://github.com/triton-lang.png
 tags: [kernel, compiler, open-source]
 regions: [Global]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: PyTorch native fully sharded data parallel training wrapper.
   zh: PyTorch 原生的全分片数据并行训练封装。
 website: https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html
+logo: https://cdn.simpleicons.org/pytorch
 tags: [training, distributed, open-source]
 regions: [Global]
 status: active

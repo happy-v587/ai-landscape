@@ -9,6 +9,7 @@ summary:
   en: General-purpose AI assistant application from Anthropic.
   zh: Anthropic 推出的通用 AI 助手应用。
 website: https://claude.ai/
+logo: https://cdn.simpleicons.org/claude
 tags: [assistant, productivity, web, mobile]
 regions: [US]
 status: active

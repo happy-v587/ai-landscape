@@ -9,6 +9,7 @@ summary:
   en: Tooling platform that provides managed tool integrations and authentication for AI agents.
   zh: 为 AI Agent 提供托管工具集成和认证的工具平台。
 website: https://composio.dev/
+logo: https://github.com/ComposioHQ.png
 tags: [tools, runtime, integrations, closed-source]
 regions: [US]
 status: active

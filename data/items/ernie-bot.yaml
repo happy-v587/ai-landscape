@@ -9,6 +9,7 @@ summary:
   en: Baidu's knowledge-enhanced large language model chat application.
   zh: 百度推出的知识增强大语言模型聊天应用。
 website: https://yiyan.baidu.com/
+logo: https://eb-static.cdn.bcebos.com/logo/favicon.ico
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

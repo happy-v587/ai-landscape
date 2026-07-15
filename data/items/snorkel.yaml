@@ -10,6 +10,7 @@ summary:
   en: Data-centric AI platform for programmatic labeling and weak supervision.
   zh: 面向程序化标注和弱监督的数据-centric AI 平台。
 website: https://snorkel.ai/
+logo: https://s46486.pcdn.co/wp-content/uploads/2022/11/android-chrome-192x192-1.png
 tags: [data, labeling, weak-supervision, open-source]
 regions: [US]
 status: active

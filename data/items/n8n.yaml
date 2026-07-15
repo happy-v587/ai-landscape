@@ -9,6 +9,7 @@ summary:
   en: Workflow automation platform with AI agent nodes and self-hosting option.
   zh: 支持 AI Agent 节点和自托管选项的工作流自动化平台。
 website: https://n8n.io/
+logo: https://cdn.simpleicons.org/n8n
 tags: [agent, automation, open-source]
 regions: [Global]
 status: active

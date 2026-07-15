@@ -9,6 +9,7 @@ summary:
   en: Google's open Agent Development Kit for building, evaluating, and deploying agents with tools and orchestration.
   zh: Google 开源的 Agent 开发套件，用于构建、评估和部署具备工具与编排能力的 Agent。
 website: https://google.github.io/adk-docs/
+logo: https://cdn.simpleicons.org/google
 tags: [agent, framework, runtime, open-source]
 regions: [US]
 status: active

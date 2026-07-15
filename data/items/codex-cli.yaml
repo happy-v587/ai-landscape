@@ -9,6 +9,7 @@ summary:
   en: Lightweight coding agent in the terminal powered by OpenAI's Codex model and reasoning.
   zh: 由 OpenAI Codex 模型和推理能力驱动的轻量级终端编程 Agent。
 website: https://github.com/openai/codex
+logo: https://github.com/openai.png
 tags: [coding, agent, cli, open-source]
 regions: [US]
 status: active

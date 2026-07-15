@@ -10,6 +10,7 @@ summary:
   en: Cross-platform inference runtime for ONNX models.
   zh: 面向 ONNX 模型的跨平台推理运行时。
 website: https://onnxruntime.ai/
+logo: https://cdn.simpleicons.org/onnx
 tags: [inference, runtime, open-source]
 regions: [Global]
 status: active

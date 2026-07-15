@@ -9,6 +9,7 @@ summary:
   en: Library and hub interface for accessing and processing datasets.
   zh: 用于访问与处理数据集的库和数据中心接口。
 website: https://huggingface.co/docs/datasets/index
+logo: https://cdn.simpleicons.org/huggingface
 tags: [data, datasets, open-source]
 regions: [Global]
 status: active

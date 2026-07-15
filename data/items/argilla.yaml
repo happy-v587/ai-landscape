@@ -10,6 +10,7 @@ summary:
   en: Open-source data labeling and curation platform for LLMs.
   zh: 面向大模型的开源数据标注与整理平台。
 website: https://argilla.io/
+logo: https://www.argilla.io/favicon-32x32.png
 tags: [data, labeling, open-source]
 regions: [Global]
 status: active

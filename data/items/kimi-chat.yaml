@@ -9,6 +9,7 @@ summary:
   en: Moonshot AI's long-context AI assistant and chat application.
   zh: 月之暗面推出的长上下文 AI 助手与聊天应用。
 website: https://kimi.moonshot.cn/
+logo: https://cdn.simpleicons.org/kimi
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

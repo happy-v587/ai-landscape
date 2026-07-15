@@ -10,6 +10,7 @@ summary:
   en: Google Cloud's high-performance LLM training framework built on JAX.
   zh: Google Cloud 基于 JAX 构建的高性能大语言模型训练框架。
 website: https://github.com/google/maxtext
+logo: https://github.com/google.png
 tags: [training, distributed, jax, open-source]
 regions: [US]
 status: active

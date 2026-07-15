@@ -9,6 +9,7 @@ summary:
   en: xAI's conversational AI assistant with real-time access to X and web data.
   zh: xAI 推出的会话式 AI 助手，可实时访问 X 和网页数据。
 website: https://grok.com/
+logo: https://grok.com/images/favicon.svg
 tags: [assistant, chat, web, mobile]
 regions: [US]
 status: active

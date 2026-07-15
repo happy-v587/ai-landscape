@@ -10,6 +10,7 @@ summary:
   en: Open-source framework for reinforcement learning from human feedback at scale.
   zh: 面向大规模人类反馈强化学习的开源框架。
 website: https://github.com/OpenRLHF/OpenRLHF
+logo: https://github.com/OpenRLHF.png
 tags: [training, rlhf, open-source]
 regions: [Global]
 status: active

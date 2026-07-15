@@ -9,6 +9,7 @@ summary:
   en: Python agent framework built around type-safe structured outputs.
   zh: 围绕类型安全结构化输出构建的 Python Agent 框架。
 website: https://ai.pydantic.dev/
+logo: https://cdn.simpleicons.org/pydantic
 tags: [agent, framework, python, open-source]
 regions: [Global]
 status: active

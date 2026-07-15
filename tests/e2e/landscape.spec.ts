@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('homepage shows four map cards', async ({ page }) => {
+test('homepage shows four map guides', async ({ page }) => {
   await page.goto('/en');
   await expect(page.getByRole('heading', { name: 'Models' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Apps & SaaS' })).toBeVisible();
@@ -8,7 +8,7 @@ test('homepage shows four map cards', async ({ page }) => {
 
 test('homepage links to map pages', async ({ page }) => {
   await page.goto('/en');
-  await page.getByRole('link', { name: /Models Foundation models and release timelines/ }).click();
+  await page.getByRole('link', { name: /Models/ }).first().click();
   await expect(page).toHaveURL(/\/en\/maps\/models/);
 });
 

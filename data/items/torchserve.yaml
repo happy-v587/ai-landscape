@@ -10,6 +10,7 @@ summary:
   en: PyTorch model serving framework with multi-model and versioning support.
   zh: PyTorch 模型服务框架，支持多模型和版本管理。
 website: https://pytorch.org/serve/
+logo: https://github.com/pytorch.png
 tags: [inference, serving, pytorch, open-source]
 regions: [US]
 status: active

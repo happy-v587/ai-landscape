@@ -10,6 +10,7 @@ summary:
   en: Inference and fine-tuning platform for open-source generative models.
   zh: 面向开源生成式模型的推理与微调平台。
 website: https://www.together.ai/
+logo: https://cdn.prod.website-files.com/69654e88dce9154b5f1206dd/699e382b218f39bfa0a115d9_favicon.png
 tags: [inference, serving, closed-source]
 regions: [US]
 status: active

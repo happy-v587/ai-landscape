@@ -10,6 +10,7 @@ summary:
   en: Data orchestration platform designed for developing and maintaining data assets.
   zh: 用于开发和维护数据资产的数据编排平台。
 website: https://dagster.io/
+logo: https://cdn.prod.website-files.com/681399f654933b29e12fb8bd/681cbb6702de85f9eb0bf220_32x32.png
 tags: [data, orchestration, open-source]
 regions: [US]
 status: active

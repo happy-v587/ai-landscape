@@ -10,6 +10,7 @@ summary:
   en: Intel toolkit for optimizing and deploying deep learning models across hardware.
   zh: Intel 用于跨硬件优化和部署深度学习模型的工具包。
 website: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit.html
+logo: https://github.com/openvinotoolkit.png
 tags: [inference, optimization, open-source]
 regions: [US]
 status: active

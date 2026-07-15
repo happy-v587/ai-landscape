@@ -10,6 +10,7 @@ summary:
   en: Modern workflow orchestration tool for data and ML pipelines.
   zh: 面向数据和机器学习流水线的现代工作流编排工具。
 website: https://www.prefect.io/
+logo: https://cdn.simpleicons.org/prefect
 tags: [data, orchestration, open-source]
 regions: [US]
 status: active

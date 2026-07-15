@@ -120,3 +120,17 @@
 - **原因**：用户认为嵌入地图的 2×2 框视觉上不舒服；希望首页更像目录/引导页，有数据总结、介绍说明，并带苹果风格的交互艺术感。
 - **交互**：卡片进入有错落淡入动画；hover 时卡片上浮、边框变色、出现柔和阴影，其他卡片轻微变暗；按下时轻微缩放。
 - **文件**：`components/site/FullLandscape.tsx`、`components/site/home.module.css`、`app/[locale]/page.tsx`、`tests/e2e/landscape.spec.ts`。
+
+## 2026-07-15 首页改为纵向 Atlas Guide 列表
+
+- **决策**：将首页的 2×2 卡片网格改为四个纵向排列的引导条目（Atlas Guides），每个条目包含索引编号、地图名称、一句话说明、数据统计、洞察句子和分析短评，点击跳转到对应地图页。
+- **原因**：用户认为 2×2 卡片在内容量不同时视觉上仍不舒服，希望更像目录/引导页；纵向列表更像展览目录或年度索引，阅读节奏更稳定，也更容易展示数据总结和分析。
+- **交互**：进入时有错落淡入动画；hover 时条目整体右移，左侧出现地图色竖线，其他条目变暗以聚焦当前项；按下时轻微回缩。保留了 Apple 风格的弹性缓动和克制动效。
+- **文件**：`components/site/FullLandscape.tsx`、`components/site/home.module.css`、`tests/e2e/landscape.spec.ts`。
+
+## 2026-07-15 为非模型条目添加显式 logo
+
+- **决策**：为 `model-infra`、`agent-tools`、`apps-saas` 三个地图的全部条目添加显式 `logo:` 字段，优先使用 Simple Icons CDN、GitHub 组织头像或官方站点 logo，不再依赖 `logos.hunter.io` 自动推导。
+- **原因**：原 hunter.io 回退不可靠，导致大量条目只显示首字母 Monogram；用户希望非模型地图以图标为主、名称为辅，需要可加载的真实 logo。
+- **实现**：共更新 116 个 YAML 文件；Simple Icons 46 个、GitHub 头像 37 个、官方站点/press kit 33 个；避免错误匹配（如 Flowise≠wise、Grok≠ngrok、Mastra≠astra）。
+- **文件**：`data/items/*.yaml`（116 个文件）。

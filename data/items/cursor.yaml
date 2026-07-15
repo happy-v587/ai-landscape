@@ -8,6 +8,7 @@ summary:
   en: AI code editor for software teams.
   zh: 面向软件团队的 AI 代码编辑器。
 website: https://cursor.com/
+logo: https://cdn.simpleicons.org/cursor
 tags: [ide, coding-agent]
 regions: [US]
 status: active

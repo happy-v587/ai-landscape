@@ -10,6 +10,7 @@ summary:
   en: Google high-performance numerical computing and ML framework.
   zh: Google 的高性能数值计算与机器学习框架。
 website: https://jax.readthedocs.io/
+logo: https://raw.githubusercontent.com/google/jax/main/images/jax_logo.svg
 tags: [training, framework, open-source]
 regions: [US]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: Efficient fine-tuning toolkit supporting LLMs and multimodal models.
   zh: 支持大语言模型和多模态模型的高效微调工具包。
 website: https://github.com/InternLM/xtuner
+logo: https://github.com/InternLM.png
 tags: [training, fine-tuning, open-source]
 regions: [CN]
 status: active

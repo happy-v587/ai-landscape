@@ -10,6 +10,7 @@ summary:
   en: Baidu's open-source deep learning platform with industry-focused tools.
   zh: 百度开源的深度学习平台，提供面向工业应用的工具。
 website: https://www.paddlepaddle.org.cn/
+logo: https://cdn.simpleicons.org/paddlepaddle
 tags: [framework, training, open-source]
 regions: [CN]
 status: active

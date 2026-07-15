@@ -9,6 +9,7 @@ summary:
   en: Autonomous AI software engineer from Cognition that can plan, code, test, and deploy projects.
   zh: Cognition 推出的自主 AI 软件工程师，可规划、编码、测试和部署项目。
 website: https://www.cognition.ai/
+logo: https://www.cognition.ai/icon.svg
 tags: [coding, agent, closed-source]
 regions: [US]
 status: active

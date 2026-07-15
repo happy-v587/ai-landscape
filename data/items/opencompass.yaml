@@ -10,6 +10,7 @@ summary:
   en: One-stop platform for evaluating large language models across 100+ datasets.
   zh: 支持 100+ 数据集的一站式大语言模型评测平台。
 website: https://github.com/open-compass/opencompass
+logo: https://github.com/open-compass.png
 tags: [evaluation, benchmarks, open-source]
 regions: [CN]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: Hugging Face library for pre-training and post-training LLMs at scale.
   zh: Hugging Face 推出的大规模预训练和后训练大语言模型库。
 website: https://github.com/huggingface/nanotron
+logo: https://cdn.simpleicons.org/huggingface
 tags: [training, distributed, open-source]
 regions: [US]
 status: active

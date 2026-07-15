@@ -9,6 +9,7 @@ summary:
   en: Microsoft SDK for integrating AI services and agents into enterprise apps.
   zh: 微软用于将 AI 服务与 Agent 集成到企业应用的 SDK。
 website: https://github.com/microsoft/semantic-kernel
+logo: https://github.com/microsoft.png
 tags: [agent, sdk, enterprise, open-source]
 regions: [US]
 status: active

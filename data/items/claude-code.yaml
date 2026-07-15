@@ -9,6 +9,7 @@ summary:
   en: Agentic coding tool that works in the terminal and developer workflows.
   zh: 在终端与开发工作流中运行的 Agent 编程工具。
 website: https://docs.anthropic.com/en/docs/claude-code/overview
+logo: https://cdn.simpleicons.org/claude
 tags: [coding-agent, cli, developer-tools]
 regions: [US]
 status: active

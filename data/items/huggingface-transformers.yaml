@@ -10,6 +10,7 @@ summary:
   en: Hugging Face library providing pretrained models and training utilities for NLP and beyond.
   zh: Hugging Face 提供的预训练模型和训练工具库，覆盖自然语言处理等领域。
 website: https://huggingface.co/docs/transformers
+logo: https://cdn.simpleicons.org/huggingface
 tags: [training, inference, models, open-source]
 regions: [US]
 status: active

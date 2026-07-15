@@ -7,6 +7,7 @@ summary:
   en: General-purpose AI assistant and productivity application.
   zh: 通用 AI 助手与生产力应用。
 website: https://chatgpt.com/
+logo: https://github.com/openai.png
 tags: [assistant, productivity, desktop, mobile]
 regions: [US]
 status: active

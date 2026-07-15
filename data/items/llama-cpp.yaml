@@ -10,6 +10,7 @@ summary:
   en: C++ inference engine for running LLMs efficiently on consumer hardware.
   zh: 用 C++ 实现在消费级硬件上高效运行大模型的推理引擎。
 website: https://github.com/ggerganov/llama.cpp
+logo: https://github.com/ggerganov.png
 tags: [inference, quantization, open-source]
 regions: [Global]
 status: active

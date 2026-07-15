@@ -9,6 +9,7 @@ summary:
   en: Open-source serving framework for language and multimodal models.
   zh: 面向语言与多模态模型的开源服务框架。
 website: https://sgl-project.github.io/
+logo: https://github.com/sgl-project.png
 tags: [inference, serving, open-source]
 regions: [Global]
 status: active

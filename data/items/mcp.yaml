@@ -9,6 +9,7 @@ summary:
   en: Open protocol for connecting AI assistants to external data sources, tools, and services.
   zh: 将 AI 助手连接到外部数据源、工具和服务的开放协议。
 website: https://modelcontextprotocol.io/
+logo: https://github.com/modelcontextprotocol.png
 tags: [protocol, runtime, tool-use, open-source]
 regions: [US]
 status: active

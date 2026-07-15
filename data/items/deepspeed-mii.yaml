@@ -10,6 +10,7 @@ summary:
   en: Low-latency, high-throughput inference engine from the DeepSpeed team.
   zh: DeepSpeed 团队推出的低延迟、高吞吐推理引擎。
 website: https://github.com/microsoft/DeepSpeed-MII
+logo: https://github.com/microsoft.png
 tags: [inference, serving, open-source]
 regions: [US]
 status: active

@@ -9,6 +9,7 @@ summary:
   en: Quora's AI chat platform providing access to multiple models and custom bots.
   zh: Quora 推出的 AI 聊天平台，可访问多个模型和自定义机器人。
 website: https://poe.com/
+logo: https://cdn.simpleicons.org/poe
 tags: [assistant, chat, web, mobile]
 regions: [US]
 status: active

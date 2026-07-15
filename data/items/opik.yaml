@@ -10,6 +10,7 @@ summary:
   en: Comet's open-source LLM evaluation and observability platform.
   zh: Comet 推出的开源大模型评测与可观测性平台。
 website: https://www.comet.com/site/opik/
+logo: https://www.comet.com/site/wp-content/uploads/2025/01/cropped-apple-touch-icon-192x192.png
 tags: [observability, evaluation, open-source]
 regions: [Global]
 status: active

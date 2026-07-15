@@ -9,6 +9,7 @@ summary:
   en: Alibaba Cloud's general-purpose AI assistant and chat application.
   zh: 阿里云推出的通用 AI 助手与聊天应用。
 website: https://tongyi.aliyun.com/
+logo: https://cdn.simpleicons.org/qwen
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

@@ -9,6 +9,7 @@ summary:
   en: Visual framework for building and experimenting with LangChain flows.
   zh: 用于可视化构建和试验 LangChain 流程的框架。
 website: https://www.langflow.org/
+logo: https://cdn.simpleicons.org/langflow
 tags: [agent, no-code, open-source]
 regions: [Global]
 status: active

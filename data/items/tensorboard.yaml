@@ -10,6 +10,7 @@ summary:
   en: TensorFlow visualization toolkit widely used for tracking ML experiments.
   zh: 广泛用于追踪机器学习实验的 TensorFlow 可视化工具。
 website: https://www.tensorflow.org/tensorboard
+logo: https://cdn.simpleicons.org/tensorflow
 tags: [observability, visualization, open-source]
 regions: [Global]
 status: active

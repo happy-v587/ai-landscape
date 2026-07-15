@@ -10,6 +10,7 @@ summary:
   en: Holistic evaluation framework for language models from Stanford CRFM.
   zh: 斯坦福 CRFM 推出的语言模型整体评估框架。
 website: https://crfm.stanford.edu/helm/
+logo: https://crfm.stanford.edu/helm/helm.svg
 tags: [evaluation, benchmark, open-source]
 regions: [US]
 status: active

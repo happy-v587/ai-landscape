@@ -10,6 +10,7 @@ summary:
   en: Fast inference engine for Transformer models with quantization support.
   zh: 支持量化的 Transformer 模型快速推理引擎。
 website: https://github.com/OpenNMT/CTranslate2
+logo: https://github.com/OpenNMT.png
 tags: [inference, quantization, open-source]
 regions: [Global]
 status: active

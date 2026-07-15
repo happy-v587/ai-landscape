@@ -10,6 +10,7 @@ summary:
   en: LangChain's platform for debugging, testing, evaluating and monitoring LLM applications.
   zh: LangChain 推出的用于调试、测试、评估和监控大模型应用的平台。
 website: https://smith.langchain.com/
+logo: https://smith.langchain.com/favicon.svg
 tags: [observability, llm, closed-source]
 regions: [US]
 status: active

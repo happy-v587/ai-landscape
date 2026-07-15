@@ -10,6 +10,7 @@ summary:
   en: Open-source framework for unit testing LLM outputs with metrics like G-Eval and RAGAS.
   zh: 用于对 LLM 输出进行单元测试的开源框架，支持 G-Eval、RAGAS 等指标。
 website: https://github.com/confident-ai/deepeval
+logo: https://github.com/confident-ai.png
 tags: [evaluation, testing, open-source]
 regions: [Global]
 status: active

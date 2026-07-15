@@ -8,6 +8,7 @@ summary:
   en: Open-source inference and serving engine.
   zh: 开源推理与服务引擎。
 website: https://vllm.ai/
+logo: https://cdn.simpleicons.org/vllm
 tags: [inference, serving, open-source]
 regions: [US]
 status: active

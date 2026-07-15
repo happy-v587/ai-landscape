@@ -9,6 +9,7 @@ summary:
   en: Orchestration framework and runtime for long-running, stateful agents.
   zh: 面向长时运行、有状态 Agent 的编排框架与运行时。
 website: https://www.langchain.com/langgraph
+logo: https://cdn.simpleicons.org/langgraph
 tags: [agent, orchestration, open-source]
 regions: [US]
 status: active

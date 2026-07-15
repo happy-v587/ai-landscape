@@ -9,6 +9,7 @@ summary:
   en: Low-code drag-and-drop tool for building LLM workflows and agents.
   zh: 用于通过拖拽方式构建大模型工作流与 Agent 的低代码工具。
 website: https://flowiseai.com/
+logo: https://github.com/FlowiseAI.png
 tags: [agent, no-code, open-source]
 regions: [Global]
 status: active

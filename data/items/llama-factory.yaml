@@ -10,6 +10,7 @@ summary:
   en: Unified framework for fine-tuning over 100 LLMs via LoRA, QLoRA, and full parameters.
   zh: 通过 LoRA、QLoRA 和全参数方式微调 100+ 个大模型的统一框架。
 website: https://github.com/hiyouga/LLaMA-Factory
+logo: https://github.com/hiyouga.png
 tags: [training, fine-tuning, open-source]
 regions: [Global]
 status: active

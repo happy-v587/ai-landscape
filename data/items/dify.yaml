@@ -9,6 +9,7 @@ summary:
   en: Open-source LLM application development platform with visual workflow and agents.
   zh: 开源大模型应用开发平台，支持可视化工作流与 Agent。
 website: https://dify.ai/
+logo: https://cdn.simpleicons.org/dify
 tags: [agent, no-code, open-source]
 regions: [CN]
 status: active

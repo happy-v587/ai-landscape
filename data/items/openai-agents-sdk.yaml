@@ -9,6 +9,7 @@ summary:
   en: SDK for building text, voice, and sandboxed agents with a small set of primitives.
   zh: 以少量原语构建文本、语音与沙箱 Agent 的 SDK。
 website: https://openai.github.io/openai-agents-js/
+logo: https://github.com/openai.png
 tags: [agent, sdk, typescript, open-source]
 regions: [US]
 status: active

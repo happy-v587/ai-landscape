@@ -10,6 +10,7 @@ summary:
   en: Unified deep learning system for large-scale model training.
   zh: 面向大模型训练的统一深度学习系统。
 website: https://colossalai.org/
+logo: https://github.com/hpcaitech.png
 tags: [training, distributed, open-source]
 regions: [Global]
 status: active

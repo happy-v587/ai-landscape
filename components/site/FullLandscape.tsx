@@ -36,6 +36,25 @@ const mapDescriptions: Record<(typeof mapOrder)[number], Record<Locale, string>>
   },
 };
 
+const mapAnalysis: Record<(typeof mapOrder)[number], Record<Locale, string>> = {
+  models: {
+    en: 'Release cadence is accelerating; reasoning and multimodal variants now dominate new announcements.',
+    zh: '发布节奏持续加快，推理与多模态变体已成为新模型发布的主流。',
+  },
+  'model-infra': {
+    en: 'Inference and serving layers are the most crowded, driven by demand for efficient local and cloud deployment.',
+    zh: '推理与服务层最为拥挤，反映出对本地与云端高效部署的强烈需求。',
+  },
+  'agent-tools': {
+    en: 'Coding agents and composable frameworks are converging around open protocols like MCP and A2A.',
+    zh: '编程 Agent 与可组合框架正围绕 MCP、A2A 等开放协议快速收敛。',
+  },
+  'apps-saas': {
+    en: 'Chat interfaces and coding assistants remain the most visible end-user surfaces across regions.',
+    zh: '对话界面与编程助手仍是各地区最可见的终端用户入口。',
+  },
+};
+
 function collectMapStats(mapId: (typeof mapOrder)[number], entries: CatalogEntry[]) {
   const mapEntries = entries.filter((entry) => entry.map === mapId);
   const categories = new Set(mapEntries.map((entry) => entry.category));
@@ -78,42 +97,51 @@ function collectMapStats(mapId: (typeof mapOrder)[number], entries: CatalogEntry
   };
 }
 
-function MapPlate({
+function MapGuide({
   mapId,
   entries,
   locale,
+  index,
 }: {
   mapId: (typeof mapOrder)[number];
   entries: CatalogEntry[];
   locale: Locale;
+  index: number;
 }) {
   const stats = collectMapStats(mapId, entries);
+  const number = String(index + 1).padStart(2, '0');
   return (
     <Link
       href={`/${locale}/maps/${mapId}`}
-      className={styles.mapPlate}
+      className={styles.mapGuide}
       data-map={mapId}
     >
-      <div className={styles.plateHeader}>
-        <span className={styles.plateDot} />
-        <h2 className={styles.plateTitle}>{mapNames[mapId][locale]}</h2>
-      </div>
-      <p className={styles.plateDescription}>{mapDescriptions[mapId][locale]}</p>
-      <div className={styles.plateStats}>
-        <div className={styles.plateStat}>
-          <strong>{stats.entryCount}</strong>
-          <span>{locale === 'en' ? 'entries' : '条目'}</span>
-        </div>
-        <div className={styles.plateStat}>
-          <strong>{stats.categoryCount}</strong>
-          <span>{locale === 'en' ? 'categories' : '分类'}</span>
-        </div>
-      </div>
-      <p className={styles.plateInsight}>{stats.insight}</p>
-      <span className={styles.plateAction}>
-        {locale === 'en' ? 'Explore' : '探索'}
-        <span aria-hidden="true">→</span>
+      <span className={styles.guideNumber} aria-hidden="true">
+        {number}
       </span>
+      <span className={styles.guideRule} aria-hidden="true" />
+      <div className={styles.guideBody}>
+        <div className={styles.guideHeader}>
+          <h2 className={styles.guideTitle}>{mapNames[mapId][locale]}</h2>
+          <span className={styles.guideAction}>
+            {locale === 'en' ? 'Explore' : '探索'}
+            <span aria-hidden="true">→</span>
+          </span>
+        </div>
+        <p className={styles.guideDescription}>{mapDescriptions[mapId][locale]}</p>
+        <div className={styles.guideStats}>
+          <span className={styles.guideStat}>
+            <strong>{stats.entryCount}</strong>
+            {locale === 'en' ? 'entries' : '条目'}
+          </span>
+          <span className={styles.guideStat}>
+            <strong>{stats.categoryCount}</strong>
+            {locale === 'en' ? 'categories' : '分类'}
+          </span>
+          <span className={styles.guideInsight}>{stats.insight}</span>
+        </div>
+        <p className={styles.guideAnalysis}>{mapAnalysis[mapId][locale]}</p>
+      </div>
     </Link>
   );
 }
@@ -125,6 +153,14 @@ export function FullLandscape({
   entries: CatalogEntry[];
   locale: Locale;
 }) {
+  const activeCount = entries.filter((entry) => entry.status === 'active').length;
+  const providers = new Set(
+    entries
+      .filter((entry) => entry.timeline != null)
+      .map((entry) => entry.timeline?.provider_lane ?? entry.organization)
+      .filter(Boolean)
+  ).size;
+
   return (
     <div className={styles.fullLandscape}>
       <section className={styles.hero}>
@@ -134,12 +170,30 @@ export function FullLandscape({
             ? 'A field atlas of models, infrastructure, agents, and applications.'
             : '模型、基础设施、Agent 与应用的中英文生态地图。'}
         </p>
+        <div className={styles.heroStats}>
+          <div className={styles.heroStat}>
+            <strong>{mapOrder.length}</strong>
+            <span>{locale === 'en' ? 'maps' : '地图'}</span>
+          </div>
+          <div className={styles.heroStat}>
+            <strong>{entries.length}</strong>
+            <span>{locale === 'en' ? 'entries' : '条目'}</span>
+          </div>
+          <div className={styles.heroStat}>
+            <strong>{activeCount}</strong>
+            <span>{locale === 'en' ? 'active' : '活跃'}</span>
+          </div>
+          <div className={styles.heroStat}>
+            <strong>{providers}</strong>
+            <span>{locale === 'en' ? 'providers' : '厂商'}</span>
+          </div>
+        </div>
       </section>
-      <div className={styles.mapGrid}>
-        {mapOrder.map((mapId) => (
-          <MapPlate key={mapId} mapId={mapId} entries={entries} locale={locale} />
+      <nav className={styles.atlasIndex} aria-label={locale === 'en' ? 'Atlas index' : '图鉴索引'}>
+        {mapOrder.map((mapId, index) => (
+          <MapGuide key={mapId} mapId={mapId} entries={entries} locale={locale} index={index} />
         ))}
-      </div>
+      </nav>
     </div>
   );
 }

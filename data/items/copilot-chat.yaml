@@ -9,6 +9,7 @@ summary:
   en: Microsoft's AI companion across Windows, Edge, Microsoft 365, and mobile apps.
   zh: 微软在 Windows、Edge、Microsoft 365 和移动应用中的 AI 伴侣。
 website: https://copilot.microsoft.com/
+logo: https://github.com/microsoft.png
 tags: [assistant, chat, web, mobile]
 regions: [US]
 status: active

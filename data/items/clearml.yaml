@@ -10,6 +10,7 @@ summary:
   en: Open-source MLOps platform for experiment management, orchestration and observability.
   zh: 开源 MLOps 平台，支持实验管理、编排与可观测性。
 website: https://clear.ml/
+logo: https://clear.ml/wp-content/uploads/2021/01/cropped-fav-192x192.png
 tags: [observability, experiment-tracking, open-source]
 regions: [Global]
 status: active

@@ -9,6 +9,7 @@ summary:
   en: Data labeling platform for preparing training and evaluation data.
   zh: 用于准备训练与评测数据的数据标注平台。
 website: https://labelstud.io/
+logo: https://labelstud.io/favicon.svg
 tags: [data, labeling, open-source]
 regions: [US]
 status: active

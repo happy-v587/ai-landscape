@@ -9,6 +9,7 @@ summary:
   en: Open-source platform for experiment tracking, evaluation, and model lifecycle workflows.
   zh: 用于实验追踪、评测与模型生命周期流程的开源平台。
 website: https://mlflow.org/
+logo: https://cdn.simpleicons.org/mlflow
 tags: [observability, evaluation, open-source]
 regions: [Global]
 status: active

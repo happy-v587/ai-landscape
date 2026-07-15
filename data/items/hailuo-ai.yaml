@@ -9,6 +9,7 @@ summary:
   en: MiniMax's AI assistant for chat, voice, and video creation.
   zh: MiniMax 推出的 AI 助手，支持聊天、语音和视频创作。
 website: https://hailuoai.com/
+logo: https://cdn.hailuoai.com/hailuo-video-web/public_assets/d36833d9-4c7a-4bcc-87e9-37a2e4bf50a4.svg
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

@@ -9,6 +9,7 @@ summary:
   en: Open-source platform for AI software engineering agents that can solve real GitHub issues and PRs.
   zh: 用于 AI 软件工程 Agent 的开源平台，可解决真实 GitHub Issue 和 PR。
 website: https://www.all-hands.dev/
+logo: https://github.com/All-Hands-AI.png
 tags: [coding, agent, open-source, research]
 regions: [US]
 status: active

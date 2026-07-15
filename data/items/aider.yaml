@@ -9,6 +9,7 @@ summary:
   en: Terminal-based AI coding assistant that edits code in local repositories with multi-file support.
   zh: 基于终端的 AI 编程助手，可在本地仓库中多文件编辑代码。
 website: https://aider.chat/
+logo: https://github.com/paul-gauthier.png
 tags: [coding, agent, cli, open-source]
 regions: [US]
 status: active

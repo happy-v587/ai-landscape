@@ -10,6 +10,7 @@ summary:
   en: High-level neural network API that runs on top of TensorFlow and JAX.
   zh: 运行在 TensorFlow 和 JAX 之上的高级神经网络 API。
 website: https://keras.io/
+logo: https://cdn.simpleicons.org/keras
 tags: [framework, training, open-source]
 regions: [US]
 status: active

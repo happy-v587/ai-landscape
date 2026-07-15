@@ -9,6 +9,7 @@ summary:
   en: Microsoft framework for building multi-agent conversational systems.
   zh: 微软用于构建多智能体对话系统的框架。
 website: https://github.com/microsoft/autogen
+logo: https://github.com/microsoft.png
 tags: [agent, framework, multi-agent, open-source]
 regions: [US]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: Open-source observability tool for LLM, agent and computer vision applications.
   zh: 面向大模型、Agent 和计算机视觉应用的开源可观测性工具。
 website: https://phoenix.arize.com/
+logo: https://raw.githubusercontent.com/Arize-ai/phoenix-assets/main/logos/Phoenix/phoenix.svg
 tags: [observability, llm, open-source]
 regions: [US]
 status: active

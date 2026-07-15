@@ -10,6 +10,7 @@ summary:
   en: Unified framework for scaling AI and Python workloads across clusters.
   zh: 用于在集群上扩展 AI 与 Python 工作负载的统一框架。
 website: https://www.ray.io/
+logo: https://cdn.simpleicons.org/ray
 tags: [orchestration, distributed, open-source]
 regions: [Global]
 status: active

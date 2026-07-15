@@ -9,6 +9,7 @@ summary:
   en: Zhipu AI's conversational AI assistant based on the GLM model family.
   zh: 智谱 AI 基于 GLM 模型家族推出的对话式 AI 助手。
 website: https://chatglm.cn/
+logo: https://chatglm.cn/favicon.ico
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active

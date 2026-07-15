@@ -10,6 +10,7 @@ summary:
   en: Hugging Face parameter-efficient fine-tuning library for LoRA, adapters, and more.
   zh: Hugging Face 的参数高效微调库，支持 LoRA、适配器等。
 website: https://huggingface.co/docs/peft/index
+logo: https://cdn.simpleicons.org/huggingface
 tags: [training, fine-tuning, open-source]
 regions: [Global]
 status: active

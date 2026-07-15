@@ -9,6 +9,7 @@ summary:
   en: Framework for composing agents from models, tools, prompts, and middleware.
   zh: 由模型、工具、提示词与中间件组合 Agent 的框架。
 website: https://www.langchain.com/
+logo: https://cdn.simpleicons.org/langchain
 tags: [agent, framework, open-source]
 regions: [US]
 status: active

@@ -9,6 +9,7 @@ summary:
   en: Framework for orchestrating role-based autonomous agent crews.
   zh: 用于编排基于角色的自主 Agent 团队的框架。
 website: https://www.crewai.com/
+logo: https://cdn.simpleicons.org/crewai
 tags: [agent, framework, multi-agent, open-source]
 regions: [US]
 status: active

@@ -10,6 +10,7 @@ summary:
   en: Hugging Face production-ready serving stack for text generation models.
   zh: Hugging Face 面向文本生成模型的生产级服务框架。
 website: https://huggingface.co/docs/text-generation-inference/index
+logo: https://cdn.simpleicons.org/huggingface
 tags: [inference, serving, open-source]
 regions: [Global]
 status: active

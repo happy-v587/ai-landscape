@@ -10,6 +10,7 @@ summary:
   en: MLOps platform for experiment tracking, model versioning, and visualization.
   zh: 用于实验追踪、模型版本管理与可视化的 MLOps 平台。
 website: https://wandb.ai/
+logo: https://cdn.simpleicons.org/weightsandbiases
 tags: [observability, experiment-tracking]
 regions: [US]
 status: active

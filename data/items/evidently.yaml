@@ -10,6 +10,7 @@ summary:
   en: Open-source tools to evaluate, test and monitor machine learning models.
   zh: 用于评估、测试和监控机器学习模型的开源工具。
 website: https://www.evidentlyai.com/
+logo: https://cdn.prod.website-files.com/660ef16a9e0687d9cc2746d7/664e5252225bcaf6895a34f8_256x256.png
 tags: [observability, evaluation, open-source]
 regions: [US]
 status: active

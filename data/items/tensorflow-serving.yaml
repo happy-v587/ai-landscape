@@ -10,6 +10,7 @@ summary:
   en: Flexible serving system for machine learning models from Google.
   zh: Google 推出的灵活机器学习模型服务系统。
 website: https://www.tensorflow.org/tfx/guide/serving
+logo: https://cdn.simpleicons.org/tensorflow
 tags: [inference, serving, tensorflow, open-source]
 regions: [US]
 status: active

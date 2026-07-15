@@ -9,6 +9,7 @@ summary:
   en: AI pair programmer integrated into editors and GitHub with code suggestions, chat, and agentic capabilities.
   zh: 集成在编辑器和 GitHub 中的 AI 结对程序员，提供代码建议、聊天和 Agent 能力。
 website: https://github.com/features/copilot
+logo: https://cdn.simpleicons.org/githubcopilot
 tags: [coding, agent, ide, closed-source]
 regions: [US]
 status: active

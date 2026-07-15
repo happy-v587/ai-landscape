@@ -10,6 +10,7 @@ summary:
   en: YAML-configured fine-tuning framework for LLMs and multimodal models.
   zh: 通过 YAML 配置对大模型和多模态模型进行微调的框架。
 website: https://github.com/axolotl-ai-cloud/axolotl
+logo: https://github.com/axolotl-ai-cloud.png
 tags: [training, fine-tuning, open-source]
 regions: [Global]
 status: active

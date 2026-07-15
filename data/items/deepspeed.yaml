@@ -9,6 +9,7 @@ summary:
   en: Deep learning optimization library for distributed training and inference.
   zh: 用于分布式训练与推理的深度学习优化库。
 website: https://www.deepspeed.ai/
+logo: https://github.com/microsoft.png
 tags: [training, distributed, open-source]
 regions: [US]
 status: active

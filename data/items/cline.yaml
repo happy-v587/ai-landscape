@@ -9,6 +9,7 @@ summary:
   en: VS Code extension that acts as an autonomous coding agent using tools, browser, and terminal.
   zh: VS Code 扩展，可作为使用工具、浏览器和终端的自主编程 Agent。
 website: https://github.com/cline/cline
+logo: https://cdn.simpleicons.org/cline
 tags: [coding, agent, ide, open-source]
 regions: [US]
 status: active

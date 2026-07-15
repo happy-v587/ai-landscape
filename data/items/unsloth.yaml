@@ -10,6 +10,7 @@ summary:
   en: Fast memory-efficient fine-tuning library for LLMs.
   zh: 快速且节省内存的大模型微调库。
 website: https://github.com/unslothai/unsloth
+logo: https://github.com/unslothai.png
 tags: [training, fine-tuning, open-source]
 regions: [Global]
 status: active

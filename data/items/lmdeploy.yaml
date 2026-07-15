@@ -10,6 +10,7 @@ summary:
   en: OpenMMLab LLM deployment toolkit with TurboMind inference engine.
   zh: OpenMMLab 的大模型部署工具包，集成 TurboMind 推理引擎。
 website: https://github.com/InternLM/lmdeploy
+logo: https://github.com/InternLM.png
 tags: [inference, serving, open-source]
 regions: [CN]
 status: active

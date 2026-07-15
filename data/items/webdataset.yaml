@@ -10,6 +10,7 @@ summary:
   en: High-performance streaming data loader for large-scale training datasets.
   zh: 面向大规模训练数据集的高性能流式数据加载器。
 website: https://github.com/webdataset/webdataset
+logo: https://github.com/webdataset.png
 tags: [data, datasets, open-source]
 regions: [Global]
 status: active

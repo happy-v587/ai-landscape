@@ -9,6 +9,7 @@ summary:
   en: Tencent's AI assistant based on Hunyuan models for chat and content creation.
   zh: 腾讯基于混元模型推出的 AI 助手，支持聊天和内容创作。
 website: https://yuanbao.tencent.com/
+logo: https://static.yuanbao.tencent.com/m/yuanbao-web/favicon_new@32.png
 tags: [assistant, chat, web, mobile]
 regions: [CN]
 status: active
