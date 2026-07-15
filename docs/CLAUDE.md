@@ -55,9 +55,10 @@ Run a single Playwright test: `npx playwright test tests/e2e/landscape.spec.ts`.
 - All catalog and map pages are statically generated. The only potential server route is `/api/submissions`, which is not currently present in the codebase.
 - The project is configured for Vercel (see `.vercel/project.json`). The build command is `npm run build`.
 
-## 知识沉淀 / Knowledge retention
+## Knowledge retention
 
-当完成一个完整功能或做出重要设计选择时，主动总结决策及原因，并使用 SuperPowers Skill 或个人沉淀文档记录。细节记录存放于：
+Document decisions and repeatable knowledge for every non-trivial task, regardless of size.
 
-- [DECISIONS.md](./DECISIONS.md) — 重要决策及原因
-- [RUNBOOK.md](./RUNBOOK.md) — 验证流程、踩坑记录、复用模式
+- **Large features or architectural changes**: use the `Superpower` skill (or equivalent planning workflow) to design before implementation.
+- **Small bugs or tweaks**: communicate directly and fix quickly.
+- **Both** must produce a concise written record: decisions and rationale go to [DECISIONS.md](./DECISIONS.md), while verification steps, gotchas, and reusable patterns go to [RUNBOOK.md](./RUNBOOK.md).
