@@ -140,3 +140,40 @@
 - **决策**：移除地图详情页左侧的彩色竖条 rail（`MapRail`），地图内容区占满整宽。
 - **原因**：用户认为左侧竖条不好看；去掉后页面更干净，内容区更宽，阅读体验更开阔。
 - **文件**：`components/maps/MapShell.tsx`、`components/maps/maps.module.css`、`app/globals.css`、`DESIGN.md`；删除 `components/maps/MapRail.tsx`。
+
+## 2026-07-18 首页改为全目录密集 Logo 墙
+
+- **决策**：首页从四个引导条目（Atlas Guides）改为 `LandscapeOverview`：把四张地图的全部分类按 CNCF Landscape 式密集网格直接编排在首页（非 iframe），单元格为直角（无圆角）、固定 80px 高、4px 间距；顶部保留精简标题栏与吸顶的彩色地图索引条。地图详情页的 `.itemLogo` 同步改为直角密集网格。
+- **原因**：用户希望打开首页即可一览全局，图标像 CNCF Landscape 一样紧密排列、直角边框；引导页式首页需要多次点击才能看到条目。
+- **实现**：新增 `components/site/LandscapeOverview.tsx`（服务端组件，按 categories.yaml 顺序分组、按名称排序）；`ItemChip` 增加 logo 加载失败回退 Monogram 与 `loading="lazy"`；`.subcategoryItems` 改为 `auto-fill` 网格。
+- **文件**：`components/site/LandscapeOverview.tsx`、`components/site/LandscapeOverview.module.css`、`components/maps/ItemChip.tsx`、`components/maps/maps.module.css`、`app/[locale]/page.tsx`、`tests/components/LandscapeOverview.test.tsx`、`tests/components/ItemChip.test.tsx`、`tests/e2e/landscape.spec.ts`；删除 `components/site/FullLandscape.tsx`、`components/site/home.module.css`、`tests/components/HomeMapDirectory.test.tsx`。
+
+### 2026-07-18 补充：分类盒子按内容定宽并排排列
+
+- **决策**：首页同一地图内的分类盒子不再各占一行，而是按条目数分档定宽（2/4/6/8 列单元格宽或通栏），用 flex-wrap 紧密并排，行内允许右侧留白（与 CNCF Landscape 一致）；单元格最小宽 86px，盒子宽度按 86px 单元 + 4px 间距 + 内边距 + 边框精确计算，保证 auto-fill 网格落在整数列上；同时压缩标题栏、分区间距和盒子内边距。
+- **原因**：用户反馈第一版"每个分类一行"太松散，希望像 CNCF Landscape 官网那样多个分类盒子排布在一起、更密。
+- **排查记录**：改动后 e2e `homepage links to map pages` 失败，定位为 Next.js 客户端导航的 RSC fetch 被本机大量挂起的外网图片请求（github avatars 等）阻塞——属测试环境网络问题而非布局问题；修复方式是在 Playwright `beforeEach` 中拦截并 abort 所有非 localhost 请求，使 e2e 不再依赖外部 CDN（同时大幅提速）。注意不要在本机以挂起状态复用旧 `next start` 进程：重建 `.next` 后旧进程引用失效的 CSS chunk 会导致页面无样式。
+
+### 2026-07-18 补充：首页改为 CNCF 式分层堆叠
+
+- **决策**：首页改为分层堆叠布局——页面铺满全宽（去掉 1440px 限宽），层顺序自上而下为 Apps & SaaS → Agent & Tools → Model Infra → Models（模型作为地基在页面最底部）；每层左侧为竖排的层标签条（地图色方块 + 层名 + 条目数，点击进地图页），层内分类盒子同行列并排（flex-wrap）。Models 层只展示模型厂商（8 个），基础模型以虚线磁贴（"Foundation Models 122 entries →"）链接到模型地图页，通过 `homepageCategories` 白名单控制各层在首页展示哪些分类。移动端层标签条退化为横向层头，盒子通栏。
+- **原因**：用户明确参考 CNCF Landscape 官网的分层结构：铺满全屏、从左到右、分层展示、细分分类并列；且首页不需要罗列全部 122 个基础模型。
+- **文件**：`components/site/LandscapeOverview.tsx`、`components/site/LandscapeOverview.module.css`、`tests/components/LandscapeOverview.test.tsx`。
+
+### 2026-07-18 补充：band 交替着色
+
+- **决策**：`bandStrip` 与 `categoryLabel`（分类盒子标题栏，改为通栏色条）共享同一背景色 `--band-bg`；四个 band 按 `:nth-of-type(even/odd)` 在两种色调间交替（青绿 `#e6f5ee` / 钢蓝 `#e6f0f9`，取自 globals 的 pill 色系），自上而下为 绿/蓝/绿/蓝。
+- **原因**：用户要求每个 band 用颜色标识、strip 与分类标题栏同色、全页两种颜色交替。
+- **文件**：`components/site/LandscapeOverview.module.css`。
+
+### 2026-07-18 补充：分类盒子弹性撑满行
+
+- **决策**：分类盒子从固定宽度改为 `flex: 1 1 auto` + 分档 `min-width`（2/4/6/8 列单元格下限），同行盒子按比例吸收剩余空间、每行铺满；大分类（>24 条）仍独占一行；移动端重置 `min-width: 0` 防止溢出。
+- **原因**：固定宽度导致 Training 这类通栏盒子上下行右侧留空，用户反馈布局不够紧凑。代价是不同盒子内单元格宽度略有差异（86–110px），换取零水平空档。
+- **文件**：`components/site/LandscapeOverview.module.css`。
+
+### 2026-07-18 补充：同层盒子按条目数比例分配宽度
+
+- **决策**：废弃按条目数分档定宽（boxSize 2/4/6/8 列 + 通栏）的方案，改为同层所有分类盒子排在同一行、宽度按条目数比例分配（行内 `flex-grow = 条目数`，`flex-basis: 0`），保底 3 列宽（≤2 条保底 2 列）。Model Infra 层因此从三行（Inference 行 / Training 通栏行 / Data+Eval 行）变为四个盒子并列一行。
+- **原因**：分档定宽里 ">24 条通栏" 的规则导致 Training 独占一行、上下留空；用户希望同层细分分类像 CNCF 参考图那样并列展示。
+- **文件**：`components/site/LandscapeOverview.tsx`、`components/site/LandscapeOverview.module.css`。

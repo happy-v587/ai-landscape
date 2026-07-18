@@ -1,4 +1,4 @@
-import { FullLandscape } from '@/components/site/FullLandscape';
+import { LandscapeOverview } from '@/components/site/LandscapeOverview';
 import { loadCatalog } from '@/lib/catalog/load';
 import { assertLocale } from '@/lib/i18n';
 
@@ -7,8 +7,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   assertLocale(locale);
   const catalog = loadCatalog();
   return (
-    <FullLandscape
+    <LandscapeOverview
       entries={catalog.entries}
+      categories={[...catalog.categoriesById.values()]}
       locale={locale}
     />
   );

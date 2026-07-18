@@ -23,7 +23,7 @@ Run a single Playwright test: `npx playwright test tests/e2e/landscape.spec.ts`.
 **Internationalization** is implemented through the `[locale]` route segment. Supported locales are `en` and `zh`, defined in `lib/i18n.ts`. `app/[locale]/layout.tsx` renders `GlobalNav` and an `HtmlLang` wrapper; `app/layout.tsx` is the minimal root layout.
 
 **Routes:**
-- `/[locale]` — homepage showing all four maps (`components/site/FullLandscape.tsx`).
+- `/[locale]` — homepage showing the full catalog as one dense logo wall across all four maps (`components/site/LandscapeOverview.tsx`).
 - `/[locale]/maps/[mapId]` — single map page (`components/maps/MapShell.tsx`).
 - `/[locale]/item/[id]` — entry detail page (`components/catalog/EntryDetail.tsx`).
 - `/[locale]/explore` — searchable/filterable catalog explorer (`components/catalog/CatalogExplorer.tsx`).

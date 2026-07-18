@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { expect, it } from 'vitest';
 import { ItemChip } from '@/components/maps/ItemChip';
 import type { CatalogEntry } from '@/lib/catalog/types';
@@ -41,4 +41,15 @@ it('falls back to monogram when no logo or website is available', () => {
   };
   render(<ItemChip entry={noLogoEntry} entries={[noLogoEntry]} locale="en" size="primary" />);
   expect(screen.getByLabelText('Cursor monogram')).toBeInTheDocument();
+});
+
+it('falls back to monogram when the logo image fails to load', () => {
+  const { container } = render(
+    <ItemChip entry={entry} entries={[entry]} locale="en" size="primary" mode="logo" />
+  );
+  const img = container.querySelector('img');
+  expect(img).toBeInTheDocument();
+  fireEvent.error(img!);
+  expect(screen.getByLabelText('Cursor monogram')).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Cursor' })).toBeInTheDocument();
 });

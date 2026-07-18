@@ -23,6 +23,7 @@ export function ItemChip({
   mode?: 'name' | 'logo';
 }) {
   const [selected, setSelected] = useState(false);
+  const [logoFailed, setLogoFailed] = useState(false);
   const className = mode === 'logo'
     ? styles.itemLogo
     : size === 'primary'
@@ -31,6 +32,7 @@ export function ItemChip({
   const logoSize = mode === 'logo' ? 28 : size === 'primary' ? 24 : 18;
   const logoSrc = getLogoUrl(entry);
   const useNextImage = logoSrc ? isLocalLogo(logoSrc) : false;
+  const showLogo = logoSrc && !logoFailed;
 
   return (
     <>
@@ -41,11 +43,11 @@ export function ItemChip({
         aria-label={entry.name[locale]}
         title={entry.name[locale]}
       >
-        {logoSrc ? (
+        {showLogo ? (
           useNextImage ? (
-            <Image src={logoSrc} alt="" width={logoSize} height={logoSize} />
+            <Image src={logoSrc} alt="" width={logoSize} height={logoSize} onError={() => setLogoFailed(true)} />
           ) : (
-            <img src={logoSrc} alt="" width={logoSize} height={logoSize} />
+            <img src={logoSrc} alt="" width={logoSize} height={logoSize} loading="lazy" onError={() => setLogoFailed(true)} />
           )
         ) : (
           <Monogram name={entry.name[locale]} size={mode === 'logo' ? 'md' : size === 'primary' ? 'md' : 'sm'} />
