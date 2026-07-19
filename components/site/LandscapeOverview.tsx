@@ -61,57 +61,8 @@ export function LandscapeOverview({
     })
     .filter((section) => section.shown.length > 0 || section.hidden.length > 0);
 
-  const providers = new Set(
-    entries
-      .filter((entry) => entry.timeline != null)
-      .map((entry) => entry.timeline?.provider_lane ?? entry.organization)
-      .filter(Boolean)
-  ).size;
-  const categoryCount = new Set(entries.map((entry) => entry.category)).size;
-
-  const stats = [
-    { value: entries.length, label: locale === 'en' ? 'entries' : '条目' },
-    { value: sections.length, label: locale === 'en' ? 'maps' : '地图' },
-    { value: categoryCount, label: locale === 'en' ? 'categories' : '分类' },
-    { value: providers, label: locale === 'en' ? 'providers' : '厂商' },
-  ];
-
   return (
     <div className={styles.page}>
-      <section className={styles.masthead}>
-        <div className={styles.mastheadText}>
-          <h1 className={styles.title}>AI Landscape</h1>
-          <p className={styles.subtitle}>
-            {locale === 'en'
-              ? 'The whole catalog on one wall — models, infrastructure, agents, and applications.'
-              : '整个生态尽在一墙：模型、基础设施、Agent 与应用。'}
-          </p>
-        </div>
-        <dl className={styles.stats}>
-          {stats.map((stat) => (
-            <div key={stat.label} className={styles.stat}>
-              <dt>{stat.label}</dt>
-              <dd>{stat.value}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
-
-      <nav className={styles.rail} aria-label={locale === 'en' ? 'Maps index' : '地图索引'}>
-        {sections.map((section) => (
-          <a
-            key={section.mapId}
-            href={`#map-${section.mapId}`}
-            className={styles.railItem}
-            data-map={section.mapId}
-          >
-            <span className={styles.railKey} aria-hidden="true" />
-            <span className={styles.railName}>{section.name}</span>
-            <span className={styles.railCount}>{section.count}</span>
-          </a>
-        ))}
-      </nav>
-
       {sections.map((section) => (
         <section
           key={section.mapId}

@@ -177,3 +177,21 @@
 - **决策**：废弃按条目数分档定宽（boxSize 2/4/6/8 列 + 通栏）的方案，改为同层所有分类盒子排在同一行、宽度按条目数比例分配（行内 `flex-grow = 条目数`，`flex-basis: 0`），保底 3 列宽（≤2 条保底 2 列）。Model Infra 层因此从三行（Inference 行 / Training 通栏行 / Data+Eval 行）变为四个盒子并列一行。
 - **原因**：分档定宽里 ">24 条通栏" 的规则导致 Training 独占一行、上下留空；用户希望同层细分分类像 CNCF 参考图那样并列展示。
 - **文件**：`components/site/LandscapeOverview.tsx`、`components/site/LandscapeOverview.module.css`。
+
+### 2026-07-18 补充：移除地图索引条、修正竖排中文、导航全宽
+
+- **决策**：移除首页 masthead 下方的地图索引条（rail），band 的 scroll-margin 相应改为只避让 64px 导航；`stripName` 去掉 `rotate(180deg)`，竖排文字改为自上而下阅读（中文保持字形正立、顺序正确，英文亦自上而下）；`GlobalNav` 的 `.inner` 去掉 1440px 限宽，导航栏铺满全屏，与首页全宽布局一致。
+- **原因**：用户反馈索引条多余；竖排中文经 180° 旋转后字序颠倒、观感不适；导航限宽与全宽页面不协调。
+- **文件**：`components/site/LandscapeOverview.tsx`、`components/site/LandscapeOverview.module.css`、`components/site/GlobalNav.module.css`。
+
+### 2026-07-18 补充：移除首页 masthead
+
+- **决策**：删除首页的 masthead（大标题、副标题、四项统计）及其样式与统计计算，页面从全宽导航直接进入分层墙；品牌名由 GlobalNav 的 "AI Landscape" 承担。band 双色交替的 `:nth-of-type` 奇偶规则相应对调，保持各 band 原有配色不变。
+- **原因**：用户认为标题栏多余，希望打开页面即为全景墙。
+- **文件**：`components/site/LandscapeOverview.tsx`、`components/site/LandscapeOverview.module.css`。
+
+## 2026-07-18 模型时间线改为倒序（最新在左）
+
+- **决策**：`/maps/models` 时间线的月份轴改为倒序——最新月份在最左、历史月份向右延伸，月内卡片也按日期倒序（最新在最上）；同时去掉末尾 +1 个月的未来空白列，最左列即当前月。
+- **原因**：原顺序（旧→新）要求用户横向滚动到最后才能看到最新发布的模型；倒序后打开页面即可见最新动态。
+- **文件**：`components/maps/ModelsTimeline.tsx`、`tests/components/ModelsTimeline.test.tsx`（新增月份倒序用例）。

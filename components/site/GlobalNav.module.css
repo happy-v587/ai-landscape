@@ -10,7 +10,7 @@
 }
 
 .inner {
-  max-width: var(--max-width);
+  max-width: none;
   margin: 0 auto;
   padding: 0 var(--page-gutter);
   height: 100%;

@@ -51,13 +51,13 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
   const minDate = new Date(Math.min(...releaseDates.map((d) => d.getTime())));
   const maxDate = new Date(Math.max(...releaseDates.map((d) => d.getTime())));
   minDate.setUTCMonth(minDate.getUTCMonth() - 1);
-  maxDate.setUTCMonth(maxDate.getUTCMonth() + 1);
 
+  // Newest month first: the latest releases are visible without scrolling.
   const months: string[] = [];
-  const cursor = new Date(minDate);
-  while (cursor <= maxDate) {
+  const cursor = new Date(maxDate);
+  while (cursor >= minDate) {
     months.push(formatMonthKey(cursor));
-    cursor.setUTCMonth(cursor.getUTCMonth() + 1);
+    cursor.setUTCMonth(cursor.getUTCMonth() - 1);
   }
 
   const lanes = timelineEntries.reduce<Record<string, CatalogEntry[]>>((groups, entry) => {
@@ -88,7 +88,7 @@ export function ModelsTimeline({ entries, locale }: { entries: CatalogEntry[]; l
               <div key={key} className={styles.timelineMonthCell}>
                 {laneEntries
                   .filter((entry) => formatMonthKey(parseDateUTC(entry.timeline!.released_at)) === key)
-                  .sort((a, b) => a.timeline!.released_at.localeCompare(b.timeline!.released_at))
+                  .sort((a, b) => b.timeline!.released_at.localeCompare(a.timeline!.released_at))
                   .map((entry) => {
                     const date = parseDateUTC(entry.timeline!.released_at);
                     return (

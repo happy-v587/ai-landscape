@@ -24,3 +24,16 @@ it('groups models by provider lane and exposes their release date', () => {
   expect(screen.getByRole('rowheader', { name: 'deepseek' })).toBeInTheDocument();
   expect(screen.getByText('Dec 26')).toBeInTheDocument();
 });
+
+it('orders months newest-first so the latest releases need no scrolling', () => {
+  const newerEntry = {
+    ...sampleEntry,
+    id: 'deepseek-r1',
+    name: { en: 'DeepSeek-R1', zh: 'DeepSeek-R1' },
+    timeline: { released_at: '2025-01-20', provider_lane: 'deepseek', capabilities: ['reasoning'] },
+  };
+  render(<ModelsTimeline entries={[sampleEntry, newerEntry]} locale="en" />);
+  const older = screen.getByText('Dec 2024');
+  const newer = screen.getByText('Jan 2025');
+  expect(newer.compareDocumentPosition(older) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+});
