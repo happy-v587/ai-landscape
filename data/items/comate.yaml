@@ -1,0 +1,15 @@
+id: comate
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name: { en: Baidu Comate, zh: 文心快码 Comate }
+summary:
+  en: Baidu's AI coding assistant powered by ERNIE models, available as IDE plugin and standalone IDE.
+  zh: 百度基于文心大模型的 AI 编程助手，提供 IDE 插件与独立 IDE 两种形态。
+website: https://comate.baidu.com/
+tags: [coding, agent, ide, closed-source]
+regions: [CN]
+status: active
+related: []
+facts: { platforms: [vscode, jetbrains], audience: developers }
+sources: [{ url: https://comate.baidu.com/, checked_at: 2026-07-19 }]

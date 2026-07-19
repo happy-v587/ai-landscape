@@ -1,0 +1,15 @@
+id: tongyi-lingma
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+name: { en: Tongyi Lingma, zh: 通义灵码 }
+summary:
+  en: Alibaba Cloud's AI coding assistant plugin for mainstream IDEs, powered by Qwen models.
+  zh: 阿里云基于通义大模型的 AI 编程助手，以插件形式适配主流 IDE。
+website: https://lingma.aliyun.com/
+tags: [coding, agent, ide, closed-source]
+regions: [CN]
+status: active
+related: []
+facts: { platforms: [vscode, jetbrains], audience: developers }
+sources: [{ url: https://lingma.aliyun.com/, checked_at: 2026-07-19 }]

@@ -1,0 +1,16 @@
+id: qoder
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+subcategory: ide
+name: { en: Qoder, zh: Qoder }
+summary:
+  en: Alibaba's agentic coding platform with repo-level context understanding and task delegation.
+  zh: 阿里巴巴推出的 Agentic 编程平台，具备仓库级上下文理解与任务委派能力。
+website: https://qoder.com/
+tags: [coding, agent, ide, closed-source]
+regions: [CN]
+status: active
+related: []
+facts: { platforms: [macos, windows], audience: developers }
+sources: [{ url: https://qoder.com/, checked_at: 2026-07-19 }]

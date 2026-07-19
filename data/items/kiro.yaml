@@ -1,0 +1,17 @@
+id: kiro
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+subcategory: ide
+name: { en: Kiro, zh: Kiro }
+summary:
+  en: AWS's agentic IDE built around spec-driven development, from requirements to production.
+  zh: AWS 推出的 Agentic IDE，以规格驱动开发，覆盖从需求到生产的完整流程。
+website: https://kiro.dev/
+logo: https://github.com/kirodotdev.png
+tags: [coding, agent, ide, closed-source]
+regions: [US]
+status: active
+related: []
+facts: { platforms: [macos, windows, linux], audience: developers }
+sources: [{ url: https://kiro.dev/, checked_at: 2026-07-19 }]

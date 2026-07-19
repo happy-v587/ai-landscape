@@ -1,0 +1,26 @@
+id: kimi-k3
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K3
+  zh: Kimi K3
+summary:
+  en: Moonshot AI's 2.8T-parameter open-weight MoE flagship with 1M-token context and native multimodal input.
+  zh: Moonshot AI 发布的 2.8 万亿参数开放权重 MoE 旗舰模型，支持 100 万 token 上下文与原生多模态输入。
+website: https://www.kimi.com/blog/kimi-k3
+organization: moonshot-ai
+tags: ['llm', 'coding', 'open-weights']
+regions: [CN]
+status: active
+related: [kimi-k2-thinking]
+facts:
+  modalities: ['text', 'image']
+  open_source: true
+timeline:
+  released_at: 2026-07-16
+  provider_lane: moonshot-ai
+  capabilities: ['multimodal', 'reasoning', 'coding']
+sources:
+  - url: https://www.kimi.com/blog/kimi-k3
+    checked_at: 2026-07-19

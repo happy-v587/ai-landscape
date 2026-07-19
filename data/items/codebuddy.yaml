@@ -1,0 +1,16 @@
+id: codebuddy
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+subcategory: ide
+name: { en: CodeBuddy, zh: CodeBuddy }
+summary:
+  en: Tencent's AI coding assistant and standalone IDE covering the full development workflow.
+  zh: 腾讯推出的 AI 编程助手与独立 IDE，覆盖从编码到部署的完整开发流程。
+website: https://www.codebuddy.ai/
+tags: [coding, agent, ide, closed-source]
+regions: [CN]
+status: active
+related: []
+facts: { platforms: [macos, windows], audience: developers }
+sources: [{ url: https://www.codebuddy.ai/, checked_at: 2026-07-19 }]

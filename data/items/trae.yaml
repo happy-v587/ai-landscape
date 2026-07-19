@@ -1,0 +1,16 @@
+id: trae
+kind: coding-agent
+map: agent-tools
+category: coding-agents
+subcategory: ide
+name: { en: Trae, zh: Trae }
+summary:
+  en: ByteDance's AI-native IDE with agentic coding modes such as Builder and SOLO.
+  zh: 字节跳动推出的 AI 原生 IDE，提供 Builder、SOLO 等智能体编程模式。
+website: https://www.trae.ai/
+tags: [coding, agent, ide, closed-source]
+regions: [CN]
+status: active
+related: []
+facts: { platforms: [macos, windows], audience: developers }
+sources: [{ url: https://www.trae.ai/, checked_at: 2026-07-19 }]
