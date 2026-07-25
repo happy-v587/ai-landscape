@@ -1,0 +1,28 @@
+id: claude-opus-5
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Opus 5
+  zh: Claude Opus 5
+summary:
+  en: Claude Opus 5, released by Anthropic as the new Opus-tier flagship — near-frontier intelligence close to Claude Fable 5 at half the price ($5/$25 per million tokens, same as Opus 4.8), state-of-the-art on coding and knowledge-work evals, and the new default model on Claude Max.
+  zh: Claude Opus 5 发布，取代 Opus 4.8 成为 Opus 档旗舰：以一半价格提供接近 Claude Fable 5 的前沿智能（$5/$25 每百万 token，与 Opus 4.8 持平），在编程与知识工作评测上达到 SOTA，并成为 Claude Max 默认模型。
+website: https://www.anthropic.com/news/claude-opus-5
+organization: anthropic
+tags: ['llm', 'multimodal']
+regions: [US]
+status: active
+related: ['claude-opus-4-8', 'claude-fable-5']
+facts:
+  modalities: ['text', 'vision']
+  open_source: false
+timeline:
+  released_at: 2026-07-24
+  provider_lane: anthropic
+  capabilities: ['multimodal']
+sources:
+  - url: https://www.anthropic.com/news/claude-opus-5
+    checked_at: 2026-07-25
+  - url: https://www.anthropic.com/pricing
+    checked_at: 2026-07-25
