@@ -1,0 +1,28 @@
+id: qwen3-8-flash
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Qwen3.8-Flash
+  zh: 通义千问 3.8-Flash
+summary:
+  en: Alibaba's latest multimodal open-weight model previewing the Qwen4 architecture — 1M context, strong coding and agentic performance, compatible with OpenAI and Anthropic API protocols, and lower training/inference costs.
+  zh: 阿里巴巴最新的多模态开放权重模型，预览 Qwen4 架构——1M 上下文、强劲编程与智能体表现，兼容 OpenAI 与 Anthropic API 协议，训练与推理成本更低。
+website: https://qwenlm.github.io/
+organization: qwen
+tags: ['llm', 'coding', 'agentic', 'multimodal', 'open-weights']
+regions: [CN]
+status: active
+related: ['qwen3-8-max']
+facts:
+  modalities: ['text', 'image']
+  open_source: true
+timeline:
+  released_at: 2026-08-26
+  provider_lane: qwen
+  capabilities: ['reasoning', 'coding', 'multimodal']
+sources:
+  - url: https://www.reuters.com/business/retail-consumer/alibabas-qwen-launches-qwen38-flash-ai-model-with-lower-training-costs-2026-08-26
+    checked_at: 2026-09-19
+  - url: https://help.aliyun.com/en/model-studio/qwen3-8-flash
+    checked_at: 2026-09-19

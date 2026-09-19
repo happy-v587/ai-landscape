@@ -1,0 +1,28 @@
+id: glm-5-3
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-5.3
+  zh: GLM-5.3
+summary:
+  en: Zhipu's open-weights flagship — the most capable open-source model for coding with emergent cybersecurity capabilities, approaching Claude Fable 5 on agentic tasks and claiming SOTA among open models on public benchmarks.
+  zh: 智谱发布的开放权重旗舰——最强的开源编程模型并涌现网络安全能力，智能体任务接近 Claude Fable 5，在公开评测中居开源模型榜首。
+website: https://z.ai/blog/glm-5.3
+organization: zhipu-ai
+tags: ['llm', 'reasoning', 'coding', 'cybersecurity', 'open-weights']
+regions: [CN]
+status: active
+related: ['glm-5-2']
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-08-14
+  provider_lane: zhipu-ai
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://z.ai/blog/glm-5.3
+    checked_at: 2026-09-19
+  - url: https://www.yicaiglobal.com/news/chinas-zai-unveils-glm-53-says-it-leads-open-source-ai-models-in-key-benchmarks
+    checked_at: 2026-09-19

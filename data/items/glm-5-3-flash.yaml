@@ -1,0 +1,28 @@
+id: glm-5-3-flash
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GLM-5.3-Flash
+  zh: GLM-5.3-Flash
+summary:
+  en: Zhipu's first natively multimodal GLM-5 model — a 320B/18B-active MoE with hybrid sparse-linear attention, MIT-licensed and open-weights, delivering GLM-5.2-beating coding and agentic performance at roughly one-tenth the cost.
+  zh: 智谱首个原生多模态 GLM-5 模型——320B 总参数/18B 激活的 MoE，采用混合稀疏-线性注意力，MIT 协议开源，以约十分之一成本提供超越 GLM-5.2 的编程与智能体表现。
+website: https://z.ai/blog/glm-5.3-flash
+organization: zhipu-ai
+tags: ['llm', 'reasoning', 'coding', 'multimodal', 'open-weights', 'mit']
+regions: [CN]
+status: active
+related: ['glm-5-3']
+facts:
+  modalities: ['text', 'image']
+  open_source: true
+timeline:
+  released_at: 2026-08-26
+  provider_lane: zhipu-ai
+  capabilities: ['reasoning', 'coding', 'multimodal']
+sources:
+  - url: https://z.ai/blog/glm-5.3-flash
+    checked_at: 2026-09-19
+  - url: https://www.brocker.org/z-ai-launches-glm-5-3-flash-hybrid-attention-18b-active-parameters
+    checked_at: 2026-09-19

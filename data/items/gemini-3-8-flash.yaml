@@ -1,0 +1,28 @@
+id: gemini-3-8-flash
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 3.8 Flash
+  zh: Gemini 3.8 Flash
+summary:
+  en: Google DeepMind's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents and complex enterprise workflows — 1M context, 64k output and multimodal input, with a restricted 3.8 Flash Cyber variant gated behind the Fairwind program.
+  zh: Google DeepMind 迄今最智能的 Flash 模型，面向长程软件工程、自主智能体与复杂企业工作流——1M 上下文、64k 输出、多模态输入，另有受限版 3.8 Flash Cyber 仅限 Fairwind 可信项目使用。
+website: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/
+organization: google-deepmind
+tags: ['llm', 'coding', 'agentic', 'multimodal']
+regions: [US]
+status: active
+related: ['gemini-3-7-flash']
+facts:
+  modalities: ['text', 'image', 'audio', 'video']
+  open_source: false
+timeline:
+  released_at: 2026-09-02
+  provider_lane: google-deepmind
+  capabilities: ['reasoning', 'coding', 'multimodal']
+sources:
+  - url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/
+    checked_at: 2026-09-19
+  - url: https://ai.google.dev/gemini-api/docs/changelog
+    checked_at: 2026-09-19

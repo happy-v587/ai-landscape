@@ -1,0 +1,28 @@
+id: deepseek-v4-1-flash
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: DeepSeek-V4.1-Flash
+  zh: DeepSeek-V4.1-Flash
+summary:
+  en: DeepSeek's smallest model in a new Causal Encoder–Decoder architecture family — a 552B-parameter multimodal MoE with just 8B active (16B for decode), 1M context and aggressively compressed KV cache, outperforming the flagship V4-Pro while phasing it out.
+  zh: DeepSeek 新 Causal Encoder–Decoder 架构族中最小的模型——552B 参数多模态 MoE，仅 8B（解码 16B）激活、1M 上下文与激进的 KV 缓存压缩，性能超越旗舰 V4-Pro 并逐步取代后者。
+website: https://api-docs.deepseek.com/news/news260910
+organization: deepseek
+tags: ['llm', 'reasoning', 'coding', 'multimodal', 'open-weights', 'mit']
+regions: [CN]
+status: active
+related: ['deepseek-v4']
+facts:
+  modalities: ['text', 'image']
+  open_source: true
+timeline:
+  released_at: 2026-09-10
+  provider_lane: deepseek
+  capabilities: ['reasoning', 'coding', 'multimodal']
+sources:
+  - url: https://api-docs.deepseek.com/news/news260910
+    checked_at: 2026-09-19
+  - url: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+    checked_at: 2026-09-19

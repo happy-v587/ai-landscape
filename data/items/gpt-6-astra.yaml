@@ -1,0 +1,28 @@
+id: gpt-6-astra
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: GPT-6 Astra
+  zh: GPT-6 Astra
+summary:
+  en: OpenAI's next-generation flagship, built for autonomous end-to-end work — computer use across apps, complex reasoning, coding, research and document creation. Rolls out in phases with enhanced safeguards, $10/$50 per million tokens, 1.05M context, plus a Pro tier.
+  zh: OpenAI 下一代旗舰模型，面向端到端自主任务：跨应用计算机操作、复杂推理、编程、研究与文档创作。分阶段上线并强化安全护栏，定价 $10/$50 每百万 token，1.05M 上下文，另有 Pro 档。
+website: https://openai.com/index/gpt-6-astra/
+organization: openai
+tags: ['llm', 'reasoning', 'coding', 'computer-use']
+regions: [US]
+status: active
+related: ['gpt-5-6']
+facts:
+  modalities: ['text', 'image']
+  open_source: false
+timeline:
+  released_at: 2026-09-03
+  provider_lane: openai
+  capabilities: ['reasoning', 'coding', 'computer-use']
+sources:
+  - url: https://openai.com/index/gpt-6-astra/
+    checked_at: 2026-09-19
+  - url: https://developers.openai.com/api/docs/models/gpt-6-astra
+    checked_at: 2026-09-19

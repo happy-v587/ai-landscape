@@ -1,0 +1,28 @@
+id: gemini-3-7-flash
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Gemini 3.7 Flash
+  zh: Gemini 3.7 Flash
+summary:
+  en: Google DeepMind's previous-generation Flash model for complex coding, agentic workflows and reliable multi-step execution — 1M context, 64k output, tunable thinking levels and a promotional price of $0.75/$3.75 through end of 2026.
+  zh: Google DeepMind 前代 Flash 主力模型，面向复杂编程、智能体工作流与可靠的多步执行——1M 上下文、64k 输出、可调思考档位，2026 年底前促销价 $0.75/$3.75。
+website: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/
+organization: google-deepmind
+tags: ['llm', 'coding', 'agentic']
+regions: [US]
+status: active
+related: ['gemini-3-8-flash']
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-08-13
+  provider_lane: google-deepmind
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/
+    checked_at: 2026-09-19
+  - url: https://ai.google.dev/gemini-api/docs/models
+    checked_at: 2026-09-19

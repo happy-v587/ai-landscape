@@ -1,0 +1,28 @@
+id: claude-fable-5-1
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Claude Fable 5.1
+  zh: Claude Fable 5.1
+summary:
+  en: Anthropic's Mythos-class successor to Claude Fable 5, launched alongside the restricted Claude Mythos 5.1 — top-tier coding and knowledge-work performance at unchanged $10/$50 pricing with a 75% cheaper cache read ($0.25), targeting long-horizon agent work.
+  zh: Anthropic 发布的 Mythos 档 Claude Fable 5 继任者，与受限版 Claude Mythos 5.1 同期推出：编程与知识工作性能再上台阶，价格维持 $10/$50，缓存读取降至 $0.25（降价 75%），面向长程智能体任务。
+website: https://www.anthropic.com/claude-fable-and-mythos-5-1
+organization: anthropic
+tags: ['llm', 'reasoning', 'coding', 'multimodal']
+regions: [US]
+status: active
+related: ['claude-fable-5', 'claude-opus-5']
+facts:
+  modalities: ['text', 'vision']
+  open_source: false
+timeline:
+  released_at: 2026-09-01
+  provider_lane: anthropic
+  capabilities: ['reasoning', 'coding', 'multimodal']
+sources:
+  - url: https://www.anthropic.com/claude-fable-and-mythos-5-1
+    checked_at: 2026-09-19
+  - url: https://www.vals.ai/models/anthropic_claude-fable-5-1
+    checked_at: 2026-09-19

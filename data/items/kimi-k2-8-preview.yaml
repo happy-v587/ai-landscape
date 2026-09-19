@@ -1,0 +1,28 @@
+id: kimi-k2-8-preview
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: Kimi K2.8 Preview
+  zh: Kimi K2.8 Preview
+summary:
+  en: Moonshot AI's mid-tier coding and agent model between K2.7 Code and the K3 flagship — adds multimodal input and a 1M-token context window across all Kimi Code tiers, shipped under the existing kimi-for-coding model ID.
+  zh: Moonshot AI 介于 K2.7 Code 与旗舰 K3 之间的中档编程与智能体模型——新增多模态输入，所有 Kimi Code 档位均支持 1M token 上下文，沿用 kimi-for-coding 模型 ID 平滑上线。
+website: https://www.kimi.com/code/docs/en/kimi-code/whats-new.html
+organization: moonshot-ai
+tags: ['llm', 'coding', 'agentic', 'multimodal', 'long-context']
+regions: [CN]
+status: active
+related: ['kimi-k2-7-code', 'kimi-k3']
+facts:
+  modalities: ['text', 'image', 'video']
+  open_source: false
+timeline:
+  released_at: 2026-09-11
+  provider_lane: moonshot-ai
+  capabilities: ['coding', 'reasoning', 'multimodal']
+sources:
+  - url: https://www.kimi.com/code/docs/en/kimi-code/whats-new.html
+    checked_at: 2026-09-19
+  - url: https://magicshot.ai/news/kimi-k28-preview-moonshots-new-mid-tier-ai-model
+    checked_at: 2026-09-19
