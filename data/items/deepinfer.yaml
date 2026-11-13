@@ -1,0 +1,25 @@
+id: deepinfer
+kind: inference-engine
+map: model-infra
+category: inference
+subcategory: inference-engine
+name:
+  en: 'DeepInfer'
+  zh: 'DeepInfer'
+summary:
+  en: 'DeepSeek''s in-house high-performance inference framework, open-sourced in October 2026 to power V4.1-Flash serving at scale.'
+  zh: 'DeepSeek 自研的高性能推理框架，2026 年 10 月开源，用于支撑 V4.1-Flash 的大规模线上推理。'
+website: https://github.com/deepseek-ai/DeepInfer
+organization: deepseek
+tags: ['inference', 'serving', 'open-source']
+regions: ['CN']
+status: active
+related: []
+facts:
+  deployment: ['self-hosted']
+  open_source: true
+sources:
+  - url: https://github.com/deepseek-ai/DeepInfer
+    checked_at: 2026-11-13
+  - url: https://x.com/deepseek_ai
+    checked_at: 2026-11-13

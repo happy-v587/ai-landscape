@@ -1,0 +1,28 @@
+id: deepseek-v4-1-flash-1017
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'DeepSeek-V4.1-Flash-1017'
+  zh: 'DeepSeek-V4.1-Flash-1017'
+summary:
+  en: 'DeepSeek''s October 2026 refresh of V4.1-Flash with stronger reasoning and coding benchmarks, faster task completion and shorter outputs.'
+  zh: 'DeepSeek 于 2026 年 10 月对 V4.1-Flash 的升级版，推理与编程基准提升、任务完成更快、输出更精简。'
+website: https://api-docs.deepseek.com/news/news261017
+organization: deepseek
+tags: ['llm', 'coding', 'reasoning', 'open-weights']
+regions: ['CN']
+status: active
+related: ['deepseek-v4-1-flash']
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-10-17
+  provider_lane: deepseek
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://api-docs.deepseek.com/news/news261017
+    checked_at: 2026-11-13
+  - url: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+    checked_at: 2026-11-13
