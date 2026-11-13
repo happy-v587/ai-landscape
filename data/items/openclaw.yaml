@@ -1,0 +1,25 @@
+id: openclaw
+kind: personal-agent
+map: personal-agents
+category: self-hosted-agents
+subcategory: Open Source
+name:
+  en: 'OpenClaw'
+  zh: 'OpenClaw'
+summary:
+  en: 'Open-source self-hosted AI assistant running on your own machine, reachable in Discord, iMessage, Slack and Telegram.'
+  zh: '开源自托管的个人 AI 助手，跑在自己机器上，通过 Discord、iMessage、Slack、Telegram 等渠道找你。'
+website: https://openclaw.ai/
+organization: openclaw
+tags: ['personal-agent', 'open-source', 'self-hosted']
+regions: ['Global']
+status: active
+related: []
+facts:
+  deployment: ['self-hosted']
+  open_source: true
+sources:
+  - url: https://github.com/openclaw/openclaw
+    checked_at: 2026-11-13
+  - url: https://openclaw.ai/
+    checked_at: 2026-11-13

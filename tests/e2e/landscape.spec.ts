@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-test('homepage shows all four map sections', async ({ page }) => {
+test('homepage shows the map sections', async ({ page }) => {
   await page.goto('/en');
   await expect(page.getByRole('heading', { name: 'Models', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Apps & SaaS' })).toBeVisible();

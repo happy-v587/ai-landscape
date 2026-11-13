@@ -1,0 +1,25 @@
+id: lingguang-2
+kind: personal-agent
+map: personal-agents
+category: consumer-super-agents
+subcategory: Big Tech
+name:
+  en: 'LingGuang 2.0'
+  zh: '灵光 2.0'
+summary:
+  en: 'Ant Group''s personal AI assistant that proactively tracks flight prices, subscriptions and family to-dos.'
+  zh: '蚂蚁集团的个人 AI 助理，主动盯机票降价、查订阅续费、梳理班级群待办，被称「中国版 Muse」。'
+website: https://www.lingguang.com/
+organization: antgroup
+tags: ['personal-agent', 'proactive', 'cn']
+regions: ['CN']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://www.lingguang.com/
+    checked_at: 2026-11-13
+  - url: https://cn.chinadaily.com.cn/a/202610/27/WS6ae01544e4b09a165c791b6a.html
+    checked_at: 2026-11-13

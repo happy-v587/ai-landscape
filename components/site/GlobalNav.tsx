@@ -11,6 +11,7 @@ const mapLinks: { id: MapId; key: keyof typeof copy.en }[] = [
   { id: 'model-infra', key: 'infra' },
   { id: 'agent-tools', key: 'agents' },
   { id: 'apps-saas', key: 'apps' },
+  { id: 'personal-agents', key: 'personal' },
 ];
 
 export function GlobalNav({ locale }: { locale: Locale }) {

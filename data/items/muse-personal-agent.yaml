@@ -1,0 +1,25 @@
+id: muse-personal-agent
+kind: personal-agent
+map: personal-agents
+category: consumer-super-agents
+subcategory: Big Tech
+name:
+  en: 'Muse'
+  zh: 'Muse'
+summary:
+  en: 'Meta''s personal AI agent that runs 24/7 on a dedicated cloud VM, proactively managing prices, bills and to-dos.'
+  zh: 'Meta 出品的个人智能体，跑在专属云端虚拟机里 7×24 小时主动替你盯价格、管账单、跟待办。'
+website: https://ai.meta.com/muse/
+organization: meta
+tags: ['personal-agent', 'always-on', 'proactive']
+regions: ['US']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+    checked_at: 2026-11-13
+  - url: https://ai.meta.com/muse/
+    checked_at: 2026-11-13

@@ -25,6 +25,7 @@
 [data-map="model-infra"] { --map: #2e7bbf; --pill-bg: #e6f0f9; --pill-text: #15406b; }
 [data-map="agent-tools"] { --map: #c44a8c; --pill-bg: #f9e6f0; --pill-text: #6b214b; }
 [data-map="apps-saas"] { --map: #2e9e72; --pill-bg: #e6f5ee; --pill-text: #15563d; }
+[data-map="personal-agents"] { --map: #c96442; --pill-bg: #f7ece3; --pill-text: #7a3418; }
 
 * { box-sizing: border-box; }
 

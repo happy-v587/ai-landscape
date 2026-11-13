@@ -10,3 +10,6 @@
 - id: apps-saas
   name: { en: Apps & SaaS, zh: 应用与 SaaS }
   presentation: scenario-map
+- id: personal-agents
+  name: { en: Personal Agents, zh: 个人智能体 }
+  presentation: capability-map

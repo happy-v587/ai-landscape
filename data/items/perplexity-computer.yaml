@@ -1,0 +1,23 @@
+id: perplexity-computer
+kind: personal-agent
+map: personal-agents
+category: autonomous-work-agents
+subcategory: Startup
+name:
+  en: 'Perplexity Computer'
+  zh: 'Perplexity Computer'
+summary:
+  en: 'An orchestrator unifying 19 AI models into a system of agents that research, code and work autonomously.'
+  zh: '把 19 个模型编排成一个系统，多个 Agent 协同自主完成调研、编码与办公任务。'
+website: https://www.perplexity.ai/hub/blog/introducing-perplexity-computer
+organization: perplexity
+tags: ['personal-agent', 'orchestration', 'multi-model']
+regions: ['US']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://www.perplexity.ai/hub/blog/introducing-perplexity-computer
+    checked_at: 2026-11-13

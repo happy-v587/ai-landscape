@@ -5,13 +5,14 @@ import { GlobalNav } from '@/components/site/GlobalNav';
 
 vi.mock('next/navigation', () => ({ usePathname: vi.fn() }));
 
-it('links to all four English maps and the Chinese homepage', () => {
+it('links to all five English maps and the Chinese homepage', () => {
   vi.mocked(usePathname).mockReturnValue('/en');
   render(<GlobalNav locale="en" />);
   expect(screen.getByRole('link', { name: 'Models' })).toHaveAttribute('href', '/en/maps/models');
   expect(screen.getByRole('link', { name: 'Model Infra' })).toHaveAttribute('href', '/en/maps/model-infra');
   expect(screen.getByRole('link', { name: 'Agent & Tools' })).toHaveAttribute('href', '/en/maps/agent-tools');
   expect(screen.getByRole('link', { name: 'Apps & SaaS' })).toHaveAttribute('href', '/en/maps/apps-saas');
+  expect(screen.getByRole('link', { name: 'Personal Agents' })).toHaveAttribute('href', '/en/maps/personal-agents');
   expect(screen.getByRole('link', { name: '中文' })).toHaveAttribute('href', '/zh');
 });
 

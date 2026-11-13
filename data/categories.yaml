@@ -46,3 +46,15 @@
   map: apps-saas
   name: { en: Chat, zh: 聊天 }
   presentation: scenario-map
+- id: consumer-super-agents
+  map: personal-agents
+  name: { en: Consumer Super-Agents, zh: 大厂个人智能体 }
+  presentation: capability-map
+- id: autonomous-work-agents
+  map: personal-agents
+  name: { en: Autonomous Work Agents, zh: 通用自主任务智能体 }
+  presentation: capability-map
+- id: self-hosted-agents
+  map: personal-agents
+  name: { en: Self-Hosted Agents, zh: 开源自托管智能体 }
+  presentation: capability-map

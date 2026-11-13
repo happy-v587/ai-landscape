@@ -1,0 +1,25 @@
+id: instinct
+kind: personal-agent
+map: personal-agents
+category: autonomous-work-agents
+subcategory: Startup
+name:
+  en: 'Instinct'
+  zh: 'Instinct'
+summary:
+  en: 'Viral invite-only personal agent you text like a human; reached a $10B valuation in 2026.'
+  zh: '现象级邀请制个人智能体，像跟真人发短信一样对话，2026 年估值冲到 100 亿美元。'
+website: https://instinct.com/
+organization: instinct
+tags: ['personal-agent', 'messaging', 'startup']
+regions: ['US']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://instinct.com/
+    checked_at: 2026-11-13
+  - url: https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/
+    checked_at: 2026-11-13

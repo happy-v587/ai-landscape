@@ -7,13 +7,14 @@ import styles from './LandscapeOverview.module.css';
 
 /* Layers stack like the CNCF landscape: applications on top, models as the
    foundation at the bottom of the page. */
-const bandOrder: MapId[] = ['apps-saas', 'agent-tools', 'model-infra', 'models'];
+const bandOrder: MapId[] = ['personal-agents', 'apps-saas', 'agent-tools', 'model-infra', 'models'];
 
-const mapCopyKeys: Record<MapId, 'models' | 'infra' | 'agents' | 'apps'> = {
+const mapCopyKeys: Record<MapId, 'models' | 'infra' | 'agents' | 'apps' | 'personal'> = {
   models: 'models',
   'model-infra': 'infra',
   'agent-tools': 'agents',
   'apps-saas': 'apps',
+  'personal-agents': 'personal',
 };
 
 /* Categories shown as boxes on the homepage. Maps not listed show all of

@@ -1,0 +1,23 @@
+id: claude-duet
+kind: personal-agent
+map: personal-agents
+category: consumer-super-agents
+subcategory: Big Tech
+name:
+  en: 'Claude Duet'
+  zh: 'Claude Duet'
+summary:
+  en: 'Anthropic''s proactive personal agent for professionals and small businesses, handling everyday tasks autonomously.'
+  zh: 'Anthropic 面向职场人士与小企业的主动式个人智能体，可自主处理日常事务。'
+website: https://claude.com/product/claude-duet
+organization: anthropic
+tags: ['personal-agent', 'proactive', 'work']
+regions: ['US']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://claude.com/resources/articles/claude-duet
+    checked_at: 2026-11-13

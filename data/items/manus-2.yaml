@@ -1,0 +1,23 @@
+id: manus-2
+kind: personal-agent
+map: personal-agents
+category: autonomous-work-agents
+subcategory: Startup
+name:
+  en: 'Manus 2.0'
+  zh: 'Manus 2.0'
+summary:
+  en: 'General autonomous agent rebuilt in 2026 with a Cascade harness and Cloud Computer for long-horizon work.'
+  zh: '通用自主任务智能体，2026 年以 Cascade 架构 + 云端电脑重构，主打长周期复杂任务。'
+website: https://manus.im/
+organization: manus
+tags: ['personal-agent', 'autonomous', 'cloud-computer']
+regions: ['Global']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://manus.im/blog/introducing-manus-2-0
+    checked_at: 2026-11-13

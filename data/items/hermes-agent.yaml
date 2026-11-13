@@ -1,0 +1,25 @@
+id: hermes-agent
+kind: personal-agent
+map: personal-agents
+category: self-hosted-agents
+subcategory: Open Source
+name:
+  en: 'Hermes Agent'
+  zh: 'Hermes Agent'
+summary:
+  en: 'Nous Research''s self-improving personal agent with a built-in learning loop that creates reusable skills.'
+  zh: 'Nous Research 的自我改进型个人智能体，内置学习循环、会自动沉淀可复用技能。'
+website: https://hermes-agent.nousresearch.com/
+organization: nous-research
+tags: ['personal-agent', 'open-source', 'self-improving']
+regions: ['Global']
+status: active
+related: []
+facts:
+  deployment: ['self-hosted']
+  open_source: true
+sources:
+  - url: https://github.com/NousResearch/hermes-agent
+    checked_at: 2026-11-13
+  - url: https://hermes-agent.nousresearch.com/docs
+    checked_at: 2026-11-13

@@ -1,0 +1,23 @@
+id: openai-dots
+kind: personal-agent
+map: personal-agents
+category: consumer-super-agents
+subcategory: Big Tech
+name:
+  en: 'dots'
+  zh: 'dots'
+summary:
+  en: 'OpenAI''s always-on personal agent with a customizable avatar, built to handle everything inside ChatGPT.'
+  zh: 'OpenAI 的常驻式个人智能体，带可定制虚拟形象、与 ChatGPT 深度集成，主打替你处理一切。'
+website: https://openai.com/index/introducing-dots/
+organization: openai
+tags: ['personal-agent', 'always-on', 'assistant']
+regions: ['US']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://openai.com/index/introducing-dots/
+    checked_at: 2026-11-13

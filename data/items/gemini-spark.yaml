@@ -1,0 +1,23 @@
+id: gemini-spark
+kind: personal-agent
+map: personal-agents
+category: consumer-super-agents
+subcategory: Big Tech
+name:
+  en: 'Gemini Spark'
+  zh: 'Gemini Spark'
+summary:
+  en: 'Google''s 24/7 agentic assistant with Gmail integration that proactively manages your digital life.'
+  zh: 'Google 的 7×24 小时个人智能体，打通 Gmail，主动打理你的数字生活。'
+website: https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/
+organization: google
+tags: ['personal-agent', 'always-on', 'google']
+regions: ['US']
+status: active
+related: []
+facts:
+  deployment: ['cloud']
+  open_source: false
+sources:
+  - url: https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/
+    checked_at: 2026-11-13

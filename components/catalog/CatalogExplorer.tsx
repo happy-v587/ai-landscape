@@ -10,6 +10,7 @@ const mapOptions = [
   { value: 'model-infra', labelEn: 'Model Infra', labelZh: '模型基础设施' },
   { value: 'agent-tools', labelEn: 'Agent & Tools', labelZh: 'Agent 与工具' },
   { value: 'apps-saas', labelEn: 'Apps & SaaS', labelZh: '应用与 SaaS' },
+  { value: 'personal-agents', labelEn: 'Personal Agents', labelZh: '个人智能体' },
 ];
 
 export function CatalogExplorer({
