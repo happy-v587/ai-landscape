@@ -1,0 +1,28 @@
+id: muse-ember
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Muse Ember'
+  zh: 'Muse Ember'
+summary:
+  en: 'Meta''s smallest and most efficient model, built for repetitive agent tasks at $0.10 per million input tokens.'
+  zh: 'Meta 最小、最高效的模型，专为智能体重复性任务设计，每百万输入 token 仅 0.10 美元。'
+website: https://research.meta.ai/blog/muse-ember
+organization: meta
+tags: ['llm', 'small-model', 'agentic', 'cost-efficient']
+regions: ['US']
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-11-10
+  provider_lane: meta
+  capabilities: ['reasoning', 'agentic']
+sources:
+  - url: https://research.meta.ai/blog/muse-ember
+    checked_at: 2026-11-13
+  - url: https://x.com/AIatMeta/status/2119853591703998787
+    checked_at: 2026-11-13

@@ -1,0 +1,28 @@
+id: gpt-6-cyber
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'GPT-6 Cyber'
+  zh: 'GPT-6 Cyber'
+summary:
+  en: 'OpenAI''s cyber-specialized variant of GPT-6 Astra, trained to find exploitable vulnerabilities and develop fixes; released to verified users with a ''Critical'' cybersecurity rating.'
+  zh: 'OpenAI 基于 GPT-6 Astra 的网络安全专用模型，用于发现可利用漏洞并生成修复方案；向认证用户开放，网络安全能力评级为「关键」。'
+website: https://openai.com/index/introducing-gpt-6-cyber/
+organization: openai
+tags: ['llm', 'cybersecurity', 'agentic']
+regions: ['US']
+status: active
+related: ['gpt-6-astra']
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-11-05
+  provider_lane: openai
+  capabilities: ['coding', 'reasoning', 'security']
+sources:
+  - url: https://openai.com/index/introducing-gpt-6-cyber/
+    checked_at: 2026-11-13
+  - url: https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05/
+    checked_at: 2026-11-13

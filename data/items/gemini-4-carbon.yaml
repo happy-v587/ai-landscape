@@ -1,0 +1,28 @@
+id: gemini-4-carbon
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Gemini 4 Carbon'
+  zh: 'Gemini 4 Carbon'
+summary:
+  en: 'Google''s strongest frontier model, built for long-horizon agentic workflows, multi-step coding and open-ended scientific research; made generally available to paid developers, enterprises and AI Ultra subscribers.'
+  zh: 'Google 最强的前沿模型，面向长程智能体工作流、多步编程与开放式科研；面向付费开发者、企业及 AI Ultra 订阅用户全面开放。'
+website: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available
+organization: google-deepmind
+tags: ['llm', 'reasoning', 'coding', 'agentic', 'cybersecurity']
+regions: ['US']
+status: active
+related: ['gemini-3-8-flash']
+facts:
+  modalities: ['text', 'image']
+  open_source: false
+timeline:
+  released_at: 2026-11-10
+  provider_lane: google-deepmind
+  capabilities: ['reasoning', 'coding', 'agentic', 'cybersecurity']
+sources:
+  - url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available
+    checked_at: 2026-11-13
+  - url: https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers
+    checked_at: 2026-11-13

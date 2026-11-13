@@ -1,0 +1,28 @@
+id: gemini-4-hydrogen
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Gemini 4 Hydrogen'
+  zh: 'Gemini 4 Hydrogen'
+summary:
+  en: 'Google''s low-cost agentic model for rapid coding and multimodal synthesis, finishing tasks 2.5x faster than Gemini 3.8 Flash.'
+  zh: 'Google 面向快速编程与多模态合成的低价智能体模型，任务完成速度比 Gemini 3.8 Flash 快 2.5 倍。'
+website: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/
+organization: google-deepmind
+tags: ['llm', 'coding', 'agentic', 'cost-efficient']
+regions: ['US']
+status: active
+related: ['gemini-4-carbon']
+facts:
+  modalities: ['text', 'image']
+  open_source: false
+timeline:
+  released_at: 2026-11-12
+  provider_lane: google-deepmind
+  capabilities: ['coding', 'agentic', 'multimodal']
+sources:
+  - url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/
+    checked_at: 2026-11-13
+  - url: https://x.com/GoogleDeepMind
+    checked_at: 2026-11-13

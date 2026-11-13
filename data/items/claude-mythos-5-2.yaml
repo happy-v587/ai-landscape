@@ -1,0 +1,28 @@
+id: claude-mythos-5-2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Claude Mythos 5.2'
+  zh: 'Claude Mythos 5.2'
+summary:
+  en: 'Anthropic''s restricted-access companion to Fable 5.2, aimed at the most demanding technical tasks with record-high benchmark results.'
+  zh: 'Anthropic 与 Fable 5.2 同期推出的受限访问模型，面向最高难度技术任务，基准成绩创纪录。'
+website: https://www.anthropic.com/claude-fable-and-mythos-5-2
+organization: anthropic
+tags: ['llm', 'reasoning', 'restricted']
+regions: ['US']
+status: active
+related: ['claude-fable-5-2']
+facts:
+  modalities: ['text', 'image']
+  open_source: false
+timeline:
+  released_at: 2026-11-09
+  provider_lane: anthropic
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://www.anthropic.com/claude-fable-and-mythos-5-2
+    checked_at: 2026-11-13
+  - url: https://venturebeat.com/technology/anthropic-releases-claude-fable-5-2-and-mythos-5-2-pairing-new-record-high-benchmarks/
+    checked_at: 2026-11-13

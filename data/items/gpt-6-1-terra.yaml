@@ -1,0 +1,28 @@
+id: gpt-6-1-terra
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'GPT-6.1 Terra'
+  zh: 'GPT-6.1 Terra'
+summary:
+  en: 'OpenAI''s fast, low-cost model for computer use and agentic work, matching GPT-6 Astra on agent benchmarks at one-tenth the price.'
+  zh: 'OpenAI 面向电脑操作与智能体任务的快速低价模型，在智能体基准上以十分之一价格追平 GPT-6 Astra。'
+website: https://openai.com/index/introducing-gpt-6-1-terra?v=20261102
+organization: openai
+tags: ['llm', 'computer-use', 'agentic', 'cost-efficient']
+regions: ['US']
+status: active
+related: ['gpt-6-1-sol']
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-10-27
+  provider_lane: openai
+  capabilities: ['computer-use', 'agentic', 'vision']
+sources:
+  - url: https://openai.com/index/introducing-gpt-6-1-terra?v=20261102
+    checked_at: 2026-11-13
+  - url: https://x.com/OpenAI/status/2114780720170164735
+    checked_at: 2026-11-13

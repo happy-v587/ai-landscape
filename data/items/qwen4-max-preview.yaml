@@ -1,0 +1,28 @@
+id: qwen4-max-preview
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Qwen4-Max Preview'
+  zh: 'Qwen4-Max Preview'
+summary:
+  en: 'Alibaba''s preview of the Qwen4-Max flagship with a million-token context window, opened November 11, 2026.'
+  zh: '阿里通义千问 Qwen4-Max 旗舰预览版，支持百万 token 上下文，2026 年 11 月 11 日开放。'
+website: https://x.com/Alibaba_Qwen
+organization: alibaba-qwen
+tags: ['llm', 'long-context', 'preview']
+regions: ['CN']
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-11-11
+  provider_lane: alibaba-qwen
+  capabilities: ['reasoning', 'coding', 'long-context']
+sources:
+  - url: https://x.com/Alibaba_Qwen
+    checked_at: 2026-11-13
+  - url: https://x.com/Alibaba_Qwen
+    checked_at: 2026-11-13

@@ -1,0 +1,28 @@
+id: claude-fable-5-2
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Claude Fable 5.2'
+  zh: 'Claude Fable 5.2'
+summary:
+  en: 'Anthropic''s upgraded flagship general-purpose model with gains in coding, reasoning and vision, released alongside the restricted Claude Mythos 5.2.'
+  zh: 'Anthropic 升级后的旗舰通用模型，在编程、推理与视觉上均有提升，与受限发布的 Claude Mythos 5.2 同期推出。'
+website: https://www.anthropic.com/claude-fable-and-mythos-5-2
+organization: anthropic
+tags: ['llm', 'coding', 'reasoning', 'vision']
+regions: ['US']
+status: active
+related: ['claude-fable-5-1', 'claude-mythos-5-2']
+facts:
+  modalities: ['text', 'image']
+  open_source: false
+timeline:
+  released_at: 2026-11-09
+  provider_lane: anthropic
+  capabilities: ['coding', 'reasoning', 'vision']
+sources:
+  - url: https://www.anthropic.com/claude-fable-and-mythos-5-2
+    checked_at: 2026-11-13
+  - url: https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html
+    checked_at: 2026-11-13

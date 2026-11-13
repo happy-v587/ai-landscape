@@ -1,0 +1,28 @@
+id: tencent-hy4
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Tencent Hy4'
+  zh: '腾讯混元 Hy4'
+summary:
+  en: 'Tencent Hunyuan''s flagship LLM that first enters the top tier of open models — adding vision understanding and computer use, with major gains in instruction following, long-context and long-horizon agent tasks; weights to be open-sourced soon.'
+  zh: '腾讯混元旗舰大语言模型，首次跻身最强开源模型之列——新增视觉理解与电脑操作能力，大幅提升指令遵循、长文理解与长程智能体任务表现，模型权重将于近期开源。'
+website: https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/
+organization: tencent-hunyuan
+tags: ['llm', 'reasoning', 'coding', 'multimodal', 'open-weights', 'computer-use']
+regions: ['CN']
+status: active
+related: []
+facts:
+  modalities: ['text', 'image']
+  open_source: false
+timeline:
+  released_at: 2026-11-04
+  provider_lane: tencent-hunyuan
+  capabilities: ['reasoning', 'coding', 'multimodal', 'computer-use']
+sources:
+  - url: https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/
+    checked_at: 2026-11-13
+  - url: https://hunyuan.tencent.com/research/hy4
+    checked_at: 2026-11-13

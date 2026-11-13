@@ -1,0 +1,28 @@
+id: gpt-6-1-sol
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'GPT-6.1 Sol'
+  zh: 'GPT-6.1 Sol'
+summary:
+  en: 'OpenAI''s near-Astra intelligence model at a fraction of the price, available to ChatGPT and Codex users from September 30, 2026.'
+  zh: 'OpenAI 以约五分之一成本提供接近 GPT-6 Astra 智能水平的模型，2026 年 9 月 30 日起面向 ChatGPT 与 Codex 用户开放。'
+website: https://openai.com/index/introducing-gpt-6-1-sol/
+organization: openai
+tags: ['llm', 'reasoning', 'cost-efficient']
+regions: ['US']
+status: active
+related: []
+facts:
+  modalities: ['text']
+  open_source: false
+timeline:
+  released_at: 2026-09-30
+  provider_lane: openai
+  capabilities: ['reasoning', 'coding']
+sources:
+  - url: https://openai.com/index/introducing-gpt-6-1-sol/
+    checked_at: 2026-11-13
+  - url: https://x.com/OpenAI/status/2114780720170164735
+    checked_at: 2026-11-13

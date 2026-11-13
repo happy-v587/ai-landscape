@@ -1,0 +1,28 @@
+id: kimi-k3-1-pro
+kind: foundation-model
+map: models
+category: foundation-models
+name:
+  en: 'Kimi K3.1 Pro'
+  zh: 'Kimi K3.1 Pro'
+summary:
+  en: 'Moonshot AI''s K3.1 Pro flagship with open model weights, launched November 5, 2026.'
+  zh: '月之暗面 K3.1 Pro 旗舰模型，2026 年 11 月 5 日发布并开放模型权重。'
+website: https://www.kimi.com/news/kimi-k3-1-pro
+organization: moonshot-ai
+tags: ['llm', 'open-weights', 'coding', 'agentic']
+regions: ['CN']
+status: active
+related: ['kimi-k3']
+facts:
+  modalities: ['text']
+  open_source: true
+timeline:
+  released_at: 2026-11-05
+  provider_lane: moonshot-ai
+  capabilities: ['coding', 'reasoning', 'agentic']
+sources:
+  - url: https://www.kimi.com/news/kimi-k3-1-pro
+    checked_at: 2026-11-13
+  - url: https://x.com/Kimi_Moonshot/status/2120346822086398218
+    checked_at: 2026-11-13
